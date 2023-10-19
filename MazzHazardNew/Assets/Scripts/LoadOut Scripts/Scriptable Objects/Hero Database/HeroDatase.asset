@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f506047c9d3d9a4bb117fe339a2c6ed, type: 3}
+  m_Name: HeroDatase
+  m_EditorClassIdentifier: 
+  heroLists:
+  - heroIndex: 0
+    heroCard: {fileID: 21300000, guid: e9c6d2118ad842b43936d4bcc75dfeaa, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 1
+    heroCard: {fileID: 21300000, guid: eb99f2599dfdfed40bd2c7d3fe936af0, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 2
+    heroCard: {fileID: 21300000, guid: c9914e47934adc645910ffeb302d94b6, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 3
+    heroCard: {fileID: 21300000, guid: b1b5c94d433e38d4483c1aa86c23d99a, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 4
+    heroCard: {fileID: 21300000, guid: 3d4490500c83f144f86eda4ed99a6d82, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 5
+    heroCard: {fileID: 21300000, guid: e0be3757af56fd0459c5933d4e8f6a40, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
+  - heroIndex: 6
+    heroCard: {fileID: 21300000, guid: fef9da20e8affba4a878f2290dacbaeb, type: 3}
+    buttonPrefab: {fileID: 0}
+    characterCard: {fileID: 0}
