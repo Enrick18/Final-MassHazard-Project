@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyMove : MonoBehaviour, IKillable
 {
     NavMeshAgent agent;
-    private Path thePath;
+    private UnitPathing thePath;
     // public Transform[] wayPointstransform;
     int wayPointIndex;
     [SerializeField]
@@ -30,11 +30,11 @@ public class EnemyMove : MonoBehaviour, IKillable
     {
         agent = GetComponent<NavMeshAgent>();
         movementSpeed = agent.speed;
-        thePath = FindObjectOfType<Path>();
+        thePath = FindObjectOfType<UnitPathing>();
         if(thePath ==  null)
         {
             var findGameManager = GameObject.Find("GameManager");
-            thePath = findGameManager.GetComponent<Path>();
+            thePath = findGameManager.GetComponent<UnitPathing>();
         }
         UpdateDestination();
 
