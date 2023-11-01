@@ -12595,7 +12595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1645975532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17227,7 +17227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2320085702782885571, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704028024610, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -17259,7 +17259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704028024620, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704028024621, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_LocalScale.x
@@ -17287,7 +17287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704043049443, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704043049447, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_Pivot.x
@@ -17375,7 +17375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704068280137, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704068280142, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_LocalScale.x
@@ -17475,7 +17475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2320085704466734173, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4080494045204216309, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: cubeEnabler
@@ -17483,7 +17483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4263611549396651553, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5570601591932299852, guid: 233999d1082657e41a62144d9b16dab5, type: 3}
       propertyPath: m_RootOrder
