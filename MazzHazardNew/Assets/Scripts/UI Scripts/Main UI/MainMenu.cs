@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
    public void LoadStage()
    {
-      SceneManager.LoadScene("StageScene");
+      SceneManager.LoadScene("StagesUI_Scene");
    }
 
    public void LoadLevelEditor()
@@ -15,18 +15,9 @@ public class MainMenu : MonoBehaviour
       SceneManager.LoadScene("LevelEditor");
    }
 
-   public void LoadSettings()
-   {
-      SceneManager.LoadScene("Settings");
-   }
-
    public void BackToMenu()
    {
-      SceneManager.LoadScene("MainMenu");
-   }
-   public void LoadCharacterCards()
-   {
-      SceneManager.LoadScene("CharacterCards");
+      SceneManager.LoadScene("MainMenu_UIScenes");
    }
    public void QuitApplication()
     {
