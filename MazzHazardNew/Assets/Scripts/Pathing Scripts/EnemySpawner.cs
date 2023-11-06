@@ -18,6 +18,9 @@ public class EnemySpawner : MonoBehaviour
 
     private int totalEnemies = 0;
 
+    public bool isHard;
+    public bool isMedium;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,14 @@ public class EnemySpawner : MonoBehaviour
         {
             while (enemy.enemyCount > 0)
             {
+                if (isMedium) 
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsMedium();
+                }
+                else if (isHard) 
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsHard();
+                }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
                 enemy.enemyCount--;
                 yield return new WaitForSeconds(timeBetweenSpawns);
@@ -58,6 +69,14 @@ public class EnemySpawner : MonoBehaviour
             var enemy = enemyList[Random.Range(0, enemyList.Count)];
             if (enemy.enemyCount > 0)
             {
+                if (isMedium)
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsMedium();
+                }
+                else if (isHard)
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsHard();
+                }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
                 enemy.enemyCount--;
                 yield return new WaitForSeconds(timeBetweenSpawns);
