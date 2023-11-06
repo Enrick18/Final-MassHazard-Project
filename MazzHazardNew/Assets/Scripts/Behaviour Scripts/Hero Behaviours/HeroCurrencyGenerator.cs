@@ -11,6 +11,9 @@ public class HeroCurrencyGenerator : MonoBehaviour
     //Interval of income
     public float incomeInterval;
     private float incomeCounter;
+    private HealthController healthController;
+    public float addedCooldownTime;
+
 
     bool isCooldown = true;
 
@@ -20,8 +23,11 @@ public class HeroCurrencyGenerator : MonoBehaviour
 
     private void Start()
     {
-        anim.SetBool("isIdle", true);
-        anim.SetBool("isGenerating", false);
+        //anim.SetBool("isIdle", true);
+        //anim.SetBool("isGenerating", false);
+
+        healthController = GetComponent<HealthController>();
+        currencySystem = GameObject.Find("Hero Selection").GetComponent<CurrencySystem>();
     }
 
     public void IncomeIncrease()
@@ -31,25 +37,31 @@ public class HeroCurrencyGenerator : MonoBehaviour
 
     private void Update()
     {
-        
-        incomeCounter -= Time.deltaTime;
 
-        if (isCooldown)
-        {
-            anim.SetBool("isIdle", true);
-            anim.SetBool("isGenerating", false);
-        }
-        else
-        {
-            anim.SetBool("isIdle", false);
-            anim.SetBool("isGenerating", true);
-        }
+        var currentHealth = healthController.currentHealth;
 
-        if(incomeCounter<=0)
+        if (currentHealth <= 0) 
         {
-            IncomeIncrease();
-            incomeCounter = incomeInterval;
+            currencySystem.cooldownCounter += addedCooldownTime;
         }
+        //incomeCounter -= Time.deltaTime;
+
+        //if (isCooldown)
+        //{
+        //    anim.SetBool("isIdle", true);
+        //    anim.SetBool("isGenerating", false);
+        //}
+        //else
+        //{
+        //    anim.SetBool("isIdle", false);
+        //    anim.SetBool("isGenerating", true);
+        //}
+
+        //if(incomeCounter<=0)
+        //{
+        //    IncomeIncrease();
+        //    incomeCounter = incomeInterval;
+        //}
 
     }
 

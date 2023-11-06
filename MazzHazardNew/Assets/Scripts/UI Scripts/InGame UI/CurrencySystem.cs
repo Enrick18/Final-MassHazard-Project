@@ -11,6 +11,9 @@ public class CurrencySystem : MonoBehaviour
     public int defaultCurency;
     //current currency value
     public int currentCurrency;
+
+    public float cooldownCounter = 10f;
+    public float cooldownReset;
     
     [SerializeField]public int currencyRegenAmount = 1;
 
@@ -25,14 +28,27 @@ public class CurrencySystem : MonoBehaviour
     }
 
     private void Start() {
-        InvokeRepeating(nameof(CurrencyIncome),0,10f);
+        cooldownReset = cooldownCounter;
     }
 
     private void Update() {
-        if(currentCurrency > maxCurrency)
+
+        cooldownCounter -= Time.deltaTime;
+
+        if (currentCurrency > maxCurrency)
         {
             currentCurrency = maxCurrency;
         }
+
+        
+
+        if (cooldownCounter <= 0)
+        {
+            CurrencyIncome();
+            cooldownCounter = cooldownReset;
+        }
+
+
     }
 
     void CurrencyIncome()
