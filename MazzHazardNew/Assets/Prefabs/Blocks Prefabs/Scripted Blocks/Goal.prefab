@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 5119024038786526514}
   m_Layer: 0
   m_Name: Goal
-  m_TagString: Untagged
+  m_TagString: ChildCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -82,7 +82,7 @@ Transform:
   - {fileID: 4549351516194632823}
   - {fileID: 5036219712604646299}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4082568470376938699
 MonoBehaviour:

@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseNoScript
       objectReference: {fileID: 0}
+    - target: {fileID: 3214931835592573452, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: Cube
+      objectReference: {fileID: 0}
     - target: {fileID: 3502263781493550611, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_Enabled
       value: 0

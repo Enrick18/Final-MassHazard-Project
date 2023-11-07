@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 4888871681225824315}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: ChildCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -81,7 +81,7 @@ Transform:
   - {fileID: 7914337259122194413}
   - {fileID: 6141993477886761233}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5959959934657209042
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   enemyList: []
   timeBetweenSpawns: 2
   timeBetweenWaves: 10
-  isThereBoss: 0
+  isThereBoss: 1
   isRandomized: 0
 --- !u!65 &5959959934657209043
 BoxCollider:
