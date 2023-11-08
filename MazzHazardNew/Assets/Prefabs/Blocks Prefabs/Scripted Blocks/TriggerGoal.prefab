@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &755587790619628218
 BoxCollider:
@@ -89,13 +89,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755587790619628167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d58ce6b064dde8469b2ede8aded862d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCounter: {fileID: 0}
   gameOverUi: {fileID: 0}
-  txt_lifeCount: {fileID: 0}
+  lifeCountText: {fileID: 0}
   maxLife: 5
   currentLife: 0

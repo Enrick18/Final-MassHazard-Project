@@ -26,6 +26,9 @@ public class LoadMap : MonoBehaviour
             parentCube.GetChild(3).gameObject.SetActive(mapData[parentCube.name.ToString()].path);
             parentCube.GetChild(4).gameObject.SetActive(mapData[parentCube.name.ToString()].range);
         }
+
+        //add RealTime NavMesh function
+
     }
 
     public void LoadFromJSON()
