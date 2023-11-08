@@ -16,17 +16,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 785172496108547633, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: ChildCube
+      objectReference: {fileID: 0}
     - target: {fileID: 1403805482913124670, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403805482913124670, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: ChildCube
       objectReference: {fileID: 0}
     - target: {fileID: 1862746530664258703, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1862746530664258703, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: ChildCube
+      objectReference: {fileID: 0}
     - target: {fileID: 2681864144228608020, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2681864144228608020, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -72,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BaseNoScript
       objectReference: {fileID: 0}
+    - target: {fileID: 3214931835592573452, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: Cube
+      objectReference: {fileID: 0}
     - target: {fileID: 3502263781493550611, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -80,9 +96,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3974290541543605216, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: ChildCube
+      objectReference: {fileID: 0}
     - target: {fileID: 4853364463986615485, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364463986615485, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
+      propertyPath: m_TagString
+      value: ChildCube
       objectReference: {fileID: 0}
     - target: {fileID: 8715706391565041690, guid: b9dd9e739a371e644a61c601cc60cd7f, type: 3}
       propertyPath: m_Enabled

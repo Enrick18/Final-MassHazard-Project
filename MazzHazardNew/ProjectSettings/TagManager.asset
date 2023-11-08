@@ -7,6 +7,10 @@ TagManager:
   - Tile
   - Hero
   - Enemy
+  - Spawner
+  - Goal
+  - ChildCube
+  - Cube
   layers:
   - Default
   - TransparentFX
