@@ -31,7 +31,7 @@ public class GameController : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("StageUI_Scene");
+        SceneManager.LoadScene("StagesUI_Scene");
     }
 
     public void ToLevelEditor()

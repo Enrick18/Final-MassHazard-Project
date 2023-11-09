@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3066557407855236567}
+  - component: {fileID: 5492630971274288705}
+  - component: {fileID: 6293422394053079097}
   m_Layer: 0
   m_Name: FireBuffBlock2
   m_TagString: Untagged
@@ -32,6 +34,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5492630971274288705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601157155410028436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b26301e3e8a10014f9ba515c9e02165c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileElement: 0
+--- !u!114 &6293422394053079097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601157155410028436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0745df11233d114d85d838bb41f39c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMeleeBlock: 0
+  hasTower: 0
 --- !u!1001 &7656654331754267733
 PrefabInstance:
   m_ObjectHideFlags: 0

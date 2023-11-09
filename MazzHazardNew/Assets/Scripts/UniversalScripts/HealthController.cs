@@ -10,6 +10,8 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public float currentHealth;
     private float healDmg;
     private Animator anim;
+    [SerializeField]private bool isMedium;
+    [SerializeField]private bool isHard;
 
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
@@ -17,10 +19,23 @@ public class HealthController : MonoBehaviour, IHealthSystem
     // Start is called before the first frame update
     void Start()
     {
+        if (isMedium)
+        {
+            damageResistance = 0.7f;
+            float increasehealth = maxHealth * 0.10f;
+            maxHealth += increasehealth;
+        }
+        else if (isHard)
+        {
+            damageResistance = 0.5f;
+            float increasehealth = maxHealth * 0.30f;
+            maxHealth += increasehealth;
+        }
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
         anim = GetComponentInChildren<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -40,6 +55,18 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
 
         healthBar.value = currentHealth;
+    }
+
+    public bool IsMedium() 
+    {
+        isMedium = true;
+        return isMedium;
+    }
+
+    public bool IsHard() 
+    { 
+        isHard = true;
+        return isHard;
     }
 
     public void TakeDamage(float damageAmount, float multiplier, float resistanceModifier)

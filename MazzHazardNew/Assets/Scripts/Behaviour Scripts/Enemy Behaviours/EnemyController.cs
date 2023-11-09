@@ -11,6 +11,8 @@ public class EnemyController : MonoBehaviour, IKillable
     private float attackCounter;
     private GameObject hero;
     public Animator anim;
+    [SerializeField]private bool isMedium;
+    [SerializeField]private bool isHard;
     [HideInInspector]public bool isBuffApplied { get; set; }
 
     //Enemy Melee Anim
@@ -19,6 +21,16 @@ public class EnemyController : MonoBehaviour, IKillable
     // Start is called before the first frame update
     void Start()
     {
+        if (isMedium) 
+        {
+            float damageIncrease = damageAmount * 0.15f;
+            damageAmount += damageIncrease;
+        }
+        else if (isHard) 
+        {
+            float damageIncrease = damageAmount * 0.40f;
+            damageAmount += damageIncrease;
+        }
         enemyHealth = GetComponent<IHealthSystem>();
 
     }
@@ -32,6 +44,10 @@ public class EnemyController : MonoBehaviour, IKillable
             anim.SetBool("isAttacking", false);
         }
     }
+
+    public bool IsMedium() { isMedium = true; return isMedium; }
+    public bool IsHard() { isHard = true; return isHard; }
+
 
     private void OnTriggerStay(Collider other)
     {

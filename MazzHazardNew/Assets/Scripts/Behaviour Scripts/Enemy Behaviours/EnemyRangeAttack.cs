@@ -20,11 +20,27 @@ public class EnemyRangeAttack : MonoBehaviour
 
     public Animator anim;
 
+    private bool isMedium;
+    private bool isHard;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (isMedium)
+        {
+            float damageIncrease = damage * 0.15f;
+            damage += damageIncrease;
+        }
+        else if (isHard)
+        {
+            float damageIncrease = damage * 0.40f;
+            damage += damageIncrease;
+        }
         enemyRange = GetComponent<EnemyRange>();
     }
+
+    public bool IsMedium() { isMedium = true; return isMedium; }
+    public bool IsHard() { isHard = true; return isHard; }
 
     // Update is called once per frame
     void Update()

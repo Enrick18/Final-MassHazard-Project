@@ -305,9 +305,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6825466055268326819}
   - component: {fileID: 3007991301067279415}
+  - component: {fileID: 9208562575422057691}
   - component: {fileID: 8681718244737273062}
   - component: {fileID: 3556801484299115476}
   - component: {fileID: 5059915530188485434}
+  - component: {fileID: 8341011875973406423}
   m_Layer: 6
   m_Name: Drone
   m_TagString: Enemy
@@ -353,6 +355,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1489182, y: 2.1488252, z: 2.467672}
   m_Center: {x: 0.00004196167, y: 1.7233627, z: 0.031837106}
+--- !u!195 &9208562575422057691
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6398054517495382798}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 12
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &8681718244737273062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,9 +390,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Hero
-  damageAmount: 10
+  damageAmount: 15
   timeBetweenAttacks: 1
   anim: {fileID: 8077943958025515953}
+  isMedium: 0
+  isHard: 0
 --- !u!114 &3556801484299115476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,8 +408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 6395120336178643807}
-  maxHealth: 300
+  maxHealth: 200
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 2
 --- !u!114 &5059915530188485434
@@ -398,6 +426,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8341011875973406423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6398054517495382798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3244288d6b144754dbf9673fb93a68ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {x: 0, y: 0, z: 0}
+  distance: 2.7
+  blockRequirement: 1
+  anim: {fileID: 8077943958025515953}
+  counter: {fileID: 5059915530188485434}
 --- !u!1 &8712776893564284328
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,9 @@ public class EnemySpawner : MonoBehaviour
 
     private int totalEnemies = 0;
 
+    public bool isHard;
+    public bool isMedium;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,32 @@ public class EnemySpawner : MonoBehaviour
         {
             while (enemy.enemyCount > 0)
             {
+                if (isMedium) 
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsMedium();
+
+                    if (enemy.enemy.GetComponent<EnemyController>() != null) 
+                    { 
+                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                    }
+                    else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null) 
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                    }
+                }
+                else if (isHard) 
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsHard();
+
+                    if (enemy.enemy.GetComponent<EnemyController>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
                 enemy.enemyCount--;
                 yield return new WaitForSeconds(timeBetweenSpawns);
@@ -53,16 +82,43 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator RandomizedSpawn()
     {
-        for(int i = 0; i <= totalEnemies; i++)
+        for (int i = 0; i <= totalEnemies; i++)
         {
             var enemy = enemyList[Random.Range(0, enemyList.Count)];
             if (enemy.enemyCount > 0)
             {
+                if (isMedium)
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsMedium();
+
+                    if (enemy.enemy.GetComponent<EnemyController>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                    }
+                    else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                    }
+                }
+                else if (isHard)
+                {
+                    enemy.enemy.GetComponent<HealthController>().IsHard();
+
+                    if (enemy.enemy.GetComponent<EnemyController>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
+                    {
+                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                }
+
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
                 enemy.enemyCount--;
                 yield return new WaitForSeconds(timeBetweenSpawns);
+
             }
-            
         }
     }
 
