@@ -307,6 +307,8 @@ MonoBehaviour:
   healthBar: {fileID: 2778616272866425175}
   maxHealth: 500
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 1
 --- !u!114 &2778616273020895694
@@ -339,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Hero
-  damageAmount: 0
+  damageAmount: 20
   timeBetweenAttacks: 1
   anim: {fileID: 3353206539633874598}
 --- !u!114 &2778616273020895695
