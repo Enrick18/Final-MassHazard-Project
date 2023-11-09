@@ -226,9 +226,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8316655103984054555}
   - component: {fileID: 2095201901054429573}
+  - component: {fileID: 3585214896993365443}
   - component: {fileID: 2393423992696138018}
   - component: {fileID: 2239447580332868976}
   - component: {fileID: 512971052848069693}
+  - component: {fileID: 2761066956888963789}
   m_Layer: 6
   m_Name: CorruptedGolem
   m_TagString: Enemy
@@ -251,7 +253,7 @@ Transform:
   - {fileID: 8395904275997064936}
   - {fileID: 6949173573345252788}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2095201901054429573
 BoxCollider:
@@ -274,6 +276,28 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2994914, y: 4.8274055, z: 2.7157352}
   m_Center: {x: 0.0659904, y: 8.380704, z: 0.13197958}
+--- !u!195 &3585214896993365443
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291171678685580404}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.5
+  m_Speed: 1.8
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 2
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &2393423992696138018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +313,8 @@ MonoBehaviour:
   healthBar: {fileID: 9199541396001770720}
   maxHealth: 1000
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 3
 --- !u!114 &2239447580332868976
@@ -304,9 +330,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Hero
-  damageAmount: 0
+  damageAmount: 75
   timeBetweenAttacks: 1
   anim: {fileID: 2478126174027457682}
+  isMedium: 0
+  isHard: 0
 --- !u!114 &512971052848069693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +347,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2761066956888963789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291171678685580404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3244288d6b144754dbf9673fb93a68ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {x: 0, y: 0, z: 0}
+  distance: 7.5
+  blockRequirement: 3
+  anim: {fileID: 2478126174027457682}
+  counter: {fileID: 512971052848069693}
 --- !u!1 &6393468870943331532
 GameObject:
   m_ObjectHideFlags: 0

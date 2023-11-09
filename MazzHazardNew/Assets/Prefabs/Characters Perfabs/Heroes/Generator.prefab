@@ -303,6 +303,8 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   maxHealth: 0
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 0
   element: 0
 --- !u!114 &3015725814641043831
@@ -320,6 +322,7 @@ MonoBehaviour:
   currencySystem: {fileID: 0}
   incomeValue: 15
   incomeInterval: 10
+  addedCooldownTime: 0
   anim: {fileID: 0}
 --- !u!1 &5560821129845854661
 GameObject:
@@ -339,7 +342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5560821129845854660
 RectTransform:
   m_ObjectHideFlags: 0

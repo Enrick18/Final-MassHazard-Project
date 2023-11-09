@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  distance: 2.7
+  distance: 7.5
   blockRequirement: 1
   anim: {fileID: 3353206539633874598}
   counter: {fileID: 2778616273020895695}
@@ -344,6 +344,8 @@ MonoBehaviour:
   damageAmount: 20
   timeBetweenAttacks: 1
   anim: {fileID: 3353206539633874598}
+  isMedium: 0
+  isHard: 0
 --- !u!114 &2778616273020895695
 MonoBehaviour:
   m_ObjectHideFlags: 0
