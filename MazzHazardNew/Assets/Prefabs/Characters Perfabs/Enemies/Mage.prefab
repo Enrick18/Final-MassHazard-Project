@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &365244230931322416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717780062919036481}
+  m_Layer: 0
+  m_Name: firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717780062919036481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365244230931322416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3774007, y: 11.30034, z: 2.949059}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7122417093902580943}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4749583451154443401
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +468,7 @@ Transform:
   - {fileID: 4749583451348876862}
   - {fileID: 7122417093902580943}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4749583453166842695
 BoxCollider:
@@ -571,19 +602,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4749583453166842703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6d899e52d5467f4e8d68b84202b36f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 0}
-  firePoint: {fileID: 0}
-  timeBetweenShots: 1
-  damage: 0
+  projectile: {fileID: 4734503648029603528, guid: 5b32b05a426b628478af2c736629a0e9, type: 3}
+  firePoint: {fileID: 717780062919036481}
+  timeBetweenShots: 2
+  damage: 50
   target: {fileID: 0}
   element: 0
-  launcherModel: {fileID: 0}
-  anim: {fileID: 0}
+  launcherModel: {fileID: 4749583453166842694}
+  anim: {fileID: 3762691830920406709}
 --- !u!114 &-3901681482271049161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,7 +705,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 98206f5ceecd2d14c969ee41640f445e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 717780062919036481}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
 --- !u!95 &3762691830920406709 stripped
