@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\ObjectClickHandler.cs" />
+    <Compile Include="Assets\ImageLoader.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\LevelEditor Levels\Database.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\SavingData.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\MapData.cs" />
