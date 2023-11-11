@@ -4180,12 +4180,20 @@ PrefabInstance:
       value: FireBuffBlockHighGround
       objectReference: {fileID: 0}
     - target: {fileID: 6748216106168706921, guid: cd48cc817b4544e4c9e26c7ca1c865e8, type: 3}
+      propertyPath: hasTower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748216106168706921, guid: cd48cc817b4544e4c9e26c7ca1c865e8, type: 3}
       propertyPath: isMeleeBlock
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7730993386828795727, guid: cd48cc817b4544e4c9e26c7ca1c865e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730993386828795727, guid: cd48cc817b4544e4c9e26c7ca1c865e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -347,6 +347,8 @@ MonoBehaviour:
   healthBar: {fileID: 6984987242748122294}
   maxHealth: 500
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 0
 --- !u!114 &6984987243440939679
@@ -368,7 +370,7 @@ MonoBehaviour:
   launcherModel: {fileID: 4525598916335328110}
   anim: {fileID: 7506943023779053844}
   element: 0
-  damage: 0
+  damage: 10
 --- !u!114 &6984987243440939676
 MonoBehaviour:
   m_ObjectHideFlags: 0
