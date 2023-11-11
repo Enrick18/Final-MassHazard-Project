@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 763173096927429684}
   - component: {fileID: 6548932850827931578}
   - component: {fileID: 9163994227127367085}
+  - component: {fileID: 4033780402378992425}
+  - component: {fileID: 5285290719363553645}
   m_Layer: 0
   m_Name: PlantBuffBlock1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 3337930795859226434}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6548932850827931578
 MonoBehaviour:
@@ -47,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMeleeBlock: 0
-  hasTower: 0
+  hasTower: 1
 --- !u!114 &9163994227127367085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +63,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileElement: 1
+--- !u!65 &4033780402378992425
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7039365783898355276}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.010577, y: 3.3815708, z: 6.041507}
+  m_Center: {x: 0, y: 1.7165868, z: 0.015464783}
+--- !u!114 &5285290719363553645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7039365783898355276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 4, y: 3.1546474, z: 6.0104165}
+  m_Center: {x: 0, y: 1.6031251, z: 0.015464544}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &3015176592763373737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93f9c2d18290a9045887d8a1c1002842, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93f9c2d18290a9045887d8a1c1002842, type: 3}
       propertyPath: m_LocalScale.z
@@ -127,11 +166,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 93f9c2d18290a9045887d8a1c1002842, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 93f9c2d18290a9045887d8a1c1002842, type: 3}
       propertyPath: m_Name
-      value: GreenCrack1
+      value: GreenCrackHighGround
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

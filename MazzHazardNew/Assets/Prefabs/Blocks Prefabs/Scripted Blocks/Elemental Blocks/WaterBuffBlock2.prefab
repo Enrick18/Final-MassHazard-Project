@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2279840643146137353}
   - component: {fileID: 3373015599709593157}
   - component: {fileID: 4112981465854573922}
+  - component: {fileID: 992397956221535723}
+  - component: {fileID: 826333895806997350}
   m_Layer: 0
   m_Name: WaterBuffBlock2
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 6939846068790542700}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3373015599709593157
 MonoBehaviour:
@@ -60,7 +62,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMeleeBlock: 0
-  hasTower: 0
+  hasTower: 1
+--- !u!65 &992397956221535723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229180320451983050}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.936482, y: 3.5105534, z: 5.8800645}
+  m_Center: {x: -0.014104128, y: 1.7912378, z: 0.014104605}
+--- !u!114 &826333895806997350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229180320451983050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 6.002801, y: 3.1974592, z: 6.002801}
+  m_Center: {x: 0.014104366, y: 1.5782735, z: -0.014103889}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1001 &7477646941646202503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79,7 +118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: adf376677a55d1e489a846d8f1d647a2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: adf376677a55d1e489a846d8f1d647a2, type: 3}
       propertyPath: m_LocalScale.z
@@ -131,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: adf376677a55d1e489a846d8f1d647a2, type: 3}
       propertyPath: m_Name
-      value: BlueCrack1
+      value: BlueCrackHighGround
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

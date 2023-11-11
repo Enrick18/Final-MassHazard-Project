@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 3954577488956365176}
   - component: {fileID: -5209875930827307008}
   - component: {fileID: -1658837190921820657}
+  - component: {fileID: 8191646875411843562}
+  - component: {fileID: 4233734939863341602}
   m_Layer: 0
   m_Name: WaterBuffBlock1
-  m_TagString: Untagged
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 2256835008838042855}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-5209875930827307008
 MonoBehaviour:
@@ -46,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0745df11233d114d85d838bb41f39c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMeleeBlock: 0
+  isMeleeBlock: 1
   hasTower: 0
 --- !u!114 &-1658837190921820657
 MonoBehaviour:
@@ -61,6 +63,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileElement: 2
+--- !u!114 &8191646875411843562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236630398365090746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4946bd2d4f2254fbe09a4c222e1d8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWayPoint: 0
+  wayPointIndex: -1
+--- !u!65 &4233734939863341602
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236630398365090746}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.948718, y: 6.5363774, z: 5.9177876}
+  m_Center: {x: 0, y: 3.2630608, z: -0.015464783}
 --- !u!1001 &1791124261927674636
 PrefabInstance:
   m_ObjectHideFlags: 0
