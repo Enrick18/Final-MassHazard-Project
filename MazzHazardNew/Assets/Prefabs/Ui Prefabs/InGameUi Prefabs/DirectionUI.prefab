@@ -36,7 +36,7 @@ RectTransform:
   - {fileID: 2400532629858097467}
   - {fileID: 2191123293744030878}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 12a406360f246cf48811b749907c10e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9d6d6a0235702f429701a5b19c8cf17, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -227,9 +227,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11500000, guid: 77aae11cba1a17b4c8db4c40d7ea162f, type: 3}
         m_TargetAssemblyTypeName: TowerManager, Assembly-CSharp
-        m_MethodName: OrientTower
+        m_MethodName: 
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c6b9cdce69f9e1458a49885eae65f93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c16dca0993371b40a87017120af3e11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b92fcf794cbb9a147becc5c7aa5ebbec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c59544e448249b438b529bdb7ecde6f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5cd9fdb8307170a459a006127de197f8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00ce3a1654a83a3418f102553e8e1b69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

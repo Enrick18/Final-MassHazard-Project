@@ -32,7 +32,7 @@ Transform:
   - {fileID: 1192289229322794913}
   - {fileID: 1596048579479517113}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4661617300711744389
 GameObject:
@@ -231,6 +231,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 100.3
       objectReference: {fileID: 0}
+    - target: {fileID: 481200193157152848, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481200193157152848, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481200193157152851, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -339,6 +347,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGame Ui
       objectReference: {fileID: 0}
+    - target: {fileID: 1096808893169047621, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1192289229434983267}
+    - target: {fileID: 1096808893169047621, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OrientTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3727493806879589385, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1192289229434983267}
+    - target: {fileID: 3727493806879589385, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OrientTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200012341916188932, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1192289229434983267}
+    - target: {fileID: 5200012341916188932, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OrientTower
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037306789406467345, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1192289229434983267}
+    - target: {fileID: 6037306789406467345, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OrientTower
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -360,6 +400,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 481200194402672734, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
   m_PrefabInstance: {fileID: 1596048580592228351}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1192289229434983267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 481200194038809756, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+  m_PrefabInstance: {fileID: 1596048580592228351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192289229434983269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c6714a178eae84d89bfba5875602dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192289229434983269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 481200194038809754, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
