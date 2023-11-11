@@ -98,8 +98,10 @@ MonoBehaviour:
   enemyList: []
   timeBetweenSpawns: 2
   timeBetweenWaves: 10
-  isThereBoss: 1
+  isThereBoss: 0
   isRandomized: 0
+  isHard: 0
+  isMedium: 0
 --- !u!65 &5959959934657209043
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -74,7 +74,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 18}
+  m_AnchoredPosition: {x: 0, y: 8}
   m_SizeDelta: {x: 880.39996, y: 414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1019028090000272187
@@ -243,7 +243,6 @@ GameObject:
   - component: {fileID: 5077898088379688472}
   - component: {fileID: 98227651299399409}
   - component: {fileID: 7986124550055106930}
-  - component: {fileID: 1775685090817011646}
   - component: {fileID: 9190186174890342713}
   m_Layer: 6
   m_Name: SpikeTreant
@@ -267,7 +266,7 @@ Transform:
   - {fileID: 2456023285242923769}
   - {fileID: 3890628964602207897}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &98227651299399409
 BoxCollider:
@@ -303,22 +302,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 3173503652938919139}
-  maxHealth: 200
+  maxHealth: 310
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 1
---- !u!114 &1775685090817011646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4858343405609695001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9190186174890342713
 MonoBehaviour:
   m_ObjectHideFlags: 0

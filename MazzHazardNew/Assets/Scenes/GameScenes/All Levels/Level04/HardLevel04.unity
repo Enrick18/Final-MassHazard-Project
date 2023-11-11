@@ -1192,7 +1192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986124550055106930, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: maxHealth
-      value: 400
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 9190186174890342713, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: attackRange
@@ -2450,6 +2450,10 @@ PrefabInstance:
     - target: {fileID: 5959959934657209041, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: isHard
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209068, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: m_Name
@@ -15158,7 +15162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7986124550055106930, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: maxHealth
-      value: 400
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 9190186174890342713, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: attackRange
