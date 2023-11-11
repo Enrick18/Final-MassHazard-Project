@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\LoadGameFile.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\GameController.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\UnitPathing.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\LevelEditor.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyController.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMapLoader.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyRange.cs" />
@@ -76,10 +77,14 @@
     <Compile Include="Assets\Scripts\LevelEditor\DataTransfer.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelUnlocker.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMap.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\WaveManager.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SelectionMenu.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\ObjectClickHandler.cs" />
+    <Compile Include="Assets\ImageLoader.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\LevelEditor Levels\Database.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\SavingData.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\MapData.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHeroStats.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Scriptable Objects\Hero Database\HeroDatabase.cs" />
@@ -93,6 +98,7 @@
     <Compile Include="Assets\Scripts\LevelProgress Scripts\SaveStage.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Scriptable Objects\LoadOutHeroList.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LevelSelected.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\MapSceneToLoad.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\EnemyCounter.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyRangeAttack.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageComplete.cs" />
@@ -101,6 +107,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantSpikes.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\HeroSelected.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\LoadOutSelectedHeroes.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\LoadingData.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SetupSelectionMenu.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
@@ -109,9 +116,11 @@
     <Compile Include="Assets\Scripts\LoadOut Scripts\Hero Button\HeroButton.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\Projectile.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\TileBuff.cs" />
+    <Compile Include="Assets\Scripts\TestScripts.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantAoeAttack.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />
+    <Compile Include="Assets\Scripts\Customization Level Editor\IndexSetter.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />
