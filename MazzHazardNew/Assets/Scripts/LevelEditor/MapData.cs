@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapData : ScriptableObject
 {
     public string mapName;
-
+    
+    
 
 }
