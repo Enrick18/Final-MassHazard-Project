@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585b135baef48064dbbc5aefdce99fdb, type: 3}
   m_Name: MapData
   m_EditorClassIdentifier: 
-  mapName: Test3
+  mapName: Test

@@ -1,0 +1,1675 @@
+{
+  "Base": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (1)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (2)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (3)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (4)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (5)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (6)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (7)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (8)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (9)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (10)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (11)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (12)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (13)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (14)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (15)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (16)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (17)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (18)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (19)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (20)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (21)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (22)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (23)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (24)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (25)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (26)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (27)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (28)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (29)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (30)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (31)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (32)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (33)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (34)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (35)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (36)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (37)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (38)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (39)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (40)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (41)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (42)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (43)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (44)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (45)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (46)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (47)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (48)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (49)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (50)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (51)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (52)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (53)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (54)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (55)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (56)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (57)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (58)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (59)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (60)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (61)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (62)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (63)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (64)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (65)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (66)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (67)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (68)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (69)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (70)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (71)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (72)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (73)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (74)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (75)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (76)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (77)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (78)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (79)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (80)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (81)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (82)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (83)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (84)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (85)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (86)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (87)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (88)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (89)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (90)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (91)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (92)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (93)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (94)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (95)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (96)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (97)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (98)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (99)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (100)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (101)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (102)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (103)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (104)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (105)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (106)": {
+    "spawner": true,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (107)": {
+    "spawner": false,
+    "goal": false,
+    "decor": true,
+    "path": false,
+    "range": false
+  },
+  "Base (108)": {
+    "spawner": false,
+    "goal": false,
+    "decor": true,
+    "path": false,
+    "range": false
+  },
+  "Base (109)": {
+    "spawner": false,
+    "goal": false,
+    "decor": true,
+    "path": false,
+    "range": false
+  },
+  "Base (110)": {
+    "spawner": false,
+    "goal": true,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (111)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (112)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (113)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (114)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (115)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (116)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (117)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (118)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (119)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (120)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (121)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (122)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (123)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (124)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (125)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (126)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (127)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (128)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": true,
+    "range": false
+  },
+  "Base (129)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": true,
+    "range": false
+  },
+  "Base (130)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": true,
+    "range": false
+  },
+  "Base (131)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (132)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (133)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (134)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (135)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (136)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (137)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (138)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (139)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (140)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (141)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (142)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (143)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (144)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (145)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (146)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (147)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (148)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (149)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (150)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (151)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (152)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (153)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (154)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (155)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (156)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (157)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (158)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (159)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (160)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (161)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (162)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (163)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (164)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (165)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (166)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (167)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (168)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (169)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (170)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (171)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (172)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (173)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (174)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (175)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (176)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (177)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (178)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (179)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (180)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (181)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (182)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (183)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (184)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (185)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (186)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (187)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (188)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (189)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (190)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (191)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (192)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (193)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (194)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (195)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (196)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (197)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (198)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (199)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (200)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (201)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (202)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (203)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (204)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (205)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (206)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (207)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (208)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (209)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (210)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (211)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (212)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (213)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (214)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (215)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (216)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (217)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (218)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (219)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (220)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (221)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (222)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (223)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (224)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (225)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (226)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (227)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (228)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (229)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (230)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (231)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (232)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (233)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (234)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (235)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (236)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (237)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  },
+  "Base (238)": {
+    "spawner": false,
+    "goal": false,
+    "decor": false,
+    "path": false,
+    "range": false
+  }
+}
