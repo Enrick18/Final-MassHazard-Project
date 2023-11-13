@@ -226,6 +226,8 @@ MonoBehaviour:
   healthBar: {fileID: 1877645264048957173}
   maxHealth: 500
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 3
 --- !u!114 &1877645262903174885
@@ -240,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45708c2dae519c4789f432e216666de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 25
   healAmount: 50
   timeBetweenHeals: 1.1
   healRate: 1

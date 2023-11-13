@@ -21909,10 +21909,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2898333379273149723, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
-      propertyPath: range
-      value: 90
-      objectReference: {fileID: 0}
     - target: {fileID: 4023519213374639320, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99911183
