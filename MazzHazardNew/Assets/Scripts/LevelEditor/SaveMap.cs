@@ -13,6 +13,7 @@ using UnityEngine.UI;
     public bool decor;
     public bool path;
     public bool range;
+    public bool grass;
 }
 
 
@@ -43,8 +44,10 @@ public class SaveMap : MonoBehaviour
             data.spawner = tile.GetChild(0).gameObject.activeSelf;
             data.goal = tile.GetChild(1).gameObject.activeSelf;
             data.decor = tile.GetChild(2).gameObject.activeSelf;
-            data.path = tile.GetChild(3).gameObject.activeSelf;
-            data.range = tile.GetChild(4).gameObject.activeSelf;
+            data.grass = tile.GetChild(3).gameObject.activeSelf;
+            data.path = tile.GetChild(4).gameObject.activeSelf;
+            data.range = tile.GetChild(5).gameObject.activeSelf;
+           
             mapData[tile.name] = data;
         }
     }
