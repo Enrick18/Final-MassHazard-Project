@@ -2993,11 +2993,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextStage
-      value: 
+      value: S2M
       objectReference: {fileID: 0}
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextDifficulty
-      value: S2H
+      value: S3E
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983266, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_SizeDelta.x

@@ -7504,11 +7504,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextStage
-      value: S8E
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextDifficulty
-      value: S7M
+      value: S7H
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983266, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_SizeDelta.x
