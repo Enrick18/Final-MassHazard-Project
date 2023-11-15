@@ -73,6 +73,8 @@ MonoBehaviour:
   healthBar: {fileID: 4203875407872798224}
   maxHealth: 5000
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1.5
   element: 1
 --- !u!114 &6549087834758298685
@@ -105,10 +107,10 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 64
-  range: 20
+  range: 90
   attackTargetTag: Hero
   damageInterval: 1.5
-  damageAmount: 10
+  poisonDamage: 5
   damageBuff: 1.5
 --- !u!1 &1431212655778136834
 GameObject:

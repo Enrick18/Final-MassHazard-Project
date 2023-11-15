@@ -411,6 +411,8 @@ MonoBehaviour:
   healthBar: {fileID: 7572789433793839575}
   maxHealth: 400
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 2
 --- !u!114 &7572789435222156614
@@ -437,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f0168b6772dbe46830353a5b7063bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 17
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64

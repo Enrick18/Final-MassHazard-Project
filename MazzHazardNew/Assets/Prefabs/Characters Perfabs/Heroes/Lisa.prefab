@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 4734503648029603528, guid: 988837fddcbf5dc4db9f8774b979d483, type: 3}
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 19787077837121158}
   timeBetweenShots: 3
   target: {fileID: 0}
   launcherModel: {fileID: 4525598916335328110}
