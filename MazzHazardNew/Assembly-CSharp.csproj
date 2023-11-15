@@ -112,6 +112,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\Projectile.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\TileBuff.cs" />
     <Compile Include="Assets\AutoNavMesh.cs" />
+    <Compile Include="Assets\PathCalculation.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantAoeAttack.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />

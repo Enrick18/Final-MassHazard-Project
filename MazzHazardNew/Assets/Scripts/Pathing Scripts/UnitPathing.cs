@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class UnitPathing : MonoBehaviour
 {
+    [SerializeField] private bool isLevelEditor = false;
     public Transform[] points;
     public Block[] blocks;
 
@@ -23,7 +25,10 @@ public class UnitPathing : MonoBehaviour
 
     void Awake()
     {
-        GetWaypoints();
+        if(!isLevelEditor)
+        {
+            GetWaypoints();
+        }
     }
 
 }

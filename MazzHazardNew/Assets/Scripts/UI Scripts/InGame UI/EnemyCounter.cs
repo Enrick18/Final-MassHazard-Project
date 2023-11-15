@@ -13,13 +13,7 @@ public class EnemyCounter : MonoBehaviour
     public GameObject winUi;
 
     public StageComplete levelComplete;
-    // public int level;
-
-    //private void Start()
-    //{
-    //    enemySpawner = GameObject.Find("Spawner").GetComponent<EnemySpawner>();
-    //    Debug.Log(enemySpawner);
-    //}
+    public int level;
 
     private void Update() {
         if(currentEnemyCount <= 0)
@@ -34,9 +28,8 @@ public class EnemyCounter : MonoBehaviour
     }
 
 
-    private void Awake() {
+    private void Start() {
         enemySpawner = GameObject.Find("Spawner").GetComponent<EnemySpawner>();
-
         foreach (var enemy in enemySpawner.enemyList)
         {
             currentEnemyCount += enemy.enemyCount;
