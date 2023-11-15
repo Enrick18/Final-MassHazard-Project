@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\LevelEditor\LoadCustomScene.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\Elements.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\GridGenerator.cs" />
+    <Compile Include="Assets\SpawnerDelay.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\CurrencySystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroDetect.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\EnemySpawner.cs" />

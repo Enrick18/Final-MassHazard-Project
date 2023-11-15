@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 2911617079071509235}
   - component: {fileID: 513419813108011689}
   - component: {fileID: 1534671037333876822}
+  - component: {fileID: 3322608369565799893}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: ChildCube
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298075620439394945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66477a9b105a96d42b6e0f31cbd8af5f, type: 3}
   m_Name: 
@@ -299,7 +300,7 @@ MonoBehaviour:
   enemyList:
   - enemy: {fileID: 3969773040002872723, guid: 14372163046c7ad479ba8de5449292fa, type: 3}
     enemyCount: 6
-  timeBetweenSpawns: 2
+  timeBetweenSpawns: 7
   timeBetweenWaves: 10
   isThereBoss: 1
   isRandomized: 0
@@ -408,6 +409,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 3, z: -3}
+--- !u!114 &3322608369565799893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298075620439394945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d97738bd799364bbead32144422ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 298075620439395007}
+  delay: 5
 --- !u!1 &640518177066298310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1596,7 @@ GameObject:
   - component: {fileID: 1571107923070054839}
   - component: {fileID: 6800091707876092886}
   - component: {fileID: 530083228198579541}
+  - component: {fileID: 1241131526029681935}
   m_Layer: 0
   m_Name: FinalBase
   m_TagString: Cube
@@ -1607,7 +1623,7 @@ Transform:
   - {fileID: 6809068781194794984}
   - {fileID: 4319068372469678896}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1571107923070054839
 MeshFilter:
@@ -1680,6 +1696,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1241131526029681935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8646908281328552049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 1.0000001, y: 2, z: 1.0000001}
+  m_Center: {x: 0.000000059604645, y: 0.5, z: 0.000000059604645}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &8939337682770866146
 GameObject:
   m_ObjectHideFlags: 0
