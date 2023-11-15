@@ -8,7 +8,7 @@ using Unity.AI.Navigation;
 
 public class LoadMap : MonoBehaviour
 {
-    
+    [SerializeField] private NavMeshSurface navMeshSurface;
     private string fileName = "New Map"; // Provide the name of the JSON file
     private Dictionary<string, TileData> mapData = new Dictionary<string, TileData>();
     public MapData mapName = null;
@@ -18,7 +18,6 @@ public class LoadMap : MonoBehaviour
         fileName = mapName.mapName;
         
         LoadFromJSON();
-        Debug.Log(mapData.Count);
 
 
         if (mapData.Count > 0) { 
@@ -34,6 +33,8 @@ public class LoadMap : MonoBehaviour
                 
             }
         }
+
+        navMeshSurface.BuildNavMesh();
     }
 
     public void LoadFromJSON()
@@ -53,5 +54,10 @@ public class LoadMap : MonoBehaviour
         {
             Debug.LogError("JSON file not found: " + filePath);
         }
+
+
     }
+
+
+
 }
