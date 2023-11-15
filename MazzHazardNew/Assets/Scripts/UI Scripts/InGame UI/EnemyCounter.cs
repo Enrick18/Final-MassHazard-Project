@@ -34,7 +34,8 @@ public class EnemyCounter : MonoBehaviour
     }
 
 
-    private void Awake() {
+    private void Start() 
+    {
         enemySpawner = GameObject.Find("Spawner").GetComponent<EnemySpawner>();
 
         foreach (var enemy in enemySpawner.enemyList)
