@@ -635,6 +635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawner: {fileID: 0}
   target: {fileID: 0}
+  scannedBlocks: []
 --- !u!1001 &84718627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10286,6 +10287,10 @@ PrefabInstance:
     - target: {fileID: 1192289230148868015, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1596048579329634702, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: isLevelEditor
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1596048579479517112, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_Enabled

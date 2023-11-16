@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyList:
-  - enemy: {fileID: 3969773040002872723, guid: 14372163046c7ad479ba8de5449292fa, type: 3}
+  - enemy: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
     enemyCount: 6
   timeBetweenSpawns: 7
   timeBetweenWaves: 10

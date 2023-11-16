@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  distance: 2.7
+  distance: 7.8
   blockRequirement: 1
   anim: {fileID: 3353206539633874598}
   counter: {fileID: 2778616273020895695}
