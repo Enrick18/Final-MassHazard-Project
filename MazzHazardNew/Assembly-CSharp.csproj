@@ -129,6 +129,7 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />
+    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\MissionSelect.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Healer\HealerTower.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\HeroRangeTower.cs" />
