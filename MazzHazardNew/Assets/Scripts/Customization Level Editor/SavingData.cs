@@ -7,11 +7,12 @@ using Newtonsoft.Json;
 public class SavingData : MonoBehaviour
 {
     public LevelEditor levelEditorData;
+    public Dictionary<string, TileData> mapData = new();
     public void SaveJson()
     {
         ToSaveData data = new ToSaveData();
         //Data to save
-        data.toSaveMapSelected = levelEditorData.mapSelected;
+        //data.toSaveMapSelected = levelEditorData.mapSelected;
         data.toSaveGameModeSelected = levelEditorData.gameModeSelected;
         for(int i=0; i<5; i++)
         {
@@ -23,6 +24,7 @@ public class SavingData : MonoBehaviour
         data.toSaveCapsuleCount = levelEditorData.capsuleCount;
         data.toSavefinalMapName = levelEditorData.finalMapName;
         data.toSaveIsRogue = levelEditorData.isRogue;
+
 
         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
         string filePath = Application.streamingAssetsPath + "/" + "LevelEditorFile_"+ levelEditorData.finalMapName +".json";

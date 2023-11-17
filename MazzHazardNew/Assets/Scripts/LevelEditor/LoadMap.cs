@@ -12,14 +12,26 @@ public class LoadMap : MonoBehaviour
     private string fileName = "New Map"; // Provide the name of the JSON file
     private Dictionary<string, TileData> mapData = new Dictionary<string, TileData>();
     public MapData mapName = null;
+    public SavingData saveData;
     public static event Action OnMapLoaded;
-   
-    private void Start()
+
+    private void OnEnable()
+    {
+        mapData = saveData.mapData;
+        SaveMap.OnSave += BuildMap;
+        
+    }
+
+    private void OnDisable()
+    {
+        SaveMap.OnSave -= BuildMap;
+    }
+
+    private void BuildMap()
     {
         fileName = mapName.mapName;
-        
-        LoadFromJSON();
 
+        //LoadFromJSON();
 
         if (mapData.Count > 0) { 
             for (int i = 0; i < transform.childCount; i++) 
@@ -40,26 +52,26 @@ public class LoadMap : MonoBehaviour
         OnMapLoaded?.Invoke();
     }
 
-    public void LoadFromJSON()
-    {
-        string filePath = Application.dataPath + "/CustomMaps/" + fileName + ".json";
+    //public void LoadFromJSON()
+    //{
+    //    string filePath = Application.streamingAssetsPath + "/CustomMaps/" + fileName + ".json";
 
-        if (File.Exists(filePath))
-        {
-            string json = File.ReadAllText(filePath);
-            mapData = JsonConvert.DeserializeObject<Dictionary<string, TileData>>(json);
+    //    if (File.Exists(filePath))
+    //    {
+    //        string json = File.ReadAllText(filePath);
+    //        mapData = JsonConvert.DeserializeObject<Dictionary<string, TileData>>(json);
 
             
-            // Now mapData contains the deserialized data from the JSON file
-            // You can access it like mapData["tileName"].spawner, mapData["tileName"].goal, etc.
-        }
-        else
-        {
-            Debug.LogError("JSON file not found: " + filePath);
-        }
+    //        // Now mapData contains the deserialized data from the JSON file
+    //        // You can access it like mapData["tileName"].spawner, mapData["tileName"].goal, etc.
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError("JSON file not found: " + filePath);
+    //    }
 
 
-    }
+    //}
 
 
 

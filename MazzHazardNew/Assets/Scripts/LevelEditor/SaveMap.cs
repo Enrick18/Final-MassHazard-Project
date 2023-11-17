@@ -22,8 +22,10 @@ public class SaveMap : MonoBehaviour
     [SerializeField] private string saveFolder = "CustomMaps";
     [SerializeField] private Transform grid;
     [SerializeField] private InputField enteredName;
-    private Dictionary<string , TileData> mapData = new();
+    public SavingData saveData;
     private string fileName = "New Map";
+    public static event Action OnSave;
+
     public void SaveCurrentMap()
     {
         if (enteredName.text != "")
@@ -48,13 +50,15 @@ public class SaveMap : MonoBehaviour
             data.path = tile.GetChild(4).gameObject.activeSelf;
             data.range = tile.GetChild(5).gameObject.activeSelf;
            
-            mapData[tile.name] = data;
+            saveData.mapData[tile.name] = data;
+
+            OnSave?.Invoke();
         }
     }
     public void SaveToJSON()
     {
-        string json = JsonConvert.SerializeObject(mapData, Formatting.Indented);
-        string savePath = Application.dataPath + "/" + saveFolder + "/" + fileName + ".json";
+        string json = JsonConvert.SerializeObject(saveData.mapData, Formatting.Indented);
+        string savePath = Application.streamingAssetsPath + "/" + saveFolder + "/" + fileName + ".json";
         File.WriteAllText(savePath, json);
     }
 }

@@ -14,7 +14,7 @@ public class SaveMapLoader : MonoBehaviour
     void Start()
     {
         
-        string fullPath = System.IO.Path.Combine(Application.dataPath, folderPath);
+        string fullPath = System.IO.Path.Combine(Application.streamingAssetsPath, folderPath);
 
        
         if (Directory.Exists(fullPath))

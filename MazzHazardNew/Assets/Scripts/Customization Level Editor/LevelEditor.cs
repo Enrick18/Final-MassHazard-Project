@@ -7,7 +7,6 @@ using TMPro;
 
 public class LevelEditor : MonoBehaviour
 {
-    public string mapSelected;
     public string gameModeSelected;
     public int[] enemyWaveIndex = { -1, -1, -1, -1, -1 };
     public int[] numberOfEnemies = { 0, 0, 0, 0, 0 };
@@ -26,10 +25,6 @@ public class LevelEditor : MonoBehaviour
     public TMP_InputField mapNameInputField;
     public WaveManager waveManager;
 
-    public void MapSelected(string mapName)
-    {
-        mapSelected = mapName;
-    }
 
     public void GameModeSelected(string mode)
     {
