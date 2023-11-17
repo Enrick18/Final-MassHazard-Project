@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class VolumeSettings : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private AudioMixer myMixer;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider sfxSlider;
+
+    public void SetMusicVolume()
     {
-        
+        float music_volume = musicSlider.value;
+        myMixer.SetFloat("Music", Mathf.Log10(music_volume) * 20);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetSFXVolume()
     {
-        
+        float sfx_volume = sfxSlider.value;
+        myMixer.SetFloat("SFX", Mathf.Log10(sfx_volume) * 20);
     }
 }
