@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
 {
+
+    AudioManager audioManager; 
+
     private int _enemiesBlocked = 0;
     public int enemiesBlocked => _enemiesBlocked;
     [SerializeField] private int _blockCount = 1;
@@ -22,6 +25,11 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     private bool isAttacking;
 
     public bool isAoeAttack;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -57,6 +65,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
                     if (attackCounter <= 0)
                     {
+                        audioManager.PlaySFX(audioManager.attacking);
                         attackCounter = timeBetweenAttacks;
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isAttacking", true);
@@ -104,6 +113,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
             if (other.gameObject.tag == blockTarget)
             {
+               
                 if ((_enemiesBlocked + blockRequirement) <= blockCount) // check if enemies doesnt exceed block count
                 {
                     _enemiesBlocked += blockRequirement;
@@ -133,12 +143,15 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             {
                 if (other.gameObject.tag == blockTarget)
                 {
+                   
                     enemy = other.gameObject;
                     attackCounter -= Time.deltaTime;
                     IHealthSystem enemyHealth = enemy.GetComponent<IHealthSystem>();
 
                     if (attackCounter <= 0)
                     {
+                        
+
                         attackCounter = timeBetweenAttacks;
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isAttacking", true);

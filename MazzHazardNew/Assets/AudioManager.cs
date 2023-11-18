@@ -15,9 +15,16 @@ public class AudioManager : MonoBehaviour
     public AudioClip enterGoal;
     public AudioClip attacking;
     public AudioClip death;
+    public AudioClip female_attack;
 
     private void Start()
     {
         musicSource.clip = background;
+        musicSource.Play();
+    }
+
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
     }
 }
