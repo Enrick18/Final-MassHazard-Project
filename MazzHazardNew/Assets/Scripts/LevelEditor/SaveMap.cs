@@ -19,23 +19,10 @@ using UnityEngine.UI;
 
 public class SaveMap : MonoBehaviour
 {
-    [SerializeField] private string saveFolder = "CustomMaps";
     [SerializeField] private Transform grid;
-    [SerializeField] private InputField enteredName;
     public SavingData saveData;
-    private string fileName = "New Map";
-    public static event Action OnSave;
+    public static event Action<Dictionary<string, TileData>> OnSave;
 
-    public void SaveCurrentMap()
-    {
-        if (enteredName.text != "")
-        {
-            fileName = enteredName.text;
-        }
-
-        SaveMapData();
-        SaveToJSON();
-    }
     public void SaveMapData() 
     {
         for(int i = 0; i < grid.childCount; i++)
@@ -52,13 +39,22 @@ public class SaveMap : MonoBehaviour
            
             saveData.mapData[tile.name] = data;
 
-            OnSave?.Invoke();
         }
+
+        OnSave?.Invoke(saveData.mapData);
     }
-    public void SaveToJSON()
-    {
-        string json = JsonConvert.SerializeObject(saveData.mapData, Formatting.Indented);
-        string savePath = Application.streamingAssetsPath + "/" + saveFolder + "/" + fileName + ".json";
-        File.WriteAllText(savePath, json);
-    }
+    //public void SaveToJSON()
+    //{
+    //    string json = JsonConvert.SerializeObject(saveData.mapData, Formatting.Indented);
+    //    //string savePath = Application.streamingAssetsPath + "/" + saveFolder + "/" + fileName + ".json";
+    //    string savePath = Application.streamingAssetsPath + "/"+ "LevelEditorFile" + fileName + ".json";
+    //    int fileNumber = 0;
+
+    //    while (File.Exists(savePath)) 
+    //    {
+    //      fileNumber++;
+    //      savePath = Application.streamingAssetsPath + "/" + "LevelEditorFile" + fileName + fileNumber.ToString() + ".json";
+    //    }
+    //    File.WriteAllText(savePath, json);
+    //}
 }

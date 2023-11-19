@@ -7,14 +7,14 @@ public class SaveMapLoader : MonoBehaviour
 {
     [SerializeField] private Transform parent;
     [SerializeField] private RectTransform buttonPrefab;
-    [SerializeField] private string folderPath = "CustomMaps"; 
+    //[SerializeField] private string folderPath = "CustomMaps"; 
     private List<string> savedMaps = new List<string>();
 
 
     void Start()
     {
         
-        string fullPath = System.IO.Path.Combine(Application.streamingAssetsPath, folderPath);
+        string fullPath = System.IO.Path.Combine(Application.streamingAssetsPath);
 
        
         if (Directory.Exists(fullPath))

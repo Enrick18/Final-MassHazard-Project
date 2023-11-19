@@ -12,7 +12,6 @@ public class SavingData : MonoBehaviour
     {
         ToSaveData data = new ToSaveData();
         //Data to save
-        //data.toSaveMapSelected = levelEditorData.mapSelected;
         data.toSaveGameModeSelected = levelEditorData.gameModeSelected;
         for(int i=0; i<5; i++)
         {
@@ -24,19 +23,21 @@ public class SavingData : MonoBehaviour
         data.toSaveCapsuleCount = levelEditorData.capsuleCount;
         data.toSavefinalMapName = levelEditorData.finalMapName;
         data.toSaveIsRogue = levelEditorData.isRogue;
+        data.toSaveMapData = mapData;   
 
 
         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
-        string filePath = Application.streamingAssetsPath + "/" + "LevelEditorFile_"+ levelEditorData.finalMapName +".json";
-        int fileNummber = 0;
+        string filePath = Application.streamingAssetsPath + "/" + "LevelEditorFileData_"+ levelEditorData.finalMapName +".json";
+        int fileNumber = 0;
         while(File.Exists(filePath))
         {
-            fileNummber++;
-            filePath = Application.streamingAssetsPath + "/" + "LevelEditorFile_"+ levelEditorData.finalMapName +fileNummber.ToString()+".json";
+            fileNumber++;
+            filePath = Application.streamingAssetsPath + "/" + "LevelEditorFileData_"+ levelEditorData.finalMapName +fileNumber.ToString()+".json";
         }
         File.WriteAllText(filePath, json);
     }
 }
+
 public class ToSaveData
 {
     public string toSaveMapSelected;
@@ -48,5 +49,6 @@ public class ToSaveData
     public int toSaveCapsuleCount;
     public string toSavefinalMapName;
     public bool toSaveIsRogue;
+    public Dictionary<string, TileData> toSaveMapData = new();
 }
 

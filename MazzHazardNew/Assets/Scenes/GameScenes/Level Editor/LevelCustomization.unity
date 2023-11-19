@@ -12986,7 +12986,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3741e82d768a954384ab4c290df3d81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapSelected: 
   gameModeSelected: 
   enemyWaveIndex: ffffffffffffffffffffffffffffffffffffffff
   numberOfEnemies: 0000000000000000000000000000000000000000
@@ -13000,7 +12999,12 @@ MonoBehaviour:
   waveText: {fileID: 1910763483}
   hpText: {fileID: 922768504}
   capsuleText: {fileID: 559742039}
-  enemyCountText: []
+  enemyCountText:
+  - {fileID: 1726042597}
+  - {fileID: 1361363452}
+  - {fileID: 956251526}
+  - {fileID: 873528450}
+  - {fileID: 1143931022}
   mapNameInputField: {fileID: 2096611701}
   waveManager: {fileID: 1415590509}
 --- !u!4 &1415590508
@@ -13030,7 +13034,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1c910bd5c60aaa45bfdc8aad4ae823f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveScreens: []
+  waveScreens:
+  - {fileID: 63345341}
+  - {fileID: 256074636}
+  - {fileID: 2063183871}
+  - {fileID: 254645889}
+  - {fileID: 564518232}
   nextScreen: {fileID: 1954280956}
   prevScreen: {fileID: 978567376}
   levelEditor: {fileID: 1415590507}
@@ -19400,7 +19409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2133139189
 MonoBehaviour:
   m_ObjectHideFlags: 0

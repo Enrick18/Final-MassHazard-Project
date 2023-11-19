@@ -8401,6 +8401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthUi
       objectReference: {fileID: 0}
+    - target: {fileID: 1596048579329634702, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: points.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2157815483155812379, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_Name
       value: GameEssentials

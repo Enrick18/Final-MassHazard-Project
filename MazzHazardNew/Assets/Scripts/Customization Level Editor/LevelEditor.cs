@@ -13,7 +13,7 @@ public class LevelEditor : MonoBehaviour
     public int waveCount = 1;
     public int hpCount = 1;
     public int capsuleCount = 10;
-    public string finalMapName;
+    public string finalMapName = "New Map";
     public bool isRogue = false;
 
     public GameObject waveSettingScene;
@@ -124,7 +124,11 @@ public class LevelEditor : MonoBehaviour
 
     public void SetMapName()
     {
-        finalMapName = mapNameInputField.text;
+        if (mapNameInputField.text != "") 
+        {
+            finalMapName = mapNameInputField.text;
+        }
+        
     }
 
     public void MapNameBack()
@@ -137,7 +141,7 @@ public class LevelEditor : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu_UIScenes");
     }
 
 }
