@@ -254,6 +254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -413,6 +417,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 06
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1041,6 +1049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1201,6 +1213,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 05
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1316,6 +1332,10 @@ PrefabInstance:
     - target: {fileID: 1198711795040702019, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Name
       value: StageCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1860800880163564491, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1504,6 +1524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1546,11 +1570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436845951884456002, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3M
+      value: S7M
       objectReference: {fileID: 0}
     - target: {fileID: 3714484747783492557, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3E
+      value: S7E
       objectReference: {fileID: 0}
     - target: {fileID: 3714484747783492557, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Enabled
@@ -1664,6 +1688,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 07
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1678,7 +1706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8940927914346597314, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3H
+      value: S7H
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1781,6 +1809,10 @@ PrefabInstance:
     - target: {fileID: 1198711795040702019, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Name
       value: StageCard 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1942,6 +1974,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 03
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1979,6 +2015,10 @@ PrefabInstance:
     - target: {fileID: 1198711795040702019, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Name
       value: StageCard 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2139,6 +2179,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 04
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2756,6 +2800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2915,6 +2963,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 09
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3099,6 +3151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3259,6 +3315,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 08
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3397,6 +3457,7 @@ MonoBehaviour:
   loadOutUi: {fileID: 165824364}
   heroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   warningUi: {fileID: 1454858242}
+  loadOutChecker: 1
 --- !u!114 &2047175441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3492,6 +3553,10 @@ PrefabInstance:
     - target: {fileID: 1198711795040702019, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Name
       value: StageCard 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3653,6 +3718,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3690,6 +3759,10 @@ PrefabInstance:
     - target: {fileID: 1198711795040702019, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Name
       value: StageCard 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3850,6 +3923,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 02
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

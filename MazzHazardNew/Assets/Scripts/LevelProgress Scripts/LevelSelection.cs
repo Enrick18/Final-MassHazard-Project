@@ -9,7 +9,7 @@ public class LevelSelection : MonoBehaviour
     public GameObject loadOutUi;
     public LoadOutHeroList heroList;
     public GameObject warningUi;
-
+    [SerializeField]private bool loadOutChecker = false;
 
     public void SetLevelToLoad(string level)
     {
@@ -21,19 +21,22 @@ public class LevelSelection : MonoBehaviour
     public void LoadLevel()
     {
 
-
-        for(int i = 0; i < heroList.heroChoosenIndex.Count; i++)
+        for (int i = 0; i < heroList.heroChoosenIndex.Count; i++)
         {
-            if(heroList.heroChoosenIndex[i] != -1)
+            if (heroList.heroChoosenIndex[i] != -1)
             {
-                SceneManager.LoadScene(MissionSelect.levelToLoad);
-            }
-            else
-            {
-                warningUi.SetActive(true);
+                loadOutChecker = true;
             }
         }
-        
+
+        if (loadOutChecker)
+        {
+            SceneManager.LoadScene(MissionSelect.levelToLoad);
+        }
+        else
+        {
+            warningUi.SetActive(true);
+        }
     }
 
     public void BackToStageUi()

@@ -39,8 +39,68 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/All Levels/Level03/MediumLevel03.unity
     guid: 05225b37f6d48f34e9ef9870575e7090
   - enabled: 1
-    path: Assets/Scenes/GameScenes/Level Editor/CustomMapMenu.unity
-    guid: e1c7d9d7f67114d46b20ce60e56add42
+    path: Assets/Scenes/GameScenes/All Levels/Level04/EasyLevel04.unity
+    guid: 80a18aa5b5e84d441b8e9f85100d9a75
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level04/HardLevel04.unity
+    guid: 1bc6c9aa4b50de247aa40fa026a39568
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level04/MediumLevel04.unity
+    guid: f900c5154a7ccd44f894850e34ee7aae
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level05/EasyLevel05.unity
+    guid: 82370bab73b2fa041874deb2214f76c0
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level05/HardLevel05.unity
+    guid: 3a7ecd7050dd4b244a58cba60c1d2870
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level05/MediumLevel05.unity
+    guid: 1c461fe5583779642ad8274549889058
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level06/EasyLevel06.unity
+    guid: 1514e3026ac88dc45a822ada190d843b
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level06/HardLevel06.unity
+    guid: ead43e52600028d44bdf35a4ba1a3f92
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level06/MediumLevel06.unity
+    guid: afbfb4c74b3cbc64d826af21e4393ebc
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level07/EasyLevel07.unity
+    guid: eaee0d79ef92cea4182f6e523648b263
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level07/HardLevel07.unity
+    guid: 04980907f10477049822d0b274f16fb7
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level07/MediumLevel07.unity
+    guid: ea51682ca477af14297f08ed476ad30f
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level08/EasyLevel08.unity
+    guid: 76a750e7123be254f8710bf9c38f2f48
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level08/HardLevel08.unity
+    guid: eeacd249bbb88f14cacf2cfa79b93518
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level08/MediumLevel08.unity
+    guid: e8cbc228a2b123741b137b7b070c2610
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level09/EasyLevel09.unity
+    guid: 12b3ae4758378aa4bb89471e9e9fc74e
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level09/HardLevel09.unity
+    guid: 2078118b2021b394a82d77c0dde40119
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level09/MediumLevel09.unity
+    guid: 9c52be87f2628a540a93ca8596df08fd
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level10/EasyLevel10.unity
+    guid: f8d716405e5ba20478500665dda4c11e
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level10/HardLevel10.unity
+    guid: dbb1b1c6b7947e347979d27b94478a31
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/All Levels/Level10/MediumLevel10.unity
+    guid: cad7ff16514060948a4da29ff11d3c2a
   - enabled: 1
     path: Assets/Scenes/GameScenes/Level Editor/LevelEditor.unity
     guid: 520256ef073583b41a7a78bd5572bf60

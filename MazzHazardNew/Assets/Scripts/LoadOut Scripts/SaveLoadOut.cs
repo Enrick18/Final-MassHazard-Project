@@ -9,11 +9,29 @@ public class SaveLoadOut : MonoBehaviour
     public Sprite activatedImage;
     public Sprite originalImage;
     private Button button;
+    public string levelKey;
+    public int levelUnlocked;
+    [SerializeField]private bool isLevelEditor = false;
     
     private void Start() 
     {
-         button = GetComponent<Button>();
-         button.image.sprite = originalImage;
+        levelUnlocked = PlayerPrefs.GetInt(levelKey, 0);
+        button = GetComponent<Button>();
+        button.image.sprite = originalImage;
+
+        if (isLevelEditor) 
+        {
+            levelUnlocked = 1;
+        }
+
+        if (levelUnlocked != 0)
+        {
+            button.interactable = true;
+        }
+        else 
+        { 
+            button.interactable=false;
+        }
     }
     public void HeroSelected(int index)
     {

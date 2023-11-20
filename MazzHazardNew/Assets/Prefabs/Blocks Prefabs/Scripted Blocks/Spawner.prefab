@@ -95,9 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66477a9b105a96d42b6e0f31cbd8af5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyList: []
+  enemyList:
+  - enemy: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
+    enemyCount: 1
   timeBetweenSpawns: 2
-  timeBetweenWaves: 10
+  timeBetweenWaves: 4
   isThereBoss: 0
   isRandomized: 0
   isHard: 0

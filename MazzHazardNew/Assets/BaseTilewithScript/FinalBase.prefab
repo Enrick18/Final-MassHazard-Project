@@ -298,9 +298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyList: []
-  timeBetweenSpawns: 7
-  timeBetweenWaves: 10
-  isThereBoss: 1
+  timeBetweenSpawns: 2
+  timeBetweenWaves: 4
+  isThereBoss: 0
   isRandomized: 0
   isHard: 0
   isMedium: 0
