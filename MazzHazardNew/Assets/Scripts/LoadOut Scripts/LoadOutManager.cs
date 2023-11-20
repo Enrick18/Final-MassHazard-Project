@@ -29,18 +29,6 @@ public class LoadOutManager : MonoBehaviour
         for (int j = 0; j < database.heroLists.Count; j++)
         {
             var card = Instantiate(database.heroLists[j].characterCard,parent);
-            int isCardEnabled = card.GetComponent<SaveLoadOut>().levelUnlocked;
-            Debug.Log(isCardEnabled);
-
-            if (isCardEnabled != 0)
-            {
-                card.GetComponent<Button>().interactable = true;
-            }
-            else 
-            { 
-                card.GetComponent <Button>().interactable = false;
-            }
-            
             characterCards.Add(card);
         }
 
