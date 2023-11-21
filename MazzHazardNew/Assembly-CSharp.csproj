@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\RealtimeNavMeshBaking.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\BackToMenu.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Hero Button\HeroButton.cs" />
@@ -129,7 +130,6 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />
-    <Compile Include="Assets\AudioManager.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\MissionSelect.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Healer\HealerTower.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\HeroRangeTower.cs" />
