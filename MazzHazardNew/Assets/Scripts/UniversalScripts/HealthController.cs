@@ -93,9 +93,9 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
     }
 
-    public void HealDamage(float healAmount)
+    public void HealDamage(float healAmount, float health)
     {
-        healDmg = healAmount;
+        healDmg = healAmount * health;
 
         Invoke(nameof(Heal), .2f);
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyRangeAttack : MonoBehaviour
 {
@@ -20,12 +21,29 @@ public class EnemyRangeAttack : MonoBehaviour
 
     public Animator anim;
 
+    private NavMeshAgent agent;
+    private float moveSpeed;
+
     private bool isMedium;
     private bool isHard;
 
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        AnimationEvent.OnAttackStartAnimation += StopMoving;
+        AnimationEvent.OnAttackEndAnimation += ResumeMoving;
+    }
+
+    private void OnDisable()
+    {
+        AnimationEvent.OnAttackStartAnimation -= StopMoving;
+        AnimationEvent.OnAttackEndAnimation -= ResumeMoving;
+    }
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        moveSpeed = agent.speed;
         if (isMedium)
         {
             float damageIncrease = damage * 0.15f;
@@ -59,6 +77,7 @@ public class EnemyRangeAttack : MonoBehaviour
         {
             shotCounter = timeBetweenShots;
             firePoint.LookAt(target);
+
             anim.SetBool("isAttacking", true);
             anim.SetBool("isWalking", false);
             var bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
@@ -102,6 +121,18 @@ public class EnemyRangeAttack : MonoBehaviour
     public void IsDead()
     {
         this.enabled = false;
+    }
+
+    public void StopMoving() 
+    {
+        agent.speed = 0;
+        agent.isStopped = true;
+    }
+
+    public void ResumeMoving() 
+    {
+        agent.speed = moveSpeed;
+        agent.isStopped = false;
     }
 
 }

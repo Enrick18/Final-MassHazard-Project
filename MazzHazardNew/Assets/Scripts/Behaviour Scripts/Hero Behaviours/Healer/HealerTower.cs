@@ -77,7 +77,7 @@ public class HealerTower : MonoBehaviour, IKillable
                 anim.SetBool("isIdle", false);
                 anim.SetBool("isHealing", true);
 
-                kvp.Value.HealDamage(healAmount);
+                kvp.Value.HealDamage(healAmount, kvp.Value.GetMaxHealth());
                 if (kvp.Value.GetCurrentHealth() >= kvp.Value.GetMaxHealth())
                 {
                     _healableAllies.Remove(kvp.Key);

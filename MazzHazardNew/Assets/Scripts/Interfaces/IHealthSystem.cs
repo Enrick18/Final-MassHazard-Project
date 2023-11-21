@@ -12,7 +12,7 @@ public interface IHealthSystem
     float GetCurrentHealth();
     float GetMaxHealth();
     float GetDamageResistanceModifier();
-    void HealDamage(float healAmount);
+    void HealDamage(float healAmount, float  health);
 
     float GetElementalDamageMultiplier(ElementType attacker, ElementType defender);
 }
