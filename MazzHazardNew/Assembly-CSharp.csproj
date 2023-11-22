@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyController.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMapLoader.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyRange.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\VideoPlayer.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\ListOfEnemies.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadCustomScene.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\Elements.cs" />
