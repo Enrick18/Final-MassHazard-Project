@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScenes/All Levels/Level01/EasyLevel01.unity
     guid: 37870ce92d29638499b9465036cc678f
   - enabled: 1
+    path: Assets/Scenes/Cutscenes/Cutscene 2/Cutscene2.unity
+    guid: b659e77e60e0d8d4ca07c8aa97735f45
+  - enabled: 1
     path: Assets/Scenes/GameScenes/All Levels/Level01/HardLevel01.unity
     guid: 139d3701498beb84abafb4f75fd80f9d
   - enabled: 1

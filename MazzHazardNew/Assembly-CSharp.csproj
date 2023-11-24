@@ -58,6 +58,7 @@
     <Analyzer Include="D:\Applications\Unity Editor\2022.3.3f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 1\VideoController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\LoadGameFile.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\GameController.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\UnitPathing.cs" />
@@ -65,17 +66,19 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyController.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMapLoader.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyRange.cs" />
-    <Compile Include="Assets\Scenes\Cutscenes\VideoPlayer.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\ListOfEnemies.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadCustomScene.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\Elements.cs" />
     <Compile Include="Assets\Audio\SoundEffectsPlayer.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\GridGenerator.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 5\VideoController5.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\CurrencySystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroDetect.cs" />
     <Compile Include="Assets\Scripts\AutoNavMesh.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\EnemySpawner.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 1\CutsceneTransition.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Melee\HeroController.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 3\VideoController3.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\SpikeBehaviour.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\DataTransfer.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelUnlocker.cs" />
@@ -85,7 +88,10 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\ObjectClickHandler.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 5\CutsceneTransition5.cs" />
     <Compile Include="Assets\Audio\VolumeSettings.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 3\CutsceneTransition3.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 4\CutsceneTransition4.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\LevelEditor Levels\Database.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\SavingData.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\MapData.cs" />
@@ -98,6 +104,7 @@
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerPlacement.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\SpawnerDelay.cs" />
+    <Compile Include="Assets\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IKillable.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyMove.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyEventRaiser.cs" />
@@ -107,6 +114,7 @@
     <Compile Include="Assets\Scripts\Customization Level Editor\MapSceneToLoad.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\EnemyCounter.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\EnemyRangeAttack.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 4\VideoController4.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageComplete.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\SaveLoadOut.cs" />
@@ -118,12 +126,13 @@
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerManager.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 2\CutsceneTransition2.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\RealtimeNavMeshBaking.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\BackToMenu.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Hero Button\HeroButton.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\Projectile.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\TileBuff.cs" />
+    <Compile Include="Assets\Scenes\Cutscenes\Cutscene 2\VideoController2.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantAoeAttack.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />
