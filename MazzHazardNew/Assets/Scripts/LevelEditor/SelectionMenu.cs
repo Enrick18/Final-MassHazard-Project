@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class SelectionMenu : MonoBehaviour
 {
+    public AudioSource tileClickPlayer;
+    public AudioClip button1, button2, button3, button4, button5, button6;
     
     [HideInInspector] public GameObject selectedCube;
     [HideInInspector] public GameObject selectedChildCube;
@@ -133,4 +135,37 @@ public class SelectionMenu : MonoBehaviour
         }
         DisableRemoveButton();
     }   
+    //BUTTON CLICKER FUNCTIONS
+    public void Button1()
+    {
+        tileClickPlayer.clip = button1;
+        tileClickPlayer.Play();
+    }
+    public void Button2()
+    {
+        tileClickPlayer.clip = button2;
+        tileClickPlayer.Play();
+
+    }
+    public void Button3()
+    {
+        tileClickPlayer.clip = button3;
+        tileClickPlayer.Play();
+    }
+    public void Button4()
+    {
+        tileClickPlayer.clip = button4;
+        tileClickPlayer.Play();
+    }
+    public void Button5()
+    {
+        tileClickPlayer.clip = button5;
+        tileClickPlayer.Play();
+    }
+    public void Button6()
+    {
+        tileClickPlayer.clip = button6;
+        tileClickPlayer.Play();
+    }
+
 }

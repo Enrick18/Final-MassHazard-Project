@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ObjectClickHandler : MonoBehaviour
 {
+    //public AudioSource clickEffectPlayer;
+
     public Material highlightMaterial;
     public Material originalMaterial;
     public GameObject SelectedTile { get { return _selectedTile; } }

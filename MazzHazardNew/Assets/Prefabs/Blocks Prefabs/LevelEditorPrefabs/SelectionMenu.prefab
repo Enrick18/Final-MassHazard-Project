@@ -648,7 +648,6 @@ GameObject:
   - component: {fileID: 2320085704043049446}
   - component: {fileID: 2320085704043049441}
   - component: {fileID: 2320085704043049440}
-  - component: {fileID: 6292566114999720033}
   m_Layer: 5
   m_Name: SelectionMenu
   m_TagString: Untagged
@@ -745,27 +744,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &6292566114999720033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2320085704043049443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 182e64528b8d49949b514ba0fbd97516, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
-  src: {fileID: 0}
-  background: {fileID: 0}
-  sfx1: {fileID: 0}
-  sfx2: {fileID: 0}
-  sfx3: {fileID: 0}
-  sfx4: {fileID: 0}
-  sfx5: {fileID: 0}
-  sfx6: {fileID: 0}
 --- !u!1 &2320085704065571560
 GameObject:
   m_ObjectHideFlags: 0
