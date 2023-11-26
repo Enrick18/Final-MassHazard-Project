@@ -9,6 +9,7 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
     public Transform firePoint;
     public float timeBetweenShots = 1f;
     private float shotCounter;
+    //[SerializeField] private bool isBomb = false;
 
     [SerializeField]private Transform target;
     public Transform launcherModel;
@@ -18,6 +19,8 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
     [SerializeField]private ElementType element;
 
     public float damage;
+
+   
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,6 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
         // to look at target without rotating the x and z value
         if(target != null)
         {
-            // launcherModel.LookAt(target);
             launcherModel.rotation = Quaternion.Slerp (launcherModel.rotation, Quaternion.LookRotation(target.position - transform.position), 5f * Time.deltaTime);
 
             launcherModel.rotation = Quaternion.Euler(0f, launcherModel.rotation.eulerAngles.y, 0f);
@@ -46,10 +48,8 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
             firePoint.LookAt(target);
             anim.SetBool("isIdle",false);
             anim.SetBool("isAttacking", true);
+            //FireAttack();
 
-            GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-            bullet.GetComponent<Projectile>().element = element; //sets the element of the hero to the bullet
-            bullet.GetComponent<Projectile>().damageAmount = damage;
         }
 
         if(theTower.enemiesUpdated) // for optimising purposes so that it wont check closest enemy every frame
@@ -57,7 +57,7 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
             //Assign a target from the data given by theTower code
             if(theTower.enemiesInRange.Count > 0)
             {
-                anim.SetBool("isAttacking", true);
+               
                 float minDistance = theTower.range + 1f;
 
                 foreach(EnemyMove enemy in theTower.enemiesInRange)
@@ -81,6 +81,20 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
                 anim.SetBool("isIdle", true);        
             }
         }    
+    }
+
+    public void FireAttack() 
+    {
+        GameObject bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
+        bullet.GetComponent<Projectile>().element = element; //sets the element of the hero to the bullet
+        bullet.GetComponent<Projectile>().damageAmount = damage;
+    }
+
+    public void Explosion() 
+    {
+        GameObject bullet = Instantiate(projectile, target);
+        bullet.GetComponent<Projectile>().element = element; //sets the element of the hero to the bullet
+        bullet.GetComponent<Projectile>().damageAmount = damage;
     }
 
 

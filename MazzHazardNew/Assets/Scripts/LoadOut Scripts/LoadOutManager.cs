@@ -9,6 +9,7 @@ public class LoadOutManager : MonoBehaviour
     public LoadOutHeroList heroList;
     public Transform parent;
     private List<GameObject> characterCards = new List<GameObject>();
+    [SerializeField] private bool isLevelEditor = false;
     
     private void OnEnable()
     {
@@ -29,6 +30,10 @@ public class LoadOutManager : MonoBehaviour
         for (int j = 0; j < database.heroLists.Count; j++)
         {
             var card = Instantiate(database.heroLists[j].characterCard,parent);
+            if (isLevelEditor) 
+            {
+                card.GetComponent<SaveLoadOut>().IsLevelEditor(true);
+            }
             characterCards.Add(card);
         }
 

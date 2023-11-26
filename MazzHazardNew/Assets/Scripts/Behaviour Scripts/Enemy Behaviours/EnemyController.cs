@@ -14,6 +14,7 @@ public class EnemyController : MonoBehaviour, IKillable
     [SerializeField]private bool isMedium;
     [SerializeField]private bool isHard;
     [HideInInspector]public bool isBuffApplied { get; set; }
+    private IHealthSystem heroHealth;
 
     //Enemy Melee Anim
 
@@ -56,18 +57,24 @@ public class EnemyController : MonoBehaviour, IKillable
         {
             hero = other.gameObject;
             attackCounter -= Time.deltaTime;
-            var heroHealth = hero.GetComponent<IHealthSystem>();
+            heroHealth = hero.GetComponent<IHealthSystem>();
             if (attackCounter <= 0)
             {
                 attackCounter = timeBetweenAttacks;
                 anim.SetBool("isWalking", false);
                 anim.SetBool("isAttacking", true);
-                //Attack anim
-                heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
+
             }
         }
 
     }
+
+    public void EnemyDealDamage() 
+    {
+        heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
+
+    }
+
 
     public void IsDead()
     {

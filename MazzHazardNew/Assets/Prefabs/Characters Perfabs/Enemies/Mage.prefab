@@ -443,7 +443,6 @@ GameObject:
   - component: {fileID: 4749583453166842689}
   - component: {fileID: -7589314261866240970}
   - component: {fileID: -6685852590656365769}
-  - component: {fileID: 4749583453166842700}
   - component: {fileID: 4749583453166842691}
   - component: {fileID: -3901681482271049161}
   m_Layer: 6
@@ -555,7 +554,7 @@ MonoBehaviour:
   healthBar: {fileID: 4749583452736029983}
   maxHealth: 200
   currentHealth: 0
-  isMedium: 0
+  isMedium: 1
   isHard: 0
   damageResistance: 1
   element: 0
@@ -576,25 +575,7 @@ MonoBehaviour:
   blockRequirement: 1
   anim: {fileID: 3762691830920406709}
   counter: {fileID: -3901681482271049161}
---- !u!114 &4749583453166842700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4749583453166842703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b29f5f0c862d954b8af90f2dc59051f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 10
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 128
-  enemiesInRange: []
-  checkTime: 0.2
-  enemiesUpdated: 0
+  isRangeEnemy: 0
 --- !u!114 &4749583453166842691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,6 +596,11 @@ MonoBehaviour:
   element: 0
   launcherModel: {fileID: 4749583453166842694}
   anim: {fileID: 3762691830920406709}
+  detectionRadius: 10
+  attackRange: 10
+  heroLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &-3901681482271049161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,13 +689,20 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 98206f5ceecd2d14c969ee41640f445e, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
       insertIndex: -1
       addedObject: {fileID: 717780062919036481}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2970326622910924896}
   m_SourcePrefab: {fileID: 100100000, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
 --- !u!95 &3762691830920406709 stripped
 Animator:
@@ -721,3 +714,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
   m_PrefabInstance: {fileID: 7304084198120676132}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7610019252422829685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2d9f0c054441af0468b665c3f1073642, type: 3}
+  m_PrefabInstance: {fileID: 7304084198120676132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2970326622910924896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610019252422829685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 0}
+  enemy: {fileID: 0}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 4749583453166842691}
+  healer: {fileID: 0}

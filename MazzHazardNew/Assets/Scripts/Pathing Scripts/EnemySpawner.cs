@@ -56,7 +56,7 @@ public class EnemySpawner : MonoBehaviour
                     }
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null) 
                     {
-                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                        enemy.enemy.GetComponent<EnemyRangeAttack>().IsMedium();
                     }
                 }
                 else if (isHard) 
@@ -69,7 +69,7 @@ public class EnemySpawner : MonoBehaviour
                     }
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
                     {
-                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                        enemy.enemy.GetComponent<EnemyRangeAttack>().IsHard();
                     }
                 }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);

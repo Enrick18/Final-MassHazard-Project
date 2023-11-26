@@ -5,18 +5,51 @@ using System;
 
 public class AnimationEvent : MonoBehaviour
 {
-    public static event Action OnAttackStartAnimation;
-    public static event Action OnAttackEndAnimation;
+    public HeroController hero;
+    public EnemyController enemy;
+    public HeroRangeAttack heroRange;
+    public EnemyRangeAttack enemyRange;
+    public HealerTower healer;
+
+
+    public void DamageHit()
+    {
+        Debug.Log("HeroHit");
+        hero?.DealDamage();
+    }
+
+    public void FireProjectile()
+    {
+        heroRange?.FireAttack();
+
+    }
+
+    public void EnemyProjectile() 
+    { 
+        enemyRange?.FireProjectile();
+    }
+
+    public void EnemyHit()
+    {
+        enemy?.EnemyDealDamage();
+    }
+
 
     public void AttackStart() 
     {
-        Debug.Log("AttackStart");
-        OnAttackStartAnimation?.Invoke();    
+        enemyRange?.StopMoving();
+        
     }
 
     public void AttackEnd() 
     {
-        Debug.Log("AttackEnd");
-        OnAttackEndAnimation?.Invoke();
+        enemyRange?.ResumeMoving();
+       
+    }
+
+
+    public void HealHit() 
+    {
+        Debug.Log("Healed");
     }
 }

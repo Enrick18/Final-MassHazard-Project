@@ -2288,6 +2288,7 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: 10d2d415a9c6fe444a9642575f90c53c, type: 2}
   heroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   parent: {fileID: 1942737608}
+  isLevelEditor: 1
 --- !u!114 &165824366
 MonoBehaviour:
   m_ObjectHideFlags: 0

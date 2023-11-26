@@ -115,7 +115,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
             var killableComponents = GetComponents<IKillable>();
             foreach (var killable in killableComponents)
             {
-                // Debug.Log(killable);
                 killable.IsDead();
             }
         }
@@ -199,5 +198,8 @@ public class HealthController : MonoBehaviour, IHealthSystem
         currentHealth *= mulitplier;
     }
 
-    
+    public GameObject GetGameObject()
+    {
+        return gameObject;
+    }
 }

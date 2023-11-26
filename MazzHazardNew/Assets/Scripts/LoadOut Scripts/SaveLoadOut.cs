@@ -33,6 +33,12 @@ public class SaveLoadOut : MonoBehaviour
             button.interactable=false;
         }
     }
+
+    public bool IsLevelEditor(bool data) 
+    {
+        isLevelEditor = data;
+        return isLevelEditor;
+    }
     public void HeroSelected(int index)
     {
         for(int i = 0; i < playerLoadOut.heroChoosenIndex.Count; i++)

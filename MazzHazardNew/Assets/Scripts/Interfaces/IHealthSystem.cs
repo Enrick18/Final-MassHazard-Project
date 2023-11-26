@@ -14,5 +14,7 @@ public interface IHealthSystem
     float GetDamageResistanceModifier();
     void HealDamage(float healAmount, float  health);
 
+    GameObject GetGameObject();
+
     float GetElementalDamageMultiplier(ElementType attacker, ElementType defender);
 }

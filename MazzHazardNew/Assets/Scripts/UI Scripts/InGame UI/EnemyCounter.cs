@@ -30,8 +30,6 @@ public class EnemyCounter : MonoBehaviour
         }
         
     }
-
-
     private void OnDisable()
     {
         if (isLevelEditor == true) 
@@ -48,7 +46,7 @@ public class EnemyCounter : MonoBehaviour
             if (isLevelEditor == false) 
             {
                 levelComplete.SaveProgress();
-                SaveStage.SaveGameFile();
+                //SaveStage.SaveGameFile();
             }
             
             Time.timeScale = 0f;
@@ -89,7 +87,6 @@ public class EnemyCounter : MonoBehaviour
     {
         currentEnemyCount--;
         enemyCount.text = currentEnemyCount.ToString();
-        Debug.Log(currentEnemyCount);
     }
 
 }

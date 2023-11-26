@@ -284,7 +284,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5002148828284854953}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.178116, y: 23.55085, z: -7.0318136}
+  m_LocalPosition: {x: -22.178116, y: 6, z: -7.0318136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -329,6 +329,8 @@ MonoBehaviour:
   healthBar: {fileID: 5002148828723751337}
   maxHealth: 1000
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 0
 --- !u!114 &5002148828284854949
@@ -659,7 +661,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2838391200542782613, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}
       insertIndex: 0
       addedObject: {fileID: 382220491503107035}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 715061719365017880}
   m_SourcePrefab: {fileID: 100100000, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}
 --- !u!95 &3279531966645031687 stripped
 Animator:
@@ -671,6 +676,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2838391200542782613, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}
   m_PrefabInstance: {fileID: 9000911540037807766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8081921233251718087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}
+  m_PrefabInstance: {fileID: 9000911540037807766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &715061719365017880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081921233251718087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 5002148828284854949}
+  enemy: {fileID: 0}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 0}
 --- !u!4 &8890967845426923901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}

@@ -366,11 +366,11 @@ MonoBehaviour:
   projectile: {fileID: 4734503648029603528, guid: 988837fddcbf5dc4db9f8774b979d483, type: 3}
   firePoint: {fileID: 19787077837121158}
   timeBetweenShots: 3
-  target: {fileID: 0}
+  target: {fileID: 19787077837121158}
   launcherModel: {fileID: 4525598916335328110}
   anim: {fileID: 7506943023779053844}
   element: 0
-  damage: 10
+  damage: 50
 --- !u!114 &6984987243440939676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,8 +624,33 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 22233a23918207841aa8807aecd57a7f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 19787077837121158}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 22233a23918207841aa8807aecd57a7f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2660534105046436187}
   m_SourcePrefab: {fileID: 100100000, guid: 22233a23918207841aa8807aecd57a7f, type: 3}
+--- !u!1 &3856761953384858068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 22233a23918207841aa8807aecd57a7f, type: 3}
+  m_PrefabInstance: {fileID: 4126582870740450437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2660534105046436187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3856761953384858068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 0}
+  enemy: {fileID: 0}
+  heroRange: {fileID: 6984987243440939679}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 0}
 --- !u!4 &4525598916335328110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 22233a23918207841aa8807aecd57a7f, type: 3}

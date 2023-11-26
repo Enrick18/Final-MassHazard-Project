@@ -12,6 +12,7 @@ TagManager:
   - Goal
   - ChildCube
   - Cube
+  - Decor
   layers:
   - Default
   - TransparentFX

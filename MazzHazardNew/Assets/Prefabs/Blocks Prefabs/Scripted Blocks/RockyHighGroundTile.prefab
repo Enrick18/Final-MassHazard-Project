@@ -66,7 +66,7 @@ Transform:
   - {fileID: 9149974861686245845}
   - {fileID: 6797800440608477005}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6475078956856835784
 MonoBehaviour:
@@ -101,8 +101,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5.910423, y: 3.2276757, z: 5.881364}
-  m_Center: {x: 0.022261858, y: 1.696781, z: -0.0077319145}
+  m_Size: {x: 5.910423, y: 2.2786577, z: 5.881364}
+  m_Center: {x: 0.022261858, y: 1.222272, z: -0.0077319145}
 --- !u!114 &8006573225986626074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,8 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Size: {x: 6.057872, y: 3.8882089, z: 6.0982227}
-  m_Center: {x: -0.02017498, y: 1.4441044, z: 0}
+  m_Size: {x: 6.057872, y: 2.1805806, z: 6.0982227}
+  m_Center: {x: -0.02017498, y: 1.0345838, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
 --- !u!1 &9028615435683181940
@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a354c8d1a6076f7488dc0cc2f49be248, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.56
+      value: 0.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a354c8d1a6076f7488dc0cc2f49be248, type: 3}
       propertyPath: m_LocalScale.z
