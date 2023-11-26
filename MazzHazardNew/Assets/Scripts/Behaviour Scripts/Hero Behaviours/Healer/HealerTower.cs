@@ -24,7 +24,8 @@ public class HealerTower : MonoBehaviour, IKillable
     public Animator anim;
 
     private bool needsHealing = false;
-
+    private IHealthSystem heroHealth;
+    [SerializeField] private bool isAoe;
 
     private void Start()
     {
@@ -65,29 +66,29 @@ public class HealerTower : MonoBehaviour, IKillable
             needsHealing = false;
         }
 
-        healRate -= Time.deltaTime;
-
-        foreach (KeyValuePair<GameObject, IHealthSystem> kvp in sortedHealableAllies)
+        if (!isAoe && sortedHealableAllies.Count > 0)
         {
+            healRate -= Time.deltaTime;
 
-
-            if (healRate <= 0 && kvp.Value.GetCurrentHealth() > 0)
+            foreach (KeyValuePair<GameObject, IHealthSystem> kvp in sortedHealableAllies)
             {
-                healRate = timeBetweenHeals;
-                anim.SetBool("isIdle", false);
-                anim.SetBool("isHealing", true);
+                heroHealth = kvp.Value;
 
-                kvp.Value.HealDamage(healAmount, kvp.Value.GetMaxHealth());
-                if (kvp.Value.GetCurrentHealth() >= kvp.Value.GetMaxHealth())
+                if (healRate <= 0 && kvp.Value.GetCurrentHealth() > 0)
                 {
-                    _healableAllies.Remove(kvp.Key);
-                    Debug.Log("Fully Healed");
+                    healRate = timeBetweenHeals;
+                    anim.SetBool("isIdle", false);
+                    anim.SetBool("isHealing", true);
+                    break;
                 }
-                break;
-
-
             }
         }
+        else if (isAoe && sortedHealableAllies.Count > 0) 
+        {
+            anim.SetBool("isIdle", false);
+            anim.SetBool("isHealing", true);
+        }
+        
 
         if (sortedHealableAllies.Count <= 0)
         {
@@ -95,6 +96,35 @@ public class HealerTower : MonoBehaviour, IKillable
             anim.SetBool("isHealing", false);
         }
 
+    }
+
+    public void HealTower() 
+    {
+        if (!isAoe)
+        {
+            heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
+            if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
+            {
+                _healableAllies.Remove(heroHealth.GetGameObject());
+                Debug.Log("Fully Healed");
+            }
+        }
+        else 
+        {
+            Debug.Log("Aoe");
+            foreach (KeyValuePair<GameObject, IHealthSystem> hero in _healableAllies.ToList()) 
+            {
+                heroHealth = hero.Value;
+                heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
+                if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
+                {
+                    if (_healableAllies.ContainsKey(heroHealth.GetGameObject()))
+                        _healableAllies.Remove(heroHealth.GetGameObject());
+                }
+            }
+        }
+
+        
     }
 
     private void OnDrawGizmosSelected()

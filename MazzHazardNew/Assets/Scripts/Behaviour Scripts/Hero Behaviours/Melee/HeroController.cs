@@ -132,6 +132,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         }
         else
         {
+            
             foreach (KeyValuePair<GameObject, EnemyMove> enemy in _enemyBlockList.ToList()) 
             {
                 enemyHealth = enemy.Value.GetComponent<IHealthSystem>();

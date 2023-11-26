@@ -50,6 +50,7 @@ public class AnimationEvent : MonoBehaviour
 
     public void HealHit() 
     {
-        Debug.Log("Healed");
+        Debug.Log("Heal");
+        healer.HealTower();
     }
 }
