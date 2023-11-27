@@ -100,22 +100,24 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         
         if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("Entered Enemy");
-
-            var enemy = other.GetComponent<EnemyMove>();
-            int blockRequirement = enemy.blockRequirement;
-
-            if (other.gameObject.tag == blockTarget)
+            if (!other.GetComponent<BombController>()) 
             {
-                if ((_enemiesBlocked + blockRequirement) <= blockCount) // check if enemies doesnt exceed block count
+                var enemy = other.GetComponent<EnemyMove>();
+                int blockRequirement = enemy.blockRequirement;
+
+                if (other.gameObject.tag == blockTarget)
                 {
-                    _enemiesBlocked += blockRequirement;
-                    enemy.StopEnemy(gameObject);
-                    enemy.isBlocked = true;
-                    Debug.Log(enemy.isBlocked);
-                    _enemyBlockList.Add(enemy.gameObject, enemy);
+                    if ((_enemiesBlocked + blockRequirement) <= blockCount) // check if enemies doesnt exceed block count
+                    {
+                        _enemiesBlocked += blockRequirement;
+                        enemy.StopEnemy(gameObject);
+                        enemy.isBlocked = true;
+                        Debug.Log(enemy.isBlocked);
+                        _enemyBlockList.Add(enemy.gameObject, enemy);
+                    }
                 }
             }
+            
         }
     }
     public void DealDamage()

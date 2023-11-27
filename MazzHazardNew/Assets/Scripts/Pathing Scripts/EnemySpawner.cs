@@ -58,6 +58,10 @@ public class EnemySpawner : MonoBehaviour
                     {
                         enemy.enemy.GetComponent<EnemyRangeAttack>().IsMedium();
                     }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsMedium();
+                    }
                 }
                 else if (isHard) 
                 {
@@ -70,6 +74,10 @@ public class EnemySpawner : MonoBehaviour
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
                     {
                         enemy.enemy.GetComponent<EnemyRangeAttack>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsHard();
                     }
                 }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
@@ -99,6 +107,10 @@ public class EnemySpawner : MonoBehaviour
                     {
                         enemy.enemy.GetComponent<EnemyController>().IsMedium();
                     }
+                    else if (enemy.enemy.GetComponent<BombController>() != null) 
+                    { 
+                        enemy.enemy.GetComponent <BombController>().IsMedium();
+                    }
                 }
                 else if (isHard)
                 {
@@ -111,6 +123,10 @@ public class EnemySpawner : MonoBehaviour
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
                     {
                         enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsHard();
                     }
                 }
 

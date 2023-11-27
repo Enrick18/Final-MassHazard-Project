@@ -1513,6 +1513,30 @@ PrefabInstance:
       propertyPath: isHard
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: timeBetweenWaves
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: timeBetweenSpawns
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.data[1].enemy
+      value: 
+      objectReference: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.data[0].enemyCount
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.data[1].enemyCount
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209068, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: m_Name
       value: Spawner

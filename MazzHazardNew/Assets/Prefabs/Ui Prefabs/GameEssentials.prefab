@@ -299,6 +299,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 481200194038809758, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: cooldownCounter
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 481200194402672734, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -10,6 +10,7 @@ public class AnimationEvent : MonoBehaviour
     public HeroRangeAttack heroRange;
     public EnemyRangeAttack enemyRange;
     public HealerTower healer;
+    public BombController bomb;
 
 
     public void DamageHit()
@@ -41,12 +42,10 @@ public class AnimationEvent : MonoBehaviour
         
     }
 
-    public void AttackEnd() 
-    {
-        enemyRange?.ResumeMoving();
-       
+    public void BombExplosion() 
+    { 
+        bomb.Explode();
     }
-
 
     public void HealHit() 
     {

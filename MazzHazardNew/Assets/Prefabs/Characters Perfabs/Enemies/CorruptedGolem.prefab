@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8316655103984054555}
   - component: {fileID: 2095201901054429573}
+  - component: {fileID: 2842980783876444267}
   - component: {fileID: 3585214896993365443}
   - component: {fileID: 2393423992696138018}
   - component: {fileID: 2239447580332868976}
@@ -276,6 +277,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.2994914, y: 4.8274055, z: 2.7157352}
   m_Center: {x: 0.0659904, y: 8.380704, z: 0.13197958}
+--- !u!54 &2842980783876444267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291171678685580404}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!195 &3585214896993365443
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -362,8 +390,11 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
   blockRequirement: 3
+  hero: {fileID: 0}
   anim: {fileID: 2478126174027457682}
   counter: {fileID: 512971052848069693}
+  isBlocked: 0
+  isRange: 0
 --- !u!1 &6393468870943331532
 GameObject:
   m_ObjectHideFlags: 0

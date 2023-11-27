@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 9150427719785751198}
   - component: {fileID: 5887600339514849988}
   - component: {fileID: 4888871681225824315}
+  - component: {fileID: 3699967946952938718}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: ChildCube
@@ -209,6 +210,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 3, z: -3}
+--- !u!114 &3699967946952938718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959959934657209068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d97738bd799364bbead32144422ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 5959959934657209042}
+  delay: 5
 --- !u!1001 &5959959934585650938
 PrefabInstance:
   m_ObjectHideFlags: 0

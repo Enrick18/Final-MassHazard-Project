@@ -252,6 +252,7 @@ MonoBehaviour:
   healingEffectPrefab: {fileID: 0}
   launcherModel: {fileID: 1802011840986815870}
   anim: {fileID: 5756203871012439812}
+  isAoe: 0
 --- !u!114 &1877645262903174884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +622,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   heroRange: {fileID: 0}
   enemyRange: {fileID: 0}
-  healer: {fileID: 0}
+  healer: {fileID: 1877645262903174885}
 --- !u!4 &1802011840986815870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}

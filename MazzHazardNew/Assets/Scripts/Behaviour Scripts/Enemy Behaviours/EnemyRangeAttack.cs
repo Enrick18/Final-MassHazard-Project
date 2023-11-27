@@ -81,10 +81,7 @@ public class EnemyRangeAttack : MonoBehaviour
 
             }
         }
-        else 
-        { 
-            enemyMove.ReturnHero(); 
-        }
+
 
         if (target == null) 
         {
@@ -142,16 +139,6 @@ public class EnemyRangeAttack : MonoBehaviour
     {
         agent.speed = 0;
         agent.isStopped = true;
-    }
-
-    public void ResumeMoving() 
-    {
-        if (!enemyMove.isBlocked) 
-        {
-            agent.speed = moveSpeed;
-            agent.isStopped = false;
-        }
-        
     }
 
 }

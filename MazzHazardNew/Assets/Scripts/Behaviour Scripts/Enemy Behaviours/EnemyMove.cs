@@ -27,8 +27,6 @@ public class EnemyMove : MonoBehaviour, IKillable
     public EnemyEventRaiser counter;
 
     public bool isBlocked;
-    private GameObject blockerChecker;
-    public bool isRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,15 +72,6 @@ public class EnemyMove : MonoBehaviour, IKillable
         }
     }
 
-    public void ReturnHero() 
-    { 
-        hero = null;
-    }
-
-    public void GetBlocker(GameObject blocker) 
-    {
-        blockerChecker = blocker;
-    }
 
     void UpdateDestination()
     {
