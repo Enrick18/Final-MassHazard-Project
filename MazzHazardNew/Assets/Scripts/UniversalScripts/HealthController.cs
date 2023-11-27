@@ -83,6 +83,11 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
     }
 
+    public void TakePureDamage(float damageAmount) 
+    { 
+        currentHealth -= damageAmount;
+    }
+
     public void PoisonDamage(float poisonDamage)
     {
         currentHealth -= poisonDamage;

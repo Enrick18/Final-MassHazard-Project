@@ -1263,8 +1263,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6809068781194794984}
-  - component: {fileID: 6809068781194794987}
-  - component: {fileID: 6809068781194794986}
   - component: {fileID: 2476029848946781695}
   - component: {fileID: 7234874271184614398}
   - component: {fileID: 3940794516914655364}
@@ -1295,34 +1293,6 @@ Transform:
   m_Father: {fileID: 2371437482956044007}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6809068781194794987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809068781194794989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4946bd2d4f2254fbe09a4c222e1d8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWayPoint: 1
-  wayPointIndex: -1
---- !u!114 &6809068781194794986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6809068781194794989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0745df11233d114d85d838bb41f39c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMeleeBlock: 0
-  hasTower: 0
 --- !u!65 &2476029848946781695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1572,7 +1542,7 @@ Transform:
   - {fileID: 6809068781194794984}
   - {fileID: 4319068372469678896}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1571107923070054839
 MeshFilter:

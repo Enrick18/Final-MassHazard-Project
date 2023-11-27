@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 1803110958289190928}
   - component: {fileID: 952447266626700960}
   - component: {fileID: 7495220554411682128}
+  - component: {fileID: -6576670660450398134}
   m_Layer: 0
   m_Name: SpikedPath
   m_TagString: ChildCube
@@ -757,6 +758,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 3, z: -3}
+--- !u!114 &-6576670660450398134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073936382326217629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e51a63ca34f6c4fa926ef29cd82fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 50
 --- !u!1 &2235046350827692333
 GameObject:
   m_ObjectHideFlags: 0

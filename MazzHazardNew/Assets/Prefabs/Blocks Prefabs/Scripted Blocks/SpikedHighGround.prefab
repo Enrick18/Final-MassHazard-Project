@@ -1091,6 +1091,7 @@ GameObject:
   - component: {fileID: 6800403352416621480}
   - component: {fileID: 552795157729550675}
   - component: {fileID: 3375831776308688668}
+  - component: {fileID: 7285451189906189207}
   m_Layer: 0
   m_Name: SpikedHighGround
   m_TagString: Tile
@@ -1168,6 +1169,19 @@ MonoBehaviour:
   m_Center: {x: -0.02017498, y: 1.0345838, z: 0}
   m_Area: 1
   m_AffectedAgents: ffffffff
+--- !u!114 &7285451189906189207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533044052481721474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e51a63ca34f6c4fa926ef29cd82fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 50
 --- !u!1 &3721002967950549323
 GameObject:
   m_ObjectHideFlags: 0

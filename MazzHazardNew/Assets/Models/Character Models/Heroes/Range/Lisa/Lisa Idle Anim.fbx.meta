@@ -36,8 +36,8 @@ ModelImporter:
       name: Lisa_Idle
       takeName: Armature|Lisa Idle Anim
       internalID: 5773872365776451419
-      firstFrame: 24
-      lastFrame: 153
+      firstFrame: 0
+      lastFrame: 342
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

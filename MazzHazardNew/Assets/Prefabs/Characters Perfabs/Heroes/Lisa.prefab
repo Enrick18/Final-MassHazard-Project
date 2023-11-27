@@ -618,6 +618,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6f716014b5e3059429a28c79a7a0a7d6, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 22233a23918207841aa8807aecd57a7f, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -651,6 +655,7 @@ MonoBehaviour:
   heroRange: {fileID: 6984987243440939679}
   enemyRange: {fileID: 0}
   healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!4 &4525598916335328110 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 22233a23918207841aa8807aecd57a7f, type: 3}

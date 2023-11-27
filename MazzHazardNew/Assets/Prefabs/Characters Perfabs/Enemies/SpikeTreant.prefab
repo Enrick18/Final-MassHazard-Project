@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 98227651299399409}
   - component: {fileID: 7986124550055106930}
   - component: {fileID: 9190186174890342713}
+  - component: {fileID: 312201866281046443}
   m_Layer: 6
   m_Name: SpikeTreant
   m_TagString: Enemy
@@ -266,7 +267,7 @@ Transform:
   - {fileID: 2456023285242923769}
   - {fileID: 3890628964602207897}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &98227651299399409
 BoxCollider:
@@ -324,10 +325,29 @@ MonoBehaviour:
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 128
-  attackRange: 10
-  attackCooldown: 5
-  damage: 20
+  attackRange: 20
+  attackCooldown: 8
+  damage: 50
   element: 1
+--- !u!114 &312201866281046443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4858343405609695001}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3244288d6b144754dbf9673fb93a68ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {x: 0, y: 0, z: 0}
+  distance: 2.7
+  blockRequirement: 1
+  hero: {fileID: 0}
+  anim: {fileID: 0}
+  counter: {fileID: 0}
+  isBlocked: 0
 --- !u!1 &6956320903251734397
 GameObject:
   m_ObjectHideFlags: 0
