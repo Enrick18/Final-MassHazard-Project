@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &471517526749335170
+--- !u!1 &5186506936637357970
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,59 +8,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 471517526749335197}
-  - component: {fileID: 2197772435539773504}
-  - component: {fileID: 8951889041037334991}
-  - component: {fileID: 5283846357966685030}
+  - component: {fileID: 4026585831694364616}
+  - component: {fileID: 3007461350723268264}
+  - component: {fileID: 1851000032560912680}
+  - component: {fileID: 6009561118957585999}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: EnemyArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &471517526749335197
+--- !u!4 &4026585831694364616
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471517526749335170}
+  m_GameObject: {fileID: 5186506936637357970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.1, y: 10.6, z: -3.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 72501574264145660}
+  - {fileID: 3887805424148020488}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2197772435539773504
+--- !u!114 &3007461350723268264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471517526749335170}
+  m_GameObject: {fileID: 5186506936637357970}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 257f3f4cb4afac84ca6accd9a2ac974a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRB: {fileID: 8951889041037334991}
-  moveSpeed: 100
+  theRB: {fileID: 1851000032560912680}
+  moveSpeed: 50
   impactEffect: {fileID: 8182938542068515216, guid: cc00c763a347ed54388739982f7e5e11, type: 3}
   damageAmount: 0
   isAoe: 0
-  targetTag: Enemy
+  targetTag: Hero
   element: 0
---- !u!54 &8951889041037334991
+--- !u!54 &1851000032560912680
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471517526749335170}
+  m_GameObject: {fileID: 5186506936637357970}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -81,13 +81,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &5283846357966685030
+--- !u!65 &6009561118957585999
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471517526749335170}
+  m_GameObject: {fileID: 5186506936637357970}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -102,13 +102,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.36331367, y: 0.382576, z: 1.8498065}
   m_Center: {x: -0.0019254684, y: 0.0036382675, z: 0.35463512}
---- !u!1001 &471517526981255447
+--- !u!1001 &3638621604504705763
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 471517526749335197}
+    m_TransformParent: {fileID: 4026585831694364616}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 593bdb6ea20fb464fbf33355b83e3af3, type: 3}
       propertyPath: m_RootOrder
@@ -179,8 +179,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 593bdb6ea20fb464fbf33355b83e3af3, type: 3}
---- !u!4 &72501574264145660 stripped
+--- !u!4 &3887805424148020488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 593bdb6ea20fb464fbf33355b83e3af3, type: 3}
-  m_PrefabInstance: {fileID: 471517526981255447}
+  m_PrefabInstance: {fileID: 3638621604504705763}
   m_PrefabAsset: {fileID: 0}

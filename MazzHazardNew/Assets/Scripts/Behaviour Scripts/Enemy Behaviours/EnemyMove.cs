@@ -43,22 +43,12 @@ public class EnemyMove : MonoBehaviour, IKillable
     }
     void Update()
     {
-        // Debug.Log(Vector3.Distance(transform.position, target));
 
         if (Vector3.Distance(transform.position, target) < distance)
         {
             IterateWayPointIndex();
         }
 
-        if (!isBlocked)
-        {
-            UpdateDestination();
-        }
-        else 
-        {
-             transform.position = saveTransform;
-            Debug.Log(transform.position);
-        }
 
         if (hero == null )// to resume movement when no hero blocking
         {
@@ -68,7 +58,11 @@ public class EnemyMove : MonoBehaviour, IKillable
                 agent.isStopped = false;
                 agent.speed = movementSpeed;
                 _isStopped = false;
-            
+                UpdateDestination();
+        }
+        else
+        {
+            transform.position = saveTransform;
         }
     }
 
@@ -89,7 +83,6 @@ public class EnemyMove : MonoBehaviour, IKillable
         if (!_isStopped) 
         {
             saveTransform = transform.position;
-            Debug.Log(saveTransform);
             hero = GO;
             agent.speed = 0;
             _isStopped = true;

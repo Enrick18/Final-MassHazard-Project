@@ -16,7 +16,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     public Dictionary<GameObject, EnemyMove> enemyBlockList => _enemyBlockList;
     private List<GameObject> keysToRemove = new List<GameObject>();
     public string blockTarget = "Enemy";
-    //private GameObject enemy;
     public Transform launcherModel;
     public Animator anim;
     private IHealthSystem heroHealth;
@@ -86,9 +85,9 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             anim.SetBool("isAttacking", true);
         }
 
+
         if (_enemyBlockList.Count <= 0)
         {
-            //Debug.Log("To Idle");
             anim.SetBool("isIdle", true);
             anim.SetBool("isAttacking", false);
         }
@@ -112,7 +111,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
                         _enemiesBlocked += blockRequirement;
                         enemy.StopEnemy(gameObject);
                         enemy.isBlocked = true;
-                        Debug.Log(enemy.isBlocked);
                         _enemyBlockList.Add(enemy.gameObject, enemy);
                     }
                 }
@@ -137,18 +135,24 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             
             foreach (KeyValuePair<GameObject, EnemyMove> enemy in _enemyBlockList.ToList()) 
             {
-                enemyHealth = enemy.Value.GetComponent<IHealthSystem>();
-                enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
-
-                if (enemyHealth.GetCurrentHealth() <= 0)
+                if (enemy.Value != null)
                 {
-                    if (_enemyBlockList.ContainsKey(enemy.Key))
-                        _enemyBlockList.Remove(enemy.Key);
+                    enemyHealth = enemy.Value.GetComponent<IHealthSystem>();
+                    enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
+
+                    if (enemyHealth.GetCurrentHealth() <= 0)
+                    {
+                        if (_enemyBlockList.ContainsKey(enemy.Key))
+                            _enemyBlockList.Remove(enemy.Key);
+                    }
                 }
-
-
+                else 
+                {
+                    _enemyBlockList.Remove(enemy.Key);
+                }
             }
 
+            
         }
 
     }
@@ -164,35 +168,4 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         damageAmount *= multiplier;
     }
 
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    if (isAoeAttack && _enemyBlockList.Count > 0)
-    //    {
-    //        if (_enemyBlockList.ContainsKey(other.gameObject))
-    //        {
-    //            if (other.gameObject.tag == blockTarget)
-    //            {
-    //                enemy = other.gameObject;
-    //                attackCounter -= Time.deltaTime;
-    //                enemyHealth = enemy.GetComponent<IHealthSystem>();
-
-    //                if (attackCounter <= 0)
-    //                {
-    //                    attackCounter = timeBetweenAttacks;
-    //                    anim.SetBool("isIdle", false);
-    //                    anim.SetBool("isAttacking", true);
-
-    //                    enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
-    //                    if (enemyHealth.GetCurrentHealth() <= 0)
-    //                    {
-    //                        if (_enemyBlockList.ContainsKey(enemy))
-    //                            _enemyBlockList.Remove(enemy);
-    //                    }
-
-    //                }
-    //            }
-    //        }
-    //    }
-
-    //}
 }

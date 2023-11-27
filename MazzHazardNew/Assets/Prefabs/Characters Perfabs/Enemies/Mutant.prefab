@@ -290,8 +290,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.0165584, y: 3.51545, z: 1.0287628}
-  m_Center: {x: 0.043488745, y: 1.7445352, z: 0.35952568}
+  m_Size: {x: 3.2299042, y: 5.150825, z: 2.664135}
+  m_Center: {x: -0.14114761, y: 2.4830916, z: 0.51778793}
 --- !u!114 &2778616273020895692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +330,6 @@ MonoBehaviour:
   anim: {fileID: 3353206539633874598}
   counter: {fileID: 2778616273020895695}
   isBlocked: 0
-  isRange: 0
 --- !u!114 &2778616273020895693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,6 +675,7 @@ MonoBehaviour:
   heroRange: {fileID: 0}
   enemyRange: {fileID: 0}
   healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!4 &8676421353753611484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2315a343929e44848855a08541ba8953, type: 3}

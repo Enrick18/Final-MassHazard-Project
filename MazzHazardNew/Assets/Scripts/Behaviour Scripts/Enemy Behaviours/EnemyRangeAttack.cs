@@ -28,7 +28,7 @@ public class EnemyRangeAttack : MonoBehaviour
     private bool isHard;
 
     public float detectionRadius = 10f;
-    public float attackRange = 2f;
+    public float attackRange = 10f;
     public LayerMask heroLayer;
 
     private EnemyMove enemyMove;
@@ -135,10 +135,5 @@ public class EnemyRangeAttack : MonoBehaviour
         this.enabled = false;
     }
 
-    public void StopMoving() 
-    {
-        agent.speed = 0;
-        agent.isStopped = true;
-    }
 
 }

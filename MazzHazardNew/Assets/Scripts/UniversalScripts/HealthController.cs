@@ -118,7 +118,12 @@ public class HealthController : MonoBehaviour, IHealthSystem
                 killable.IsDead();
             }
         }
-        Destroy(gameObject);
+
+        if (!Object.ReferenceEquals(gameObject, null))
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     public float GetCurrentHealth()

@@ -29,7 +29,6 @@ public class Projectile : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {
         var enemyHealth = other.GetComponent<IHealthSystem>();
-        Debug.Log(enemyHealth);
 
         if (other.tag == targetTag)
         {

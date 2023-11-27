@@ -71,6 +71,7 @@ public class EnemyController : MonoBehaviour, IKillable
 
     public void EnemyDealDamage() 
     {
+        if(hero != null)
         heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
 
     }

@@ -15,7 +15,6 @@ public class AnimationEvent : MonoBehaviour
 
     public void DamageHit()
     {
-        Debug.Log("HeroHit");
         hero?.DealDamage();
     }
 
@@ -35,16 +34,9 @@ public class AnimationEvent : MonoBehaviour
         enemy?.EnemyDealDamage();
     }
 
-
-    public void AttackStart() 
-    {
-        enemyRange?.StopMoving();
-        
-    }
-
     public void BombExplosion() 
     { 
-        bomb.Explode();
+        bomb?.Explode();
     }
 
     public void HealHit() 

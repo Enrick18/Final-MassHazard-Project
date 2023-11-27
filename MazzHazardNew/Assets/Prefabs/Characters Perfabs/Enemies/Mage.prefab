@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.45287895, y: 7.553114}
+  m_AnchoredPosition: {x: 0.45287895, y: 5.883671}
   m_SizeDelta: {x: 880.39996, y: 414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4749583451348876851
@@ -488,8 +488,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7802124, y: 3.8477564, z: 1.7420712}
-  m_Center: {x: 0.041812897, y: 3.1477742, z: 0.4283228}
+  m_Size: {x: 2.4710526, y: 4.6007705, z: 3.169513}
+  m_Center: {x: 0.0941499, y: 2.561293, z: 0.40529984}
 --- !u!54 &4749583453166842688
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -577,7 +577,6 @@ MonoBehaviour:
   anim: {fileID: 3762691830920406709}
   counter: {fileID: -3901681482271049161}
   isBlocked: 0
-  isRange: 0
 --- !u!114 &4749583453166842691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,3 +737,4 @@ MonoBehaviour:
   heroRange: {fileID: 0}
   enemyRange: {fileID: 4749583453166842691}
   healer: {fileID: 0}
+  bomb: {fileID: 0}
