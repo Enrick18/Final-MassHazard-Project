@@ -23,6 +23,8 @@ public class TowerManager : MonoBehaviour
     [Range(1,2)]
     public float damageElementalMultiplier = 1f;
 
+    private Transform spawnable;
+
     private void Awake()
     {
         currency = GetComponent<CurrencySystem>();
@@ -56,8 +58,9 @@ public class TowerManager : MonoBehaviour
                             {
                                 isSelected = true;
                                 //check if currency is enough
-                                directionCanvas.transform.position = tile.transform.GetChild(1).position; //testing global
-                                directionCanvas.SetActive(true);
+                                //directionCanvas.transform.position = tile.transform.GetChild(1).position; //testing global
+                                //directionCanvas.SetActive(true);
+                                SpawnTower();
                             }
 
                         }
@@ -67,8 +70,10 @@ public class TowerManager : MonoBehaviour
                             {
                                 isSelected = true;
                                 //check if currency is enough
-                                directionCanvas.transform.position = tile.transform.GetChild(1).position;
-                                directionCanvas.SetActive(true);
+
+                                //directionCanvas.transform.position = tile.transform.GetChild(1).position;
+                                //directionCanvas.SetActive(true);
+                                SpawnTower();
                             }
 
                         }
@@ -125,6 +130,54 @@ public class TowerManager : MonoBehaviour
             {
                 //health.ApplyElementalEffect(1f-(healthElementalMultiplier%1));
                 heroStats.ModifyHeroDamage(0.75f);
+            }
+        }
+        placement.hasTower = true;
+
+        currency.UseCurrency(currentTowerCost);
+
+        isSelected = false;
+
+        directionCanvas.SetActive(false);
+        towerPrefab = null;
+        towerPosition = null;
+
+        placement.hasTower = false;
+
+        tile = null;
+
+    }
+    public void SpawnTower()
+    {
+        // Debug.Log(yRotation);
+        TileBuff buff = null;
+        IHealthSystem health = null;
+        IHeroStats heroStats = null;
+
+
+        Quaternion rot = new Quaternion();
+        Debug.Log(towerPosition);
+
+        //rot.eulerAngles = new Vector3(towerPosition.rotation.x, yRotation, towerPosition.rotation.z);
+
+
+        var tower = Instantiate(towerPrefab, tile.transform.GetChild(0).position, tile.transform.GetChild(0).rotation);
+
+        health = tower.GetComponent<IHealthSystem>();
+        heroStats = tower.GetComponent<IHeroStats>();
+        buff = tile.GetComponent<TileBuff>();
+
+        if (buff != null) // computation if there is a tile buff
+        {
+            if (buff.tileElement == health.GetElementType())
+            {
+                health.ApplyElementalEffect(healthElementalMultiplier);
+                heroStats.ModifyHeroDamage(damageElementalMultiplier);
+            }
+            else if ((buff.tileElement != health.GetElementType()) && health.GetElementType() != ElementType.Normal)
+            {
+                //health.ApplyElementalEffect(1f-(healthElementalMultiplier%1));
+                heroStats.ModifyHeroDamage(0.85f);
             }
         }
         placement.hasTower = true;

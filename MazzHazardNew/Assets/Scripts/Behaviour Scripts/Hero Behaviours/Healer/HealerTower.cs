@@ -66,8 +66,10 @@ public class HealerTower : MonoBehaviour, IKillable
             needsHealing = false;
         }
 
+
         if (!isAoe && sortedHealableAllies.Count > 0)
         {
+            LookAtTarget();
             healRate -= Time.deltaTime;
 
             foreach (KeyValuePair<GameObject, IHealthSystem> kvp in sortedHealableAllies)
@@ -96,6 +98,17 @@ public class HealerTower : MonoBehaviour, IKillable
             anim.SetBool("isHealing", false);
         }
 
+    }
+
+    void LookAtTarget()
+    {
+        if (heroHealth != null)
+        {
+            //transform.LookAt(target);
+            launcherModel.rotation = Quaternion.Slerp(launcherModel.rotation, Quaternion.LookRotation(heroHealth.GetGameObject().transform.position - transform.position), 5f * Time.deltaTime);
+
+            launcherModel.rotation = Quaternion.Euler(0f, launcherModel.rotation.eulerAngles.y, 0f);
+        }
     }
 
     public void HealTower() 
