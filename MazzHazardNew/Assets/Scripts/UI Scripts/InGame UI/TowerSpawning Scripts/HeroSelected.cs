@@ -11,6 +11,16 @@ public class HeroSelected : MonoBehaviour
 
     //models for instantiation
 
+    private void OnEnable()
+    {
+        LoadMap.OnMapLoaded += FindHeroBlocks;
+    }
+
+    private void OnDisable()
+    {
+        LoadMap.OnMapLoaded -= FindHeroBlocks;
+    }
+
     public void OnMeleeHeroSelected(bool isMeleeHero)
     {
         isTowerSelected = true;
@@ -32,6 +42,11 @@ public class HeroSelected : MonoBehaviour
     
 
     private void Start() 
+    {
+        heroTiles = FindObjectsOfType<TowerPlacement>();
+    }
+
+    public void FindHeroBlocks() 
     {
         heroTiles = FindObjectsOfType<TowerPlacement>();
     }

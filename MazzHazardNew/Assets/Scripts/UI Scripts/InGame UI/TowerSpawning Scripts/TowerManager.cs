@@ -23,8 +23,6 @@ public class TowerManager : MonoBehaviour
     [Range(1,2)]
     public float damageElementalMultiplier = 1f;
 
-    private Transform spawnable;
-
     private void Awake()
     {
         currency = GetComponent<CurrencySystem>();
