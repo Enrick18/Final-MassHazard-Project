@@ -1,37 +1,32 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutsceneTransition : MonoBehaviour
+public class CutsceneController : MonoBehaviour
 {
-    private bool hasPlayedCutscene = false;
-    public string nextSceneName = "EasyLevel01"; // Change this to the name of your gameplay scene
+    // Assign your video player or cutscene object to this variable
+    public GameObject cutsceneObject;
 
-    void Start()
+    // Name of the next scene to load after the cutscene
+    public string nextSceneName;
+
+    // Update is called once per frame
+    void Update()
     {
-        // Check if the cutscene has already been played
-        if (!hasPlayedCutscene)
+        // Check for left mouse button click
+        if (Input.GetMouseButtonDown(0))
         {
-            // Play the cutscene
-            // Add your code here to play the cutscene, e.g., using VideoPlayer component
-
-            // Set the flag to true to indicate that the cutscene has been played
-            hasPlayedCutscene = true;
-
-            // Save the flag to PlayerPrefs
-            PlayerPrefs.SetInt("HasPlayedCutscene", hasPlayedCutscene ? 1 : 0);
-            PlayerPrefs.Save();
-        }
-        else
-        {
-            // Cutscene has already been played, load the gameplay scene directly
-            LoadGameplayScene();
+            // Check if the cutscene is active
+            if (cutsceneObject.activeSelf)
+            {
+                // Skip the cutscene and load the next scene
+                LoadNextScene();
+            }
         }
     }
 
-    private void LoadGameplayScene()
+    void LoadNextScene()
     {
-        // Load the next scene (gameplay scene)
+        // Load the next scene
         SceneManager.LoadScene(nextSceneName);
     }
 }
-

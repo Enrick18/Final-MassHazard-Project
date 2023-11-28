@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46783004430ef264398ba87034a20c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cutsceneObject: {fileID: 1748357945}
   nextSceneName: EasyLevel01
 --- !u!4 &46061876
 Transform:

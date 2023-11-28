@@ -8,14 +8,14 @@ public class AudioManager : MonoBehaviour
 {
     
     [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    //[SerializeField] AudioSource SFXSource;
 
     public AudioClip background;
-    public AudioClip spawning;
-    public AudioClip enterGoal;
-    public AudioClip attacking;
-    public AudioClip death;
-    public AudioClip female_attack;
+    //public AudioClip spawning;
+    //public AudioClip enterGoal;
+    //public AudioClip attacking;
+    //public AudioClip death;
+    //public AudioClip female_attack;
 
     private void Start()
     {
@@ -23,8 +23,8 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
-    {
-        SFXSource.PlayOneShot(clip);
-    }
+    //public void PlaySFX(AudioClip clip)
+    //{
+    //    SFXSource.PlayOneShot(clip);
+    //}
 }

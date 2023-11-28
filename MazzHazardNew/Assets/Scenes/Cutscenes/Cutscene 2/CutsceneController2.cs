@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CutsceneController4 : MonoBehaviour
+public class CutsceneController2 : MonoBehaviour
 {
     // Assign your video player or cutscene object to this variable
     public GameObject cutsceneObject;

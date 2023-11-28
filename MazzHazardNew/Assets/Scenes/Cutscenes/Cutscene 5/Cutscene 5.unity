@@ -220,7 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46783004430ef264398ba87034a20c01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: EasyLevel01
+  cutsceneObject: {fileID: 605491029}
+  nextSceneName: EasyLevel05
 --- !u!4 &1128631853
 Transform:
   m_ObjectHideFlags: 0

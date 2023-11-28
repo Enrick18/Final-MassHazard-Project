@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public CutsceneTransition hasPlayedCutscene;
     public GameObject pauseMenu;
 
     // Start is called before the first frame update
@@ -13,11 +12,6 @@ public class GameController : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-    }
-
-    public void StopPlayingCutscene()
-    {
-        int cutscenePlayer = PlayerPrefs.GetInt("asPlayedCutscene", hasPlayedCutscene ? 1 : 1);
     }
 
     public void PauseGame()
