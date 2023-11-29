@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0248175, y: 0.62}
   m_AnchorMax: {x: 0.19218063, y: 0.96500003}
-  m_AnchoredPosition: {x: 0, y: -380.61264}
+  m_AnchoredPosition: {x: 1413.3933, y: -0.31539917}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9131910260929665155
@@ -129,7 +129,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -149,3 +149,5 @@ MonoBehaviour:
   playerLoadOut: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   activatedImage: {fileID: 21300000, guid: e0be3757af56fd0459c5933d4e8f6a40, type: 3}
   originalImage: {fileID: 21300000, guid: fde8e004f8101e94c8ba75ce13bca73d, type: 3}
+  levelKey: S6E
+  levelUnlocked: 0

@@ -235,8 +235,8 @@ NavMeshAgent:
   m_Speed: 8
   m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_AngularSpeed: 300
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -266,8 +266,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -290,8 +290,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1969872, y: 2.3736982, z: 1.0287628}
-  m_Center: {x: 0.12555122, y: 2.5575728, z: 0.35952568}
+  m_Size: {x: 3.2299042, y: 5.150825, z: 2.664135}
+  m_Center: {x: -0.14114761, y: 2.4830916, z: 0.51778793}
 --- !u!114 &2778616273020895692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   healthBar: {fileID: 2778616272866425175}
   maxHealth: 500
   currentHealth: 0
-  isMedium: 0
+  isMedium: 1
   isHard: 0
   damageResistance: 1
   element: 1
@@ -326,8 +326,10 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
   blockRequirement: 1
+  hero: {fileID: 0}
   anim: {fileID: 3353206539633874598}
   counter: {fileID: 2778616273020895695}
+  isBlocked: 0
 --- !u!114 &2778616273020895693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,10 +343,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Hero
-  damageAmount: 20
+  damageAmount: 85
   timeBetweenAttacks: 1
   anim: {fileID: 3353206539633874598}
-  isMedium: 0
+  isMedium: 1
   isHard: 0
 --- !u!114 &2778616273020895695
 MonoBehaviour:
@@ -641,13 +643,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2315a343929e44848855a08541ba8953, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2014066726832983314}
   m_SourcePrefab: {fileID: 100100000, guid: 2315a343929e44848855a08541ba8953, type: 3}
 --- !u!95 &3353206539633874598 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 2315a343929e44848855a08541ba8953, type: 3}
   m_PrefabInstance: {fileID: 9215048996205390647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8296483652811445862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2315a343929e44848855a08541ba8953, type: 3}
+  m_PrefabInstance: {fileID: 9215048996205390647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2014066726832983314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296483652811445862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 0}
+  enemy: {fileID: 2778616273020895693}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!4 &8676421353753611484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2315a343929e44848855a08541ba8953, type: 3}

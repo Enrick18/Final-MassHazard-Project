@@ -36,8 +36,8 @@ ModelImporter:
       name: Karma_Idle
       takeName: Armature|Karma Idle Anim
       internalID: -6067274643999532364
-      firstFrame: 0
-      lastFrame: 244
+      firstFrame: 27
+      lastFrame: 178
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

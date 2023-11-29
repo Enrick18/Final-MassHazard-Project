@@ -226,6 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8316655103984054555}
   - component: {fileID: 2095201901054429573}
+  - component: {fileID: 2842980783876444267}
   - component: {fileID: 3585214896993365443}
   - component: {fileID: 2393423992696138018}
   - component: {fileID: 2239447580332868976}
@@ -274,8 +275,35 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.2994914, y: 4.8274055, z: 2.7157352}
-  m_Center: {x: 0.0659904, y: 8.380704, z: 0.13197958}
+  m_Size: {x: 10.381564, y: 13.221268, z: 5.732825}
+  m_Center: {x: -0.053736743, y: 6.578286, z: 0.34748578}
+--- !u!54 &2842980783876444267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6291171678685580404}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!195 &3585214896993365443
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -311,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 9199541396001770720}
-  maxHealth: 1000
+  maxHealth: 1200
   currentHealth: 0
   isMedium: 0
   isHard: 0
@@ -330,7 +358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Hero
-  damageAmount: 75
+  damageAmount: 300
   timeBetweenAttacks: 1
   anim: {fileID: 2478126174027457682}
   isMedium: 0
@@ -362,8 +390,10 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
   blockRequirement: 3
+  hero: {fileID: 0}
   anim: {fileID: 2478126174027457682}
   counter: {fileID: 512971052848069693}
+  isBlocked: 0
 --- !u!1 &6393468870943331532
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +639,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7918860743ce1414c92310a125663c40, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5746096058606313279}
   m_SourcePrefab: {fileID: 100100000, guid: 7918860743ce1414c92310a125663c40, type: 3}
 --- !u!95 &2478126174027457682 stripped
 Animator:
@@ -621,3 +654,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7918860743ce1414c92310a125663c40, type: 3}
   m_PrefabInstance: {fileID: 8290712440455403779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9209842375420847186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7918860743ce1414c92310a125663c40, type: 3}
+  m_PrefabInstance: {fileID: 8290712440455403779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5746096058606313279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9209842375420847186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 0}
+  enemy: {fileID: 2239447580332868976}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 0}
+  bomb: {fileID: 0}

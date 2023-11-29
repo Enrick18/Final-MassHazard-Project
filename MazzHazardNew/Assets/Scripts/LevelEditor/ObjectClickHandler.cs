@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ObjectClickHandler : MonoBehaviour
 {
-    //public AudioSource clickEffectPlayer;
-
     public Material highlightMaterial;
     public Material originalMaterial;
     public GameObject SelectedTile { get { return _selectedTile; } }
@@ -47,7 +46,8 @@ public class ObjectClickHandler : MonoBehaviour
 
             // Perform the raycast to detect the clicked object
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
+            bool isOverUi = EventSystem.current.IsPointerOverGameObject();
+            if (Physics.Raycast(ray, out hit) && !isOverUi)
             {
                 // Check if the collider hit belongs to a clickable object
                 

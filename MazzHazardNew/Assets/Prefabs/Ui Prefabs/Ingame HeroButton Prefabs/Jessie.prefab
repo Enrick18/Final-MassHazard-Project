@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NAME: MARK\nELEMENT: FIRE\t\nHP: 500\nDMG: 80\nCOST: 16"
+  m_text: "NAME: MARK\nELEMENT: FIRE\t\nHP: 500\nDMG: 700\nCOST: 16"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -399,4 +399,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMeleeHeroType: 1
   heroModel: {fileID: 5002148828284854953, guid: 070aca655dd285f4fa9a1dee48abfe97, type: 3}
-  setHeroCost: 16
+  setHeroCost: 17

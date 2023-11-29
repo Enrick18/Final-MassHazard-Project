@@ -212,8 +212,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 4847767405068552228}
-  maxHealth: 500
+  maxHealth: 800
   currentHealth: 0
+  isMedium: 0
+  isHard: 0
   damageResistance: 1
   element: 3
 --- !u!114 &4847767404865447407
@@ -229,8 +231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blockCount: 2
-  damageAmount: 80
-  timeBetweenAttacks: 1
+  damageAmount: 100
+  timeBetweenAttacks: 2
   blockTarget: Enemy
   launcherModel: {fileID: 8761687494825966303}
   anim: {fileID: 3420458140463308965}
@@ -259,8 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96bc1420feb8074e817a642cd72eb7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 9
-  target: {fileID: 0}
+  range: 5
+  target: {fileID: 8761687494825966303}
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 64
@@ -671,7 +673,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2412161367050800168, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}
       insertIndex: 0
       addedObject: {fileID: 4004599990112860359}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4941698578954032384}
   m_SourcePrefab: {fileID: 100100000, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}
 --- !u!95 &3420458140463308965 stripped
 Animator:
@@ -683,6 +688,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2412161367050800168, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}
   m_PrefabInstance: {fileID: 9087557232054770996}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8276513263884509285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}
+  m_PrefabInstance: {fileID: 9087557232054770996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4941698578954032384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8276513263884509285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 4847767404865447407}
+  enemy: {fileID: 0}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!4 &8761687494825966303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 60ada6bc1af117448b20a7d18b37ec5e, type: 3}

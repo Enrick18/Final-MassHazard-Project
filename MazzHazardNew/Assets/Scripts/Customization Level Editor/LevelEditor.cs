@@ -7,14 +7,13 @@ using TMPro;
 
 public class LevelEditor : MonoBehaviour
 {
-    public string mapSelected;
     public string gameModeSelected;
     public int[] enemyWaveIndex = { -1, -1, -1, -1, -1 };
     public int[] numberOfEnemies = { 0, 0, 0, 0, 0 };
     public int waveCount = 1;
     public int hpCount = 1;
     public int capsuleCount = 10;
-    public string finalMapName;
+    public string finalMapName = "New Map";
     public bool isRogue = false;
 
     public GameObject waveSettingScene;
@@ -26,10 +25,6 @@ public class LevelEditor : MonoBehaviour
     public TMP_InputField mapNameInputField;
     public WaveManager waveManager;
 
-    public void MapSelected(string mapName)
-    {
-        mapSelected = mapName;
-    }
 
     public void GameModeSelected(string mode)
     {
@@ -44,7 +39,7 @@ public class LevelEditor : MonoBehaviour
             for (int i = 0; i < waveCount; i++)
             {
                 numberOfEnemies[i] = Random.Range(1, 12);
-                enemyWaveIndex[i] = Random.Range(0, 2);
+                enemyWaveIndex[i] = Random.Range(0, 5);
             }
         }
 
@@ -129,7 +124,11 @@ public class LevelEditor : MonoBehaviour
 
     public void SetMapName()
     {
-        finalMapName = mapNameInputField.text;
+        if (mapNameInputField.text != "") 
+        {
+            finalMapName = mapNameInputField.text;
+        }
+        
     }
 
     public void MapNameBack()
@@ -142,7 +141,7 @@ public class LevelEditor : MonoBehaviour
 
     public void BackToMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenu_UIScenes");
     }
 
 }

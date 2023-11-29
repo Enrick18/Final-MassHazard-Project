@@ -9,6 +9,7 @@ public class HeroCurrencyGenerator : MonoBehaviour
 
     private HealthController healthController;
     public float addedCooldownTime;
+    public float removedCooldownTime;
 
 
 
@@ -25,6 +26,11 @@ public class HeroCurrencyGenerator : MonoBehaviour
     {
 
         var currentHealth = healthController.currentHealth;
+
+        if (currentHealth > 0) 
+        { 
+            currencySystem.DecreaseCooldown(removedCooldownTime);
+        }
 
         if (currentHealth <= 0) 
         {

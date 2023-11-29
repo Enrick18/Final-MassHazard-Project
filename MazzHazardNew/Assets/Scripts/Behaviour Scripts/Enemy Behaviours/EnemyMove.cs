@@ -19,12 +19,14 @@ public class EnemyMove : MonoBehaviour, IKillable
     private bool _isStopped = false;
     public bool isStopped => _isStopped;
 
-    private GameObject hero = null;
+    private Vector3 saveTransform;
+    [SerializeField]private GameObject hero = null;
 
     public Animator anim;
 
     public EnemyEventRaiser counter;
 
+    public bool isBlocked;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,27 +40,32 @@ public class EnemyMove : MonoBehaviour, IKillable
         }
         UpdateDestination();
 
-
     }
     void Update()
     {
-        // Debug.Log(Vector3.Distance(transform.position, target));
 
         if (Vector3.Distance(transform.position, target) < distance)
         {
             IterateWayPointIndex();
         }
 
-        UpdateDestination();
 
-        if (hero == null)// to resume movement when no hero blocking
+        if (hero == null )// to resume movement when no hero blocking
         {
-            anim.SetBool("isWalking", true);
-            agent.isStopped = false;
-            agent.speed = movementSpeed;
-            _isStopped = false;
+                agent.enabled = true;
+                isBlocked = false;
+                anim.SetBool("isWalking", true);
+                agent.isStopped = false;
+                agent.speed = movementSpeed;
+                _isStopped = false;
+                UpdateDestination();
+        }
+        else
+        {
+            transform.position = saveTransform;
         }
     }
+
 
     void UpdateDestination()
     {
@@ -73,17 +80,25 @@ public class EnemyMove : MonoBehaviour, IKillable
 
     public void StopEnemy(GameObject GO)
     {
-        hero = GO;
-        agent.speed = 0;
-        _isStopped = true;
-        agent.isStopped = true;
+        if (!_isStopped) 
+        {
+            saveTransform = transform.position;
+            hero = GO;
+            agent.speed = 0;
+            _isStopped = true;
+            agent.isStopped = true;
+            agent.enabled = false;
+        }
+        
     }
-
 
     public void IsDead()
     {
+        if (agent.enabled == true) 
+        {
+            agent.isStopped = true;
+        }
         counter.SendDeathEvent();
-        agent.isStopped = true;
         this.enabled = false;
     }
 }

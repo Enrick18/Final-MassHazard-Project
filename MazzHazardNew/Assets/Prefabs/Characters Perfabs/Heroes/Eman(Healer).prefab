@@ -165,7 +165,6 @@ GameObject:
   - component: {fileID: 1877645262903174881}
   - component: {fileID: 1877645262903174885}
   - component: {fileID: 1877645262903174884}
-  - component: {fileID: -7574797286696863151}
   m_Layer: 7
   m_Name: Eman(Healer)
   m_TagString: HeroHealer
@@ -242,8 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45708c2dae519c4789f432e216666de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 25
-  healAmount: 50
+  range: 15
+  healAmount: 0.15
   timeBetweenHeals: 1.1
   healRate: 1
   allyLayer:
@@ -252,6 +251,7 @@ MonoBehaviour:
   healingEffectPrefab: {fileID: 0}
   launcherModel: {fileID: 1802011840986815870}
   anim: {fileID: 5756203871012439812}
+  isAoe: 1
 --- !u!114 &1877645262903174884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,24 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33faa2a228c89d479f04f1438e84804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-7574797286696863151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877645262903174883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d96bc1420feb8074e817a642cd72eb7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 20
-  target: {fileID: 0}
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 128
-  model: {fileID: 5756203871012439812}
 --- !u!1 &1877645263186836327
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,11 +566,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Eman Idle Anim
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b76b471e828304f4196b1d2640139af1, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8148847999670810717}
   m_SourcePrefab: {fileID: 100100000, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}
+--- !u!1 &1317822497585973188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}
+  m_PrefabInstance: {fileID: 2200203330862217877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8148847999670810717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317822497585973188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdeec00d0902dc347b239de51ecc3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hero: {fileID: 0}
+  enemy: {fileID: 0}
+  heroRange: {fileID: 0}
+  enemyRange: {fileID: 0}
+  healer: {fileID: 1877645262903174885}
+  bomb: {fileID: 0}
 --- !u!4 &1802011840986815870 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 113479e409e1ea8448353ec6acbe4e14, type: 3}

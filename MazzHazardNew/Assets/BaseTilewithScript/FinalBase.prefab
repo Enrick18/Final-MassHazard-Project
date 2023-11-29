@@ -255,12 +255,12 @@ GameObject:
   m_Component:
   - component: {fileID: 298075620439395004}
   - component: {fileID: 298075620439395007}
+  - component: {fileID: 3322608369565799893}
   - component: {fileID: 298075620439395006}
   - component: {fileID: 4127089797102857943}
   - component: {fileID: 2911617079071509235}
   - component: {fileID: 513419813108011689}
   - component: {fileID: 1534671037333876822}
-  - component: {fileID: 3322608369565799893}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: ChildCube
@@ -292,18 +292,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 298075620439394945}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66477a9b105a96d42b6e0f31cbd8af5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyList:
-  - enemy: {fileID: 0}
-    enemyCount: 0
-  timeBetweenSpawns: 7
-  timeBetweenWaves: 10
-  isThereBoss: 1
+  enemyList: []
+  timeBetweenSpawns: 2
+  timeBetweenWaves: 4
+  isThereBoss: 0
   isRandomized: 0
+  isHard: 0
+  isMedium: 0
+--- !u!114 &3322608369565799893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298075620439394945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d97738bd799364bbead32144422ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 298075620439395007}
+  delay: 5
 --- !u!65 &298075620439395006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -409,20 +423,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 3, z: -3}
---- !u!114 &3322608369565799893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298075620439394945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81d97738bd799364bbead32144422ac9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner: {fileID: 298075620439395007}
-  delay: 5
 --- !u!1 &640518177066298310
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 2902164908195055265}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: ChildCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 3892467855324450750}
   m_Layer: 0
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: ChildCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 736530311880721079}
   m_Layer: 0
   m_Name: Range
-  m_TagString: Untagged
+  m_TagString: ChildCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 4422551585581072162}
   m_Layer: 0
   m_Name: Path
-  m_TagString: ChildCube
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1801,7 +1801,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8939337682770866146}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d58ce6b064dde8469b2ede8aded862d, type: 3}
   m_Name: 

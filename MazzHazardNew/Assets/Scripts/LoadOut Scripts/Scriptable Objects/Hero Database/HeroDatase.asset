@@ -14,29 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heroLists:
   - heroIndex: 0
-    heroCard: {fileID: 21300000, guid: e9c6d2118ad842b43936d4bcc75dfeaa, type: 3}
-    buttonPrefab: {fileID: 1795359503124716672, guid: 8bcf2c38ea9527244becbb8041452ef6, type: 3}
-    characterCard: {fileID: 8002644103773601663, guid: d2a08f4f4a8156745a84b0fda65884ad, type: 3}
-  - heroIndex: 1
     heroCard: {fileID: 21300000, guid: eb99f2599dfdfed40bd2c7d3fe936af0, type: 3}
     buttonPrefab: {fileID: 4872944792313305242, guid: 9890bbde7d25d384581ac1e7f5ef4dc8, type: 3}
     characterCard: {fileID: 397181300573798948, guid: 1fd6d6aaccbd86c438a148ef7ef55a98, type: 3}
+  - heroIndex: 1
+    heroCard: {fileID: 21300000, guid: e9c6d2118ad842b43936d4bcc75dfeaa, type: 3}
+    buttonPrefab: {fileID: 1795359503124716672, guid: 8bcf2c38ea9527244becbb8041452ef6, type: 3}
+    characterCard: {fileID: 8002644103773601663, guid: d2a08f4f4a8156745a84b0fda65884ad, type: 3}
   - heroIndex: 2
-    heroCard: {fileID: 21300000, guid: c9914e47934adc645910ffeb302d94b6, type: 3}
-    buttonPrefab: {fileID: 3986802247241903740, guid: 78739fa6317a80c41b250d9fa2a07945, type: 3}
-    characterCard: {fileID: 177568236997401351, guid: 3a887df4bc933344fb4399beedce6bf7, type: 3}
-  - heroIndex: 3
     heroCard: {fileID: 21300000, guid: b1b5c94d433e38d4483c1aa86c23d99a, type: 3}
     buttonPrefab: {fileID: 3117202131511133343, guid: 088e0989ff927b04bb4cefac6d7e4dfa, type: 3}
     characterCard: {fileID: 4121768362336666640, guid: 04d8d4eb3fb516f448983c28d3bf27ab, type: 3}
+  - heroIndex: 3
+    heroCard: {fileID: 21300000, guid: c9914e47934adc645910ffeb302d94b6, type: 3}
+    buttonPrefab: {fileID: 3986802247241903740, guid: 78739fa6317a80c41b250d9fa2a07945, type: 3}
+    characterCard: {fileID: 177568236997401351, guid: 3a887df4bc933344fb4399beedce6bf7, type: 3}
   - heroIndex: 4
-    heroCard: {fileID: 21300000, guid: 3d4490500c83f144f86eda4ed99a6d82, type: 3}
-    buttonPrefab: {fileID: 4872944792313305242, guid: bc58d82e2084b9741b524a809495136d, type: 3}
-    characterCard: {fileID: 1081064124833731244, guid: ed58e9151c042a24c8bfd68d459386bf, type: 3}
-  - heroIndex: 5
     heroCard: {fileID: 21300000, guid: e0be3757af56fd0459c5933d4e8f6a40, type: 3}
     buttonPrefab: {fileID: 2653418691056458826, guid: 990edb87b5595e648a33c294ce8c734e, type: 3}
     characterCard: {fileID: 9131910260929665159, guid: 16a2ac606a7125041bcc2effff77671f, type: 3}
+  - heroIndex: 5
+    heroCard: {fileID: 21300000, guid: 3d4490500c83f144f86eda4ed99a6d82, type: 3}
+    buttonPrefab: {fileID: 4872944792313305242, guid: bc58d82e2084b9741b524a809495136d, type: 3}
+    characterCard: {fileID: 1081064124833731244, guid: ed58e9151c042a24c8bfd68d459386bf, type: 3}
   - heroIndex: 6
     heroCard: {fileID: 21300000, guid: fef9da20e8affba4a878f2290dacbaeb, type: 3}
     buttonPrefab: {fileID: 7682368503211860812, guid: 4dd81b5d23ba4df4bbe96023f8e0cda9, type: 3}

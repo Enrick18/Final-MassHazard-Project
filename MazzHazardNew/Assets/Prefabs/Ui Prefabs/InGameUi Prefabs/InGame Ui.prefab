@@ -2155,7 +2155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionCanvas: {fileID: 3002956495959371164}
-  healthElementalMultiplier: 2
+  healthElementalMultiplier: 1.937
   damageElementalMultiplier: 2
 --- !u!114 &481200194038809758
 MonoBehaviour:
@@ -2172,6 +2172,8 @@ MonoBehaviour:
   txtCurrency: {fileID: 481200192388085871}
   defaultCurency: 20
   currentCurrency: 0
+  cooldownCounter: 0
+  cooldownReset: 0
   currencyRegenAmount: 1
 --- !u!114 &481200194038809746
 MonoBehaviour:
@@ -2241,7 +2243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &481200194415107754
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2249,7 +2251,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481200194415107755}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0

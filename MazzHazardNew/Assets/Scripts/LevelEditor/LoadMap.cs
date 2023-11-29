@@ -9,17 +9,19 @@ using Unity.AI.Navigation;
 public class LoadMap : MonoBehaviour
 {
     [SerializeField] private NavMeshSurface navMeshSurface;
-    private string fileName = "New Map"; // Provide the name of the JSON file
+    [SerializeField] private string fileName = "NewMap";
     private Dictionary<string, TileData> mapData = new Dictionary<string, TileData>();
+    public ToSaveData customMapData = new ToSaveData();
     public MapData mapName = null;
     public static event Action OnMapLoaded;
-   
+
+
     private void Start()
     {
-        fileName = mapName.mapName;
-        
-        LoadFromJSON();
+       fileName = mapName.mapName;
 
+        LoadFromJSON();
+        mapData = customMapData.toSaveMapData;
 
         if (mapData.Count > 0) { 
             for (int i = 0; i < transform.childCount; i++) 
@@ -42,16 +44,13 @@ public class LoadMap : MonoBehaviour
 
     public void LoadFromJSON()
     {
-        string filePath = Application.dataPath + "/CustomMaps/" + fileName + ".json";
+        string filePath = Application.streamingAssetsPath + "/"  + fileName + ".json";
 
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
-            mapData = JsonConvert.DeserializeObject<Dictionary<string, TileData>>(json);
-
-            
-            // Now mapData contains the deserialized data from the JSON file
-            // You can access it like mapData["tileName"].spawner, mapData["tileName"].goal, etc.
+            //mapData = JsonConvert.DeserializeObject<Dictionary<string, TileData>>(json);
+            customMapData = JsonConvert.DeserializeObject<ToSaveData>(json);
         }
         else
         {

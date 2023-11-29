@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMeleeHeroType: 0
   heroModel: {fileID: 7572789435222156610, guid: 294a5d5149cb7644ba408c3346ba9dad, type: 3}
-  setHeroCost: 10
+  setHeroCost: 9
 --- !u!1 &1795359503150095353
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NAME: KARMA\nELEMENT: WATER\t\nHP: 400\nDMG: 80\nCOST: 10"
+  m_text: "NAME: KARMA\nELEMENT: WATER\t\nHP: 400\nDMG: 80\nCOST: 9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

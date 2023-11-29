@@ -8,14 +8,16 @@ public class GameController : MonoBehaviour
     public GameObject pauseMenu;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        Debug.Log(pauseMenu);
     }
 
-    public void PauseGame()
+    public void PauseGame() 
     {
+        Debug.Log(pauseMenu);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -38,6 +40,4 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("LevelEditor");
     }
-    
-
 }

@@ -158,6 +158,7 @@ MonoBehaviour:
   database: {fileID: 11400000, guid: 10d2d415a9c6fe444a9642575f90c53c, type: 2}
   heroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   parent: {fileID: 1942737608}
+  isLevelEditor: 0
 --- !u!114 &165824366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +255,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -281,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 4895f1574c43c3b43bb4084cd80079d5, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 6
@@ -413,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 06
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -800,134 +817,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &444219895
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 444219897}
-  - component: {fileID: 444219896}
-  m_Layer: 0
-  m_Name: MusicSource
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &444219896
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444219895}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -6597458367963835298, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 096f801c906e02a4382c3bd1c7ea0233, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &444219897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 444219895}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56.338696, y: 7.614706, z: 38.605766}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570779729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1058,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1196,7 +1097,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 62c0c8c731745ae42a245ba6e5d266cf, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 5
@@ -1329,6 +1230,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 05
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1445,6 +1350,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1860800880163564491, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -1465,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: HardLevel01
       objectReference: {fileID: 0}
+    - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 727e40220d696064b9328eeff5b8a701, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 1
@@ -1632,6 +1553,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1659,7 +1592,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: e8d17f31792abfe43a10bfbe370cc6fe, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 7
@@ -1674,11 +1607,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3436845951884456002, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3M
+      value: S7M
       objectReference: {fileID: 0}
     - target: {fileID: 3714484747783492557, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3E
+      value: S7E
       objectReference: {fileID: 0}
     - target: {fileID: 3714484747783492557, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Enabled
@@ -1792,6 +1725,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 07
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1806,7 +1743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8940927914346597314, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelKey
-      value: S3H
+      value: S7H
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1910,6 +1847,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1937,7 +1886,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 73f1bb1e888d5ee4f8a4df2cbfe3b74a, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 3
@@ -2070,6 +2019,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 03
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2108,6 +2061,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2135,7 +2100,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 5c80eeeb1a1dcda469d5bfc63563abcc, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 4
@@ -2267,6 +2232,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 04
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2884,6 +2853,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2911,7 +2892,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 1c51e2f1f553ddf44ae4484ec844042b, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 9
@@ -3043,6 +3024,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 09
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3227,6 +3212,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3254,7 +3251,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: f218bb4429261b4448daad61b0ec42df, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 8
@@ -3386,6 +3383,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 08
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3525,6 +3526,7 @@ MonoBehaviour:
   loadOutUi: {fileID: 165824364}
   heroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   warningUi: {fileID: 1454858242}
+  loadOutChecker: 1
 --- !u!114 &2047175441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,6 +3623,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3648,7 +3662,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7fd12c74feba7df4eba4fad683b8a30f, type: 3}
+      objectReference: {fileID: 21300000, guid: 214d7f356aa842f41a54eb30bb6825c9, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 10
@@ -3781,6 +3795,10 @@ PrefabInstance:
       propertyPath: maxMediumLevel
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3819,6 +3837,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: StageCard 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 114.500046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5.240036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1406759103742581415, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2069586303765518229, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3846,7 +3876,7 @@ PrefabInstance:
     - target: {fileID: 2804385527085904138, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 154c68196d4b0934fa76ec6bf0b3b8f8, type: 3}
+      objectReference: {fileID: 21300000, guid: c56fa90f93ccd214689984ca66e6788f, type: 3}
     - target: {fileID: 3216509274385080738, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: levelIndex
       value: 2
@@ -3978,6 +4008,10 @@ PrefabInstance:
     - target: {fileID: 4924627102071097366, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: maxMediumLevel
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281973339132521169, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
+      propertyPath: m_text
+      value: Level 02
       objectReference: {fileID: 0}
     - target: {fileID: 8190164690393366400, guid: 8ee879aaab875764ea2827760ba55b7d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

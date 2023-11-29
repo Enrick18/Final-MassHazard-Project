@@ -12,7 +12,8 @@ TagManager:
   - Goal
   - ChildCube
   - Cube
-  - Audio
+  - Decor
+  - Tree
   layers:
   - Default
   - TransparentFX

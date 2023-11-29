@@ -1,15 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Timeline;
-using UnityEngine.Audio;
 
 
-public class EnemySpawner : MonoBehaviour    
+public class EnemySpawner : MonoBehaviour
 {
-
-    AudioManager audioManager;
-
     public List<EnemyList> enemyList = new List<EnemyList>();
     // public GameObject bossToSpawn;
     private Transform spawnPoint;
@@ -26,21 +21,15 @@ public class EnemySpawner : MonoBehaviour
     public bool isHard;
     public bool isMedium;
 
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
 
     // Start is called before the first frame update
     void Start()
     {
-
         foreach(var enemy in enemyList)
         {
-            
             totalEnemies += enemy.enemyCount;
         }
-        
+
         spawnCounter = timeBetweenSpawns;
         spawnPoint = this.gameObject.transform.GetChild(0);
 
@@ -51,15 +40,12 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
- 
-
     IEnumerator LinearSpawn()
     {
         foreach (var enemy in enemyList)
         {
             while (enemy.enemyCount > 0)
             {
-                audioManager.PlaySFX(audioManager.spawning);
                 if (isMedium) 
                 {
                     enemy.enemy.GetComponent<HealthController>().IsMedium();
@@ -70,7 +56,11 @@ public class EnemySpawner : MonoBehaviour
                     }
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null) 
                     {
-                        enemy.enemy.GetComponent<EnemyController>().IsMedium();
+                        enemy.enemy.GetComponent<EnemyRangeAttack>().IsMedium();
+                    }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsMedium();
                     }
                 }
                 else if (isHard) 
@@ -83,7 +73,11 @@ public class EnemySpawner : MonoBehaviour
                     }
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
                     {
-                        enemy.enemy.GetComponent<EnemyController>().IsHard();
+                        enemy.enemy.GetComponent<EnemyRangeAttack>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsHard();
                     }
                 }
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
@@ -113,6 +107,10 @@ public class EnemySpawner : MonoBehaviour
                     {
                         enemy.enemy.GetComponent<EnemyController>().IsMedium();
                     }
+                    else if (enemy.enemy.GetComponent<BombController>() != null) 
+                    { 
+                        enemy.enemy.GetComponent <BombController>().IsMedium();
+                    }
                 }
                 else if (isHard)
                 {
@@ -125,6 +123,10 @@ public class EnemySpawner : MonoBehaviour
                     else if (enemy.enemy.GetComponent<EnemyRangeAttack>() != null)
                     {
                         enemy.enemy.GetComponent<EnemyController>().IsHard();
+                    }
+                    else if (enemy.enemy.GetComponent<BombController>() != null)
+                    {
+                        enemy.enemy.GetComponent<BombController>().IsHard();
                     }
                 }
 

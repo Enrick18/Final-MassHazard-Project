@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyRangeAttack : MonoBehaviour
 {
-    private EnemyRange enemyRange;
     public GameObject projectile;
     public Transform firePoint;
+
     public float timeBetweenShots = 1f;
     private float shotCounter;
 
@@ -20,12 +21,25 @@ public class EnemyRangeAttack : MonoBehaviour
 
     public Animator anim;
 
+    private NavMeshAgent agent;
+    private float moveSpeed;
+
     private bool isMedium;
     private bool isHard;
 
+    public float detectionRadius = 10f;
+    public float attackRange = 10f;
+    public LayerMask heroLayer;
+
+    private EnemyMove enemyMove;
+
     // Start is called before the first frame update
+
+    
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        moveSpeed = agent.speed;
         if (isMedium)
         {
             float damageIncrease = damage * 0.15f;
@@ -36,7 +50,8 @@ public class EnemyRangeAttack : MonoBehaviour
             float damageIncrease = damage * 0.40f;
             damage += damageIncrease;
         }
-        enemyRange = GetComponent<EnemyRange>();
+
+        enemyMove = GetComponent<EnemyMove>();
     }
 
     public bool IsMedium() { isMedium = true; return isMedium; }
@@ -45,63 +60,86 @@ public class EnemyRangeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // to look at target without rotating the x and z value
+        if (target == null || Vector3.Distance(transform.position, target.position) > attackRange) 
+        { 
+
+            DetectNearestEnemy();
+        }
+
+        LookAtTarget();
+
         if (target != null)
         {
+            shotCounter -= Time.deltaTime;
+
+            if (target != null && shotCounter <= 0)
+            {
+                enemyMove.StopEnemy(target.gameObject);
+                shotCounter = timeBetweenShots;
+                anim.SetBool("isWalking", false);
+                anim.SetBool("isAttacking", true);
+
+            }
+        }
+
+
+        if (target == null) 
+        {
+            anim.SetBool("isAttacking", false);
+            anim.SetBool("isWalking", true);
+        }
+    }
+
+    void DetectNearestEnemy()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius, heroLayer);
+
+        float nearestDistance = Mathf.Infinity;
+        Transform newTarget = null;
+
+        foreach (Collider col in hitColliders)
+        {
+            float distance = Vector3.Distance(transform.position, col.transform.position);
+
+            if (distance < nearestDistance)
+            {
+                nearestDistance = distance;
+                newTarget = col.transform;
+            }
+        }
+
+        target = newTarget;
+    }
+
+    void LookAtTarget()
+    {
+        if (target != null)
+        {
+            //transform.LookAt(target);
             launcherModel.rotation = Quaternion.Slerp(launcherModel.rotation, Quaternion.LookRotation(target.position - transform.position), 5f * Time.deltaTime);
 
             launcherModel.rotation = Quaternion.Euler(0f, launcherModel.rotation.eulerAngles.y, 0f);
         }
-
-        shotCounter -= Time.deltaTime;
-        // Firing of shots to enemy
-        if (shotCounter <= 0 && target != null)
-        {
-            shotCounter = timeBetweenShots;
-            firePoint.LookAt(target);
-            anim.SetBool("isAttacking", true);
-            anim.SetBool("isWalking", false);
-            var bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
-            bullet.GetComponent<Projectile>().element = element;
-            bullet.GetComponent<Projectile>().damageAmount = damage;
-
-        }
-
-        if (enemyRange.enemiesUpdated) // for optimising purposes so that it wont check closest enemy every frame
-        {
-            //Assign a target from the data given by theTower code
-            if (enemyRange.enemiesInRange.Count > 0)
-            {
-                anim.SetBool("isAttacking", true);
-                float minDistance = enemyRange.range + 1f;
-
-                foreach (HeroDetect enemy in enemyRange.enemiesInRange)
-                {
-                    if (enemy != null)
-                    {
-                        float distance = Vector3.Distance(transform.position, enemy.transform.position);
-                        if (distance < minDistance)
-                        {
-                            minDistance = distance;
-                            target = enemy.transform;
-                        }
-
-                    }
-                }
-            }
-            else
-            {
-                target = null;
-                anim.SetBool("isAttacking", false);
-                anim.SetBool("isWalking", true);
-            }
-        }
     }
 
+    public void FireProjectile() 
+    {
+        Debug.Log("Fire");
+        var bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
+        bullet.GetComponent<Projectile>().element = element;
+        bullet.GetComponent<Projectile>().damageAmount = damage;
+    }
 
     public void IsDead()
     {
         this.enabled = false;
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+    }
+
 
 }

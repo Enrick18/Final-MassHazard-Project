@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
 {
-    AudioManager audioManager;
-
     public Slider healthBar;
     public float maxHealth;
     public float currentHealth;
@@ -18,24 +16,18 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
-
-    private void Awake()
-    {
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-    }
-    
     // Start is called before the first frame update
     void Start()
     {
         if (isMedium)
         {
-            damageResistance = 0.7f;
+            damageResistance = 0.8f;
             float increasehealth = maxHealth * 0.10f;
             maxHealth += increasehealth;
         }
         else if (isHard)
         {
-            damageResistance = 0.5f;
+            damageResistance = 0.6f;
             float increasehealth = maxHealth * 0.30f;
             maxHealth += increasehealth;
         }
@@ -91,6 +83,11 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
     }
 
+    public void TakePureDamage(float damageAmount) 
+    { 
+        currentHealth -= damageAmount;
+    }
+
     public void PoisonDamage(float poisonDamage)
     {
         currentHealth -= poisonDamage;
@@ -101,9 +98,9 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
     }
 
-    public void HealDamage(float healAmount)
+    public void HealDamage(float healAmount, float health)
     {
-        healDmg = healAmount;
+        healDmg = healAmount * health;
 
         Invoke(nameof(Heal), .2f);
 
@@ -123,12 +120,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
             var killableComponents = GetComponents<IKillable>();
             foreach (var killable in killableComponents)
             {
-                // Debug.Log(killable);
                 killable.IsDead();
             }
         }
-        audioManager.PlaySFX(audioManager.death);
-        Destroy(gameObject);
+
+            Destroy(gameObject);
+        
+        
     }
 
     public float GetCurrentHealth()
@@ -208,5 +206,8 @@ public class HealthController : MonoBehaviour, IHealthSystem
         currentHealth *= mulitplier;
     }
 
-    
+    public GameObject GetGameObject()
+    {
+        return gameObject;
+    }
 }

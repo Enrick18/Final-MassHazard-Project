@@ -12,7 +12,7 @@ public class CurrencySystem : MonoBehaviour
     //current currency value
     public int currentCurrency;
 
-    public float cooldownCounter;
+    public float cooldownCounter = 2.5f;
     public float cooldownReset;
     
     [SerializeField]public int currencyRegenAmount = 1;
@@ -54,6 +54,12 @@ public class CurrencySystem : MonoBehaviour
     public void IncreaseCooldown(float cooldownIncrement) 
     {
         cooldownCounter += cooldownIncrement;
+        cooldownReset = cooldownCounter;
+    }
+
+    public void DecreaseCooldown(float cooldownDecrement) 
+    {
+        cooldownCounter -= cooldownDecrement;
         cooldownReset = cooldownCounter;
     }
 

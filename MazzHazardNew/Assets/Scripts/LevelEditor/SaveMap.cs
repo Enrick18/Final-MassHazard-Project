@@ -19,21 +19,10 @@ using UnityEngine.UI;
 
 public class SaveMap : MonoBehaviour
 {
-    [SerializeField] private string saveFolder = "CustomMaps";
     [SerializeField] private Transform grid;
-    [SerializeField] private InputField enteredName;
-    private Dictionary<string , TileData> mapData = new();
-    private string fileName = "New Map";
-    public void SaveCurrentMap()
-    {
-        if (enteredName.text != "")
-        {
-            fileName = enteredName.text;
-        }
+    public SavingData saveData;
+    public static event Action<Dictionary<string, TileData>> OnSave;
 
-        SaveMapData();
-        SaveToJSON();
-    }
     public void SaveMapData() 
     {
         for(int i = 0; i < grid.childCount; i++)
@@ -48,13 +37,11 @@ public class SaveMap : MonoBehaviour
             data.path = tile.GetChild(4).gameObject.activeSelf;
             data.range = tile.GetChild(5).gameObject.activeSelf;
            
-            mapData[tile.name] = data;
+            saveData.mapData[tile.name] = data;
+
         }
+
+        OnSave?.Invoke(saveData.mapData);
     }
-    public void SaveToJSON()
-    {
-        string json = JsonConvert.SerializeObject(mapData, Formatting.Indented);
-        string savePath = Application.dataPath + "/" + saveFolder + "/" + fileName + ".json";
-        File.WriteAllText(savePath, json);
-    }
+   
 }
