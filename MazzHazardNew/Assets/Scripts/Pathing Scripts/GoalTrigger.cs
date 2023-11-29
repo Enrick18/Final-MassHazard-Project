@@ -12,13 +12,14 @@ public class GoalTrigger : MonoBehaviour
     public int maxLife;
     public int currentLife;
 
-    private void Start() 
+    private void Awake() 
     {
         lifeCountText = GameObject.Find("HealthText").GetComponent<Text>();
-        gameOverUi = GameObject.Find("GameOverUi");
         enemyCounter = GameObject.Find("EnemyCounter").GetComponent<EnemyCounter>();
+        gameOverUi = GameObject.Find("GameOver");
         currentLife = maxLife;
-        lifeCountText.text = currentLife.ToString();    
+        lifeCountText.text = currentLife.ToString();
+        gameOverUi.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other) 

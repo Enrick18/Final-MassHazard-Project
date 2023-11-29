@@ -2172,6 +2172,8 @@ MonoBehaviour:
   txtCurrency: {fileID: 481200192388085871}
   defaultCurency: 20
   currentCurrency: 0
+  cooldownCounter: 0
+  cooldownReset: 0
   currencyRegenAmount: 1
 --- !u!114 &481200194038809746
 MonoBehaviour:
@@ -2241,7 +2243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &481200194415107754
 RectTransform:
   m_ObjectHideFlags: 0

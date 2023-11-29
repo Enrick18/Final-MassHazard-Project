@@ -45,8 +45,6 @@ public class TowerManager : MonoBehaviour
                     towerPosition = tile.transform.GetChild(0);
                     placement = tile.GetComponent<TowerPlacement>();
 
-                    // Debug.Log(tile.transform.childCount);
-
                     if (tile != null)
                     {
 
@@ -151,13 +149,6 @@ public class TowerManager : MonoBehaviour
         TileBuff buff = null;
         IHealthSystem health = null;
         IHeroStats heroStats = null;
-
-
-        Quaternion rot = new Quaternion();
-        Debug.Log(towerPosition);
-
-        //rot.eulerAngles = new Vector3(towerPosition.rotation.x, yRotation, towerPosition.rotation.z);
-
 
         var tower = Instantiate(towerPrefab, tile.transform.GetChild(0).position, tile.transform.GetChild(0).rotation);
 

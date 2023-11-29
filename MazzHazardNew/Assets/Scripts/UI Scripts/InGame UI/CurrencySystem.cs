@@ -57,6 +57,12 @@ public class CurrencySystem : MonoBehaviour
         cooldownReset = cooldownCounter;
     }
 
+    public void DecreaseCooldown(float cooldownDecrement) 
+    {
+        cooldownCounter -= cooldownDecrement;
+        cooldownReset = cooldownCounter;
+    }
+
     void CurrencyIncome()
     {
         GainCurrency(currencyRegenAmount);

@@ -35,7 +35,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MarkAttack
-  m_Speed: 1
+  m_Speed: 1.4
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4803772428626884203}
@@ -74,9 +74,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.8828125
+  m_TransitionDuration: 0.33905026
+  m_TransitionOffset: 0.01031532
+  m_ExitTime: 0.69786185
   m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -128,9 +128,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
-  m_TransitionOffset: 0
-  m_ExitTime: 0.8828125
+  m_TransitionDuration: 0.29730034
+  m_TransitionOffset: 0.01396024
+  m_ExitTime: 0.8355122
   m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -193,7 +193,7 @@ AnimatorStateMachine:
     m_Position: {x: 623.3504, y: 99.30506, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5632978270977699802}
-    m_Position: {x: 590, y: 290, z: 0}
+    m_Position: {x: 550, y: 290, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 6391837829181923759}

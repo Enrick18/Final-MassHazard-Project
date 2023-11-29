@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 7572789433793839575}
-  maxHealth: 400
+  maxHealth: 500
   currentHealth: 0
   isMedium: 0
   isHard: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   launcherModel: {fileID: 3687296484346733014}
   anim: {fileID: 7335172237230963628}
   element: 2
-  damage: 80
+  damage: 180
 --- !u!1 &7572789435358334992
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +726,7 @@ MonoBehaviour:
   heroRange: {fileID: 7572789435222156612}
   enemyRange: {fileID: 0}
   healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!95 &7335172237230963628 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 9cc2dc38badb97748b08e23ab18f56b0, type: 3}

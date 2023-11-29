@@ -54,6 +54,7 @@ MonoBehaviour:
   isAoe: 1
   targetTag: Enemy
   element: 0
+  isHero: 1
 --- !u!54 &4734503648029603530
 Rigidbody:
   m_ObjectHideFlags: 0

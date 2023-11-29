@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45708c2dae519c4789f432e216666de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 25
+  range: 15
   healAmount: 0.15
   timeBetweenHeals: 1.1
   healRate: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
   healingEffectPrefab: {fileID: 0}
   launcherModel: {fileID: 1802011840986815870}
   anim: {fileID: 5756203871012439812}
-  isAoe: 0
+  isAoe: 1
 --- !u!114 &1877645262903174884
 MonoBehaviour:
   m_ObjectHideFlags: 0

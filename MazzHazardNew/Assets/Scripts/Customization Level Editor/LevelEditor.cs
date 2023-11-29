@@ -39,7 +39,7 @@ public class LevelEditor : MonoBehaviour
             for (int i = 0; i < waveCount; i++)
             {
                 numberOfEnemies[i] = Random.Range(1, 12);
-                enemyWaveIndex[i] = Random.Range(0, 2);
+                enemyWaveIndex[i] = Random.Range(0, 5);
             }
         }
 

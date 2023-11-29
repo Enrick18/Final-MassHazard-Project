@@ -322,6 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currencySystem: {fileID: 0}
   addedCooldownTime: 2
+  removedCooldownTime: 0.5
 --- !u!114 &8373225042091538616
 MonoBehaviour:
   m_ObjectHideFlags: 0

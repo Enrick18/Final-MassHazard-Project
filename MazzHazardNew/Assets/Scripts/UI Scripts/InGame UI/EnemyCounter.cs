@@ -14,13 +14,6 @@ public class EnemyCounter : MonoBehaviour
 
     public StageComplete levelComplete;
     public bool isLevelEditor = false;
-    // public int level;
-
-    //private void Start()
-    //{
-    //    enemySpawner = GameObject.Find("Spawner").GetComponent<EnemySpawner>();
-    //    Debug.Log(enemySpawner);
-    //}
 
     private void OnEnable()
     {

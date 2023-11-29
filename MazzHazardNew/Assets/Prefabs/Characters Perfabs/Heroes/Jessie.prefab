@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blockCount: 3
-  damageAmount: 50
+  damageAmount: 700
   timeBetweenAttacks: 1
   blockTarget: Enemy
   launcherModel: {fileID: 8890967845426923901}
@@ -698,6 +698,7 @@ MonoBehaviour:
   heroRange: {fileID: 0}
   enemyRange: {fileID: 0}
   healer: {fileID: 0}
+  bomb: {fileID: 0}
 --- !u!4 &8890967845426923901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ce40c6577dbb23e4c9e18c41ae7b9609, type: 3}

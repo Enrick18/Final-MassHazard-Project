@@ -1515,11 +1515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: timeBetweenWaves
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.size
@@ -3095,6 +3095,10 @@ PrefabInstance:
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextDifficulty
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: defaultCurency
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983266, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_SizeDelta.x

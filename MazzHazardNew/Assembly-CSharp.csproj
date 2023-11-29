@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\AnimationEvent.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageComplete.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\MainMenu.cs" />
+    <Compile Include="Assets\ChangeColor.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\SaveLoadOut.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantSpikes.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\HeroSelected.cs" />

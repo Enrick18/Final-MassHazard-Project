@@ -60,6 +60,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
                     if (attackCounter <= 0)
                     {
                         attackCounter = timeBetweenAttacks;
+                        Debug.Log(_enemyBlockList.Count);
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isAttacking", true);
                         break;
@@ -68,7 +69,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
                 else
                 {
                     keysToRemove.Add(kvp.Key);
-
                 }
 
             }
@@ -120,7 +120,8 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     }
     public void DealDamage()
     {
-        if (!isAoeAttack) 
+        
+        if (!isAoeAttack && _enemyBlockList.Count > 0) 
         {
             enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
             if (enemyHealth.GetCurrentHealth() <= 0)
@@ -132,26 +133,27 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         }
         else
         {
-            
-            foreach (KeyValuePair<GameObject, EnemyMove> enemy in _enemyBlockList.ToList()) 
+            if (isAoeAttack) 
             {
-                if (enemy.Value != null)
+                foreach (KeyValuePair<GameObject, EnemyMove> enemy in _enemyBlockList.ToList())
                 {
-                    enemyHealth = enemy.Value.GetComponent<IHealthSystem>();
-                    enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
-
-                    if (enemyHealth.GetCurrentHealth() <= 0)
+                    if (enemy.Value != null)
                     {
-                        if (_enemyBlockList.ContainsKey(enemy.Key))
-                            _enemyBlockList.Remove(enemy.Key);
+                        enemyHealth = enemy.Value.GetComponent<IHealthSystem>();
+                        enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
+
+                        if (enemyHealth.GetCurrentHealth() <= 0)
+                        {
+                            if (_enemyBlockList.ContainsKey(enemy.Key))
+                                _enemyBlockList.Remove(enemy.Key);
+                        }
+                    }
+                    else
+                    {
+                        _enemyBlockList.Remove(enemy.Key);
                     }
                 }
-                else 
-                {
-                    _enemyBlockList.Remove(enemy.Key);
-                }
             }
-
             
         }
 

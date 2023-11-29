@@ -21,13 +21,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
     {
         if (isMedium)
         {
-            damageResistance = 0.7f;
+            damageResistance = 0.8f;
             float increasehealth = maxHealth * 0.10f;
             maxHealth += increasehealth;
         }
         else if (isHard)
         {
-            damageResistance = 0.5f;
+            damageResistance = 0.6f;
             float increasehealth = maxHealth * 0.30f;
             maxHealth += increasehealth;
         }
@@ -124,10 +124,8 @@ public class HealthController : MonoBehaviour, IHealthSystem
             }
         }
 
-        if (!Object.ReferenceEquals(gameObject, null))
-        {
             Destroy(gameObject);
-        }
+        
         
     }
 

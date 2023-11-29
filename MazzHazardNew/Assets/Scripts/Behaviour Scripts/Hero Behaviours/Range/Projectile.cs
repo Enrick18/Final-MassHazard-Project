@@ -19,6 +19,8 @@ public class Projectile : MonoBehaviour
 
     [HideInInspector]public ElementType element;
 
+    [SerializeField] private bool isHero;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +42,28 @@ public class Projectile : MonoBehaviour
                     hasDamage = true;
                 }
             }
-            else 
+            else
+            {
+                enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(element, enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
+            }
+        }
+        else if (other.tag == "HeroHealer" && !isHero) 
+        {
+            if (isAoe == false)
+            {
+                if (!hasDamage)
+                {
+                    enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(element, enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
+                    hasDamage = true;
+                }
+            }
+            else
             {
                 enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(element, enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
             }
         }
 
-        if (other.tag == targetTag || other.tag == "Tile" || other.tag == "Decor") 
+        if (other.tag == targetTag || other.tag == "Tile" || other.tag == "Decor" || other.tag == "HeroHealer") 
         {
             Instantiate(impactEffect, transform.position, transform.rotation);
             Destroy(gameObject);

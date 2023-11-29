@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 4749583452736029983}
-  maxHealth: 200
+  maxHealth: 280
   currentHealth: 0
   isMedium: 1
   isHard: 0
@@ -591,8 +591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 4734503648029603528, guid: 5b32b05a426b628478af2c736629a0e9, type: 3}
   firePoint: {fileID: 717780062919036481}
-  timeBetweenShots: 2
-  damage: 50
+  timeBetweenShots: 4
+  damage: 200
   target: {fileID: 0}
   element: 0
   launcherModel: {fileID: 4749583453166842694}
