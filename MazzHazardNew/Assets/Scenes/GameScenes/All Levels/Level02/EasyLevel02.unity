@@ -1524,7 +1524,7 @@ PrefabInstance:
       objectReference: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[0].enemyCount
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[1].enemyCount
@@ -3025,7 +3025,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: defaultCurency
-      value: 28
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: cooldownCounter
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983266, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_SizeDelta.x

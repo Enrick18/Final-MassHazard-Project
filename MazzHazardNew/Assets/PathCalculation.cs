@@ -20,10 +20,6 @@ public class PathCalculation : MonoBehaviour
         LoadMap.OnMapLoaded -= FindSpawner;
     }
 
-    private void Start()
-    {
-        
-    }
 
     private void FindSpawner()
     {
@@ -51,18 +47,13 @@ public class PathCalculation : MonoBehaviour
             if (NavMesh.CalculatePath(spawner.position, target.position, NavMesh.AllAreas, path))
             {
                 int count = -1;
-                //Debug.Log(path.corners.Length);
                 foreach (Vector3 point in path.corners)
                 {
-                    
-                    //Debug.Log(point);
                     RaycastHit hit;
+
                     if (Physics.Raycast(point, Vector3.down, out hit, Mathf.Infinity))
                     {
-                        
-                        // 'hit.collider.gameObject' is the block along the path
                         GameObject block = hit.collider.gameObject;
-                        //Debug.Log("Connected block: " + block.name + " Parent: " + block.transform.parent.gameObject);
 
                         if (block.GetComponent<Block>()) 
                         {
@@ -71,12 +62,10 @@ public class PathCalculation : MonoBehaviour
 
                             blockSetter.isWayPoint = true;
                             blockSetter.wayPointIndex = count;
-                            //Debug.Log(count);
                         }
 
                     }
                 }
-
             }
         }
         OnBlockLoaded?.Invoke();

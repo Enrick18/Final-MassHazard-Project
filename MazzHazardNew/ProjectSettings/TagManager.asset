@@ -13,6 +13,7 @@ TagManager:
   - ChildCube
   - Cube
   - Decor
+  - Tree
   layers:
   - Default
   - TransparentFX

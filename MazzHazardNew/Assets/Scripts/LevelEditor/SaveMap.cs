@@ -43,18 +43,5 @@ public class SaveMap : MonoBehaviour
 
         OnSave?.Invoke(saveData.mapData);
     }
-    //public void SaveToJSON()
-    //{
-    //    string json = JsonConvert.SerializeObject(saveData.mapData, Formatting.Indented);
-    //    //string savePath = Application.streamingAssetsPath + "/" + saveFolder + "/" + fileName + ".json";
-    //    string savePath = Application.streamingAssetsPath + "/"+ "LevelEditorFile" + fileName + ".json";
-    //    int fileNumber = 0;
-
-    //    while (File.Exists(savePath)) 
-    //    {
-    //      fileNumber++;
-    //      savePath = Application.streamingAssetsPath + "/" + "LevelEditorFile" + fileName + fileNumber.ToString() + ".json";
-    //    }
-    //    File.WriteAllText(savePath, json);
-    //}
+   
 }

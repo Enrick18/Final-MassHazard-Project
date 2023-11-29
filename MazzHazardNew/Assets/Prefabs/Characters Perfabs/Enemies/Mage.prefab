@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365244230931322416}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3774007, y: 12.499998, z: 0}
+  m_LocalPosition: {x: 0.3571791, y: 2.6805553, z: 2.9978983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 4749583452736029983}
-  maxHealth: 280
+  maxHealth: 400
   currentHealth: 0
   isMedium: 1
   isHard: 0
@@ -597,8 +597,8 @@ MonoBehaviour:
   element: 0
   launcherModel: {fileID: 4749583453166842694}
   anim: {fileID: 3762691830920406709}
-  detectionRadius: 10
-  attackRange: 10
+  detectionRadius: 11
+  attackRange: 11
   heroLayer:
     serializedVersion: 2
     m_Bits: 128

@@ -63,11 +63,24 @@ public class Projectile : MonoBehaviour
             }
         }
 
-        if (other.tag == targetTag || other.tag == "Tile" || other.tag == "Decor" || other.tag == "HeroHealer") 
+        if (isHero)
         {
-            Instantiate(impactEffect, transform.position, transform.rotation);
-            Destroy(gameObject);
+            if (other.tag == targetTag || other.tag == "Tile" || other.tag == "Decor" || other.tag == "HeroHealer" || other.tag == "Tree")
+            {
+                Instantiate(impactEffect, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
         }
+        else 
+        {
+            if (other.tag == targetTag || other.tag == "Tile" || other.tag == "Decor" || other.tag == "HeroHealer")
+            {
+                Instantiate(impactEffect, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
+        }
+
+        
     }
 
     private void OnBecameInvisible() 

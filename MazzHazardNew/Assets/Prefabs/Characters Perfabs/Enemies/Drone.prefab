@@ -421,7 +421,7 @@ MonoBehaviour:
   damageAmount: 50
   timeBetweenAttacks: 1
   anim: {fileID: 8077943958025515953}
-  isMedium: 0
+  isMedium: 1
   isHard: 0
 --- !u!114 &3556801484299115476
 MonoBehaviour:
@@ -436,9 +436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 6395120336178643807}
-  maxHealth: 250
+  maxHealth: 300
   currentHealth: 0
-  isMedium: 0
+  isMedium: 1
   isHard: 0
   damageResistance: 1
   element: 2

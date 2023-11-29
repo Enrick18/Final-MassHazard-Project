@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4709481211526754400}
   m_Layer: 0
   m_Name: TallRock_1
-  m_TagString: Decor
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

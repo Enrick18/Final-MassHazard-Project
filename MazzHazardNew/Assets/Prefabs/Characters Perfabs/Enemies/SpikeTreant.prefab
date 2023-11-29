@@ -326,7 +326,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackRange: 20
-  attackCooldown: 8
+  attackCooldown: 7
   damage: 65
   element: 1
 --- !u!114 &312201866281046443

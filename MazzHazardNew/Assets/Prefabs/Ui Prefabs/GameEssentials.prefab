@@ -383,6 +383,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 481200194038809756, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: damageElementalMultiplier
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 481200194038809756, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
+      propertyPath: healthElementalMultiplier
+      value: 1.56
+      objectReference: {fileID: 0}
     - target: {fileID: 481200194038809757, guid: 6c1dab2f3d57fe6438b35a11803f2179, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

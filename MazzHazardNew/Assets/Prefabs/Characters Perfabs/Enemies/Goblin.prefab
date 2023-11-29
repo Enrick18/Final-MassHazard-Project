@@ -252,7 +252,7 @@ MonoBehaviour:
   healthBar: {fileID: 2100608305678336912}
   maxHealth: 300
   currentHealth: 0
-  isMedium: 0
+  isMedium: 1
   isHard: 0
   damageResistance: 1
   element: 1
@@ -276,8 +276,8 @@ MonoBehaviour:
   element: 1
   launcherModel: {fileID: 6893684052717483491}
   anim: {fileID: 6851187302556833769}
-  detectionRadius: 10
-  attackRange: 10
+  detectionRadius: 11
+  attackRange: 11
   heroLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  distance: 2.7
+  distance: 7.5
   blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 6851187302556833769}
