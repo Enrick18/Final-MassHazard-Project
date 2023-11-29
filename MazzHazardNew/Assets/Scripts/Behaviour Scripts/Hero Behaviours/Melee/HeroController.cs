@@ -104,6 +104,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
             if (other.gameObject.tag == blockTarget)
             {
+               
                 if ((_enemiesBlocked + blockRequirement) <= blockCount) // check if enemies doesnt exceed block count
                 {
                     _enemiesBlocked += blockRequirement;
@@ -133,12 +134,15 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             {
                 if (other.gameObject.tag == blockTarget)
                 {
+                   
                     enemy = other.gameObject;
                     attackCounter -= Time.deltaTime;
                     IHealthSystem enemyHealth = enemy.GetComponent<IHealthSystem>();
 
                     if (attackCounter <= 0)
                     {
+                        
+
                         attackCounter = timeBetweenAttacks;
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isAttacking", true);

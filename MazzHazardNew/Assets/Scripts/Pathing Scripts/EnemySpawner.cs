@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
+using UnityEngine.Audio;
 
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : MonoBehaviour    
 {
+
     public List<EnemyList> enemyList = new List<EnemyList>();
     // public GameObject bossToSpawn;
     private Transform spawnPoint;
@@ -21,12 +24,13 @@ public class EnemySpawner : MonoBehaviour
     public bool isHard;
     public bool isMedium;
 
-
     // Start is called before the first frame update
     void Start()
     {
+
         foreach(var enemy in enemyList)
         {
+            
             totalEnemies += enemy.enemyCount;
         }
 
@@ -39,6 +43,8 @@ public class EnemySpawner : MonoBehaviour
             StartCoroutine(RandomizedSpawn());
 
     }
+
+ 
 
     IEnumerator LinearSpawn()
     {

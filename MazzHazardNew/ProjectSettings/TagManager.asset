@@ -12,6 +12,7 @@ TagManager:
   - Goal
   - ChildCube
   - Cube
+  - Audio
   layers:
   - Default
   - TransparentFX

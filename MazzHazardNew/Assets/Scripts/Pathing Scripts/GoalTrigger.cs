@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GoalTrigger : MonoBehaviour
-{
+{ 
     [SerializeField]private EnemyCounter enemyCounter;
     [SerializeField]private GameObject gameOverUi;
     [SerializeField] private Text lifeCountText;

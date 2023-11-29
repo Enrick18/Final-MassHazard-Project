@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
-{
+{ 
+
     public Slider healthBar;
     public float maxHealth;
     public float currentHealth;

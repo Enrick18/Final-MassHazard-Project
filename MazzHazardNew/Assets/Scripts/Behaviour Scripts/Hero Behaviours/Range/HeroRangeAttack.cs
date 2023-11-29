@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
 {
+
     private HeroRangeTower theTower;
     public GameObject projectile;
     public Transform firePoint;
@@ -42,6 +43,7 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
         // Firing of shots to enemy
         if(shotCounter <= 0 && target != null)
         {
+
             shotCounter = timeBetweenShots;
             firePoint.LookAt(target);
             anim.SetBool("isIdle",false);
