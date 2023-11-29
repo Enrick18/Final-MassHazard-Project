@@ -4,8 +4,6 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using TMPro;
 
-
-
 public class LevelSelected : MonoBehaviour
 {
     [SerializeField] private MapData mapDataSO;

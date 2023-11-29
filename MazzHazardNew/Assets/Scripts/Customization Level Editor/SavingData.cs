@@ -27,12 +27,12 @@ public class SavingData : MonoBehaviour
 
 
         string json = JsonConvert.SerializeObject(data, Formatting.Indented);
-        string filePath = Application.streamingAssetsPath + "/" + "LevelEditorFileData_"+ levelEditorData.finalMapName +".json";
+        string filePath = Application.streamingAssetsPath + "/" + "LevelEditor_"+ levelEditorData.finalMapName +".json";
         int fileNumber = 0;
         while(File.Exists(filePath))
         {
             fileNumber++;
-            filePath = Application.streamingAssetsPath + "/" + "LevelEditorFileData_"+ levelEditorData.finalMapName +fileNumber.ToString()+".json";
+            filePath = Application.streamingAssetsPath + "/" + "LevelEditor_"+ levelEditorData.finalMapName +fileNumber.ToString()+".json";
         }
         File.WriteAllText(filePath, json);
     }
@@ -40,7 +40,6 @@ public class SavingData : MonoBehaviour
 
 public class ToSaveData
 {
-    public string toSaveMapSelected;
     public string toSaveGameModeSelected;
     public int toSaveWaveCount;
     public int[] toSaveEnemyWaveIndex = new int[5];

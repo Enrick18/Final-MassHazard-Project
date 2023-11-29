@@ -13,13 +13,17 @@ public class SaveMapLoader : MonoBehaviour
 
     void Start()
     {
-        
+        CheckDirectory();
+    }
+
+    public void CheckDirectory() 
+    {
         string fullPath = System.IO.Path.Combine(Application.streamingAssetsPath);
 
-       
+
         if (Directory.Exists(fullPath))
         {
-            
+
             string[] jsonFiles = Directory.GetFiles(fullPath, "*.json");
 
             foreach (string jsonFilePath in jsonFiles)

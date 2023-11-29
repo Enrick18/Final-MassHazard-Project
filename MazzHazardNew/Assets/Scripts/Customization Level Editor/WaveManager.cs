@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class WaveManager : MonoBehaviour
     public GameObject prevScreen;
     public LevelEditor levelEditor;
     public int waveIndex = 0;
+    public static event Action OnReceiptLoad;
     
     public void Temp()
     {
@@ -17,9 +19,12 @@ public class WaveManager : MonoBehaviour
 
     public void WaveCounter()
     {
-        if(waveIndex > levelEditor.waveCount-1)
+        if (waveIndex > levelEditor.waveCount - 1) 
+        {
             nextScreen.gameObject.SetActive(true);
-            
+            OnReceiptLoad?.Invoke();
+        }
+
 
         for (int i = 0; i <= levelEditor.waveCount-1; i++)
         {
