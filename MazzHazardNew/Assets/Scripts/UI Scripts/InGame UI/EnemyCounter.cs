@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public enum Difficulty{easy, medium, hard}
 public class EnemyCounter : MonoBehaviour
-{   
+{
+
     public Difficulty difficulty;
     public Text enemyCount;
     public EnemySpawner enemySpawner;
@@ -40,9 +41,10 @@ public class EnemyCounter : MonoBehaviour
 
         foreach (var enemy in enemySpawner.enemyList)
         {
+            
             currentEnemyCount += enemy.enemyCount;
+            
         }
-
         enemyCount.text = currentEnemyCount.ToString();
     }
 

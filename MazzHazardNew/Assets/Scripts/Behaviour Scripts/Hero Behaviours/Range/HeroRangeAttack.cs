@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
 {
-
+    AudioManager audioManager;
     private HeroRangeTower theTower;
     public GameObject projectile;
     public Transform firePoint;
@@ -19,6 +19,11 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
     [SerializeField]private ElementType element;
 
     public float damage;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +48,7 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
         // Firing of shots to enemy
         if(shotCounter <= 0 && target != null)
         {
-
+            audioManager.PlaySFX(audioManager.female_attack);
             shotCounter = timeBetweenShots;
             firePoint.LookAt(target);
             anim.SetBool("isIdle",false);

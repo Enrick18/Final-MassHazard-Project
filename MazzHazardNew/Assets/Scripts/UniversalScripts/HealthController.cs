@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
-{ 
+{
+    AudioManager audioManager;
 
     public Slider healthBar;
     public float maxHealth;
@@ -17,6 +18,12 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -120,6 +127,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
                 killable.IsDead();
             }
         }
+        audioManager.PlaySFX(audioManager.death);
         Destroy(gameObject);
     }
 

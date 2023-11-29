@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     
     [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    [SerializeField] AudioSource SFXSource; 
 
     public AudioClip background;
     public AudioClip spawning;

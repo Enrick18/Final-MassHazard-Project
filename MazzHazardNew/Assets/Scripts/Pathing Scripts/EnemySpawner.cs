@@ -8,6 +8,8 @@ using UnityEngine.Audio;
 public class EnemySpawner : MonoBehaviour    
 {
 
+    AudioManager audioManager;
+
     public List<EnemyList> enemyList = new List<EnemyList>();
     // public GameObject bossToSpawn;
     private Transform spawnPoint;
@@ -24,6 +26,11 @@ public class EnemySpawner : MonoBehaviour
     public bool isHard;
     public bool isMedium;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +40,7 @@ public class EnemySpawner : MonoBehaviour
             
             totalEnemies += enemy.enemyCount;
         }
-
+        
         spawnCounter = timeBetweenSpawns;
         spawnPoint = this.gameObject.transform.GetChild(0);
 
@@ -52,6 +59,7 @@ public class EnemySpawner : MonoBehaviour
         {
             while (enemy.enemyCount > 0)
             {
+                audioManager.PlaySFX(audioManager.spawning);
                 if (isMedium) 
                 {
                     enemy.enemy.GetComponent<HealthController>().IsMedium();
