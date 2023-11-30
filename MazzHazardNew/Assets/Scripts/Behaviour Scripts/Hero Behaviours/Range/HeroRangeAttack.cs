@@ -9,8 +9,6 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
     public Transform firePoint;
     public float timeBetweenShots = 1f;
     private float shotCounter;
-    //[SerializeField] private bool isBomb = false;
-
     [SerializeField]private Transform target;
     public Transform launcherModel;
 
@@ -25,6 +23,8 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
     // Start is called before the first frame update
     void Start()
     {
+        anim.SetBool("isIdle", true);
+        anim.SetBool("isAttacking", false);
         theTower = GetComponent<HeroRangeTower>();
     }
 
@@ -48,8 +48,6 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
             firePoint.LookAt(target);
             anim.SetBool("isIdle",false);
             anim.SetBool("isAttacking", true);
-            //FireAttack();
-
         }
 
         if(theTower.enemiesUpdated) // for optimising purposes so that it wont check closest enemy every frame

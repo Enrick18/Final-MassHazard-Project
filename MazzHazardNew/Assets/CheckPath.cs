@@ -41,7 +41,6 @@ public class CheckPath : MonoBehaviour
 
             if (NavMesh.CalculatePath(spawner.position, target.position, NavMesh.AllAreas, path)) 
             {
-                Debug.Log(path.status);
 
                 if (path.status == NavMeshPathStatus.PathComplete)
                 {

@@ -11546,7 +11546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshSurface: {fileID: 1992870959}
   fileName: NewMap
-  mapName: {fileID: 11400000, guid: 8e3ca8b219c92d94aa9e8eb58e4c1aad, type: 2}
+  mapNameSO: {fileID: 11400000, guid: 8e3ca8b219c92d94aa9e8eb58e4c1aad, type: 2}
 --- !u!1001 &1416899102
 PrefabInstance:
   m_ObjectHideFlags: 0

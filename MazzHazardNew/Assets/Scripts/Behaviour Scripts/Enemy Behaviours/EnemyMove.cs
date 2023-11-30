@@ -7,25 +7,18 @@ public class EnemyMove : MonoBehaviour, IKillable
 {
     NavMeshAgent agent;
     private UnitPathing thePath;
-    // public Transform[] wayPointstransform;
     int wayPointIndex;
     [SerializeField]
     private Vector3 target;
     public float distance = 2.7f;
-
     public int blockRequirement = 1;
-
     private float movementSpeed;
     private bool _isStopped = false;
     public bool isStopped => _isStopped;
-
     private Vector3 saveTransform;
     [SerializeField]private GameObject hero = null;
-
     public Animator anim;
-
     public EnemyEventRaiser counter;
-
     public bool isBlocked;
     // Start is called before the first frame update
     void Start()

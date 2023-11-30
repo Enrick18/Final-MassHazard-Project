@@ -6,13 +6,10 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public List<EnemyList> enemyList = new List<EnemyList>();
-    // public GameObject bossToSpawn;
     private Transform spawnPoint;
     public float timeBetweenSpawns = 2f;
     public float timeBetweenWaves = 10f;
     private float spawnCounter;
-
-    private int bossCountDown;
     public bool isThereBoss;
     public bool isRandomized = false;
 

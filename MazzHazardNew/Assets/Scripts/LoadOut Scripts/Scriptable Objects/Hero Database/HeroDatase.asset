@@ -41,3 +41,7 @@ MonoBehaviour:
     heroCard: {fileID: 21300000, guid: fef9da20e8affba4a878f2290dacbaeb, type: 3}
     buttonPrefab: {fileID: 7682368503211860812, guid: 4dd81b5d23ba4df4bbe96023f8e0cda9, type: 3}
     characterCard: {fileID: 2585078332970252211, guid: 9fad8e419a0c58d4c807144b72895e4a, type: 3}
+  - heroIndex: 7
+    heroCard: {fileID: 21300000, guid: fef9da20e8affba4a878f2290dacbaeb, type: 3}
+    buttonPrefab: {fileID: 1285592659203674338, guid: aefdde3f30a69f240a1594c327cbba82, type: 3}
+    characterCard: {fileID: 7945228989303204121, guid: f7f5b752ed79cd84bb57d6ca64821216, type: 3}

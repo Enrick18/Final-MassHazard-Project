@@ -3,22 +3,22 @@
   "toSaveGameModeSelected": "Rogue",
   "toSaveWaveCount": 3,
   "toSaveEnemyWaveIndex": [
-    1,
-    0,
-    0,
+    2,
+    4,
+    4,
     -1,
     -1
   ],
   "toSaveNumberOfEnemies": [
-    3,
+    9,
     11,
-    7,
+    8,
     0,
     0
   ],
-  "toSaveHpCount": 6,
-  "toSaveCapsuleCount": 28,
-  "toSavefinalMapName": "Bob",
+  "toSaveHpCount": 9,
+  "toSaveCapsuleCount": 15,
+  "toSavefinalMapName": "NewMap",
   "toSaveIsRogue": true,
   "toSaveMapData": {
     "FinalBase": {
@@ -607,7 +607,7 @@
     },
     "FinalBase (73)": {
       "spawner": false,
-      "goal": true,
+      "goal": false,
       "decor": false,
       "path": false,
       "range": false,
@@ -793,7 +793,7 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": true,
+      "path": false,
       "range": false,
       "grass": false
     },
@@ -881,7 +881,7 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": true,
+      "path": false,
       "range": false,
       "grass": false
     },
@@ -1065,7 +1065,7 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": true,
+      "path": false,
       "range": false,
       "grass": false
     },
@@ -1073,7 +1073,7 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": true,
+      "path": false,
       "range": false,
       "grass": false
     },
@@ -1081,12 +1081,12 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": true,
+      "path": false,
       "range": false,
       "grass": false
     },
     "FinalBase (133)": {
-      "spawner": true,
+      "spawner": false,
       "goal": false,
       "decor": false,
       "path": false,
@@ -1335,7 +1335,7 @@
     },
     "FinalBase (164)": {
       "spawner": false,
-      "goal": false,
+      "goal": true,
       "decor": false,
       "path": false,
       "range": false,
@@ -1345,12 +1345,12 @@
       "spawner": false,
       "goal": false,
       "decor": false,
-      "path": false,
+      "path": true,
       "range": false,
       "grass": false
     },
     "FinalBase (166)": {
-      "spawner": false,
+      "spawner": true,
       "goal": false,
       "decor": false,
       "path": false,

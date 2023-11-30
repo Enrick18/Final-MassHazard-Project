@@ -12,13 +12,13 @@ public class LoadMap : MonoBehaviour
     [SerializeField] private string fileName = "NewMap";
     private Dictionary<string, TileData> mapData = new Dictionary<string, TileData>();
     public ToSaveData customMapData = new ToSaveData();
-    public MapData mapName = null;
+    public MapData mapNameSO = null;
     public static event Action OnMapLoaded;
 
 
     private void Start()
     {
-       fileName = mapName.mapName;
+       fileName = mapNameSO.mapName;
 
         LoadFromJSON();
         mapData = customMapData.toSaveMapData;
