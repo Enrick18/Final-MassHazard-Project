@@ -96,7 +96,7 @@ public class HealerTower : MonoBehaviour, IKillable
 
             foreach (GameObject key in keysToRemove)
             {
-                _healableAllies.Remove(key);
+                sortedHealableAllies.Remove(key);
             }
         }
         else if (isAoe && sortedHealableAllies.Count > 0) 
@@ -104,8 +104,8 @@ public class HealerTower : MonoBehaviour, IKillable
             anim.SetBool("isIdle", false);
             anim.SetBool("isHealing", true);
         }
-        
 
+        Debug.Log(sortedHealableAllies.Count);
         if (sortedHealableAllies.Count <= 0)
         {
             anim.SetBool("isIdle", true);
@@ -118,7 +118,6 @@ public class HealerTower : MonoBehaviour, IKillable
     {
         if (heroHealth != null)
         {
-            //transform.LookAt(target);
             launcherModel.rotation = Quaternion.Slerp(launcherModel.rotation, Quaternion.LookRotation(heroHealth.GetGameObject().transform.position - transform.position), 5f * Time.deltaTime);
 
             launcherModel.rotation = Quaternion.Euler(0f, launcherModel.rotation.eulerAngles.y, 0f);
@@ -127,9 +126,9 @@ public class HealerTower : MonoBehaviour, IKillable
 
     public void HealTower() 
     {
-        Debug.Log("Hero Need Heal " +_healableAllies.Count);
+        Debug.Log(heroHealth);
 
-        if (!isAoe && _healableAllies.Count > 0)
+        if (!isAoe && heroHealth!=null)
         {
             heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
             if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
@@ -139,7 +138,7 @@ public class HealerTower : MonoBehaviour, IKillable
         }
         else
         {
-            foreach (KeyValuePair<GameObject, IHealthSystem> hero in _healableAllies.ToList()) 
+            foreach (KeyValuePair<GameObject, IHealthSystem> hero in sortedHealableAllies.ToList()) 
             {
                 if (hero.Value != null)
                 {
@@ -158,7 +157,6 @@ public class HealerTower : MonoBehaviour, IKillable
                 
             }
         }
-
         
     }
 
