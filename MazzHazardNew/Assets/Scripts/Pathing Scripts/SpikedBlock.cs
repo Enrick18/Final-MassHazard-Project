@@ -12,6 +12,7 @@ public class SpikedBlock : MonoBehaviour
     {
         if (other.tag == target) 
         {
+            Debug.Log("Damage");
            var hero = other.GetComponent<HealthController>();
 
             hero.TakePureDamage(damageAmount);

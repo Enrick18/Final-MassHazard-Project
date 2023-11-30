@@ -41,7 +41,6 @@ public class AnimationEvent : MonoBehaviour
 
     public void HealHit() 
     {
-        Debug.Log("Heal");
         healer.HealTower();
     }
 }

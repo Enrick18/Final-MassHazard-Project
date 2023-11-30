@@ -19,7 +19,7 @@ public class SpikeBehaviour : MonoBehaviour
     {
         
         // Check if the spikes collide with an enemy.
-        if (other.tag == targetTag)
+        if (other.tag == targetTag || other.tag == "HeroHealer")
         {
             
             // Damage the enemy and destroy the spikes.
