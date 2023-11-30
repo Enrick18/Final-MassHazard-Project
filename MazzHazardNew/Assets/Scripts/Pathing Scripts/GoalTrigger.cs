@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GoalTrigger : MonoBehaviour
 {
+    AudioManager audioManager;
+
     [SerializeField]private EnemyCounter enemyCounter;
     [SerializeField]private GameObject gameOverUi;
     [SerializeField] private Text lifeCountText;
@@ -20,12 +22,17 @@ public class GoalTrigger : MonoBehaviour
         currentLife = maxLife;
         lifeCountText.text = currentLife.ToString();
         gameOverUi.SetActive(false);
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        
     }
+
 
     private void OnTriggerEnter(Collider other) 
     {
         if(other.tag == "Enemy")
         {
+            audioManager.PlaySFX(audioManager.enterGoal);
             Destroy(other.gameObject);
             Debug.Log("Destroyed");
             LoseHealth();

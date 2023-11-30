@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
 {
+    AudioManager audioManager;
+
     private int _enemiesBlocked = 0;
     public int enemiesBlocked => _enemiesBlocked;
     [SerializeField] private int _blockCount = 1;
@@ -24,6 +26,10 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
     public bool isAoeAttack = false;
 
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void Start()
     {
@@ -59,6 +65,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
                     enemyHealth = kvp.Value.GetComponent<IHealthSystem>();
                     if (attackCounter <= 0)
                     {
+                        audioManager.PlaySFX(audioManager.attacking);
                         attackCounter = timeBetweenAttacks;
                         Debug.Log(_enemyBlockList.Count);
                         anim.SetBool("isIdle", false);
