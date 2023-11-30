@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneObject: {fileID: 1794399778}
-  nextSceneName: StagesUI_Scene
+  nextSceneName: EasyLevel02
 --- !u!4 &227094637
 Transform:
   m_ObjectHideFlags: 0

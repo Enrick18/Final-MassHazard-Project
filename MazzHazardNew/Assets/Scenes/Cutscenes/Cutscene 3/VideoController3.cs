@@ -10,6 +10,8 @@ public class VideoController3 : MonoBehaviour
     {
         // Subscribe to the videoPlayer's loopPointReached event
         videoPlayer3.loopPointReached += OnVideoEnd;
+
+
     }
 
     void OnVideoEnd(VideoPlayer vp)
@@ -17,4 +19,5 @@ public class VideoController3 : MonoBehaviour
         // This method is called when the video ends
         SceneManager.LoadScene("EasyLevel10");
     }
+
 }
