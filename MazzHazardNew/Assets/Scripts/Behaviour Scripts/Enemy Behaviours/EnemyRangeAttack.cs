@@ -124,7 +124,6 @@ public class EnemyRangeAttack : MonoBehaviour
 
     public void FireProjectile() 
     {
-        Debug.Log("Fire");
         var bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
         bullet.GetComponent<Projectile>().element = element;
         bullet.GetComponent<Projectile>().damageAmount = damage;

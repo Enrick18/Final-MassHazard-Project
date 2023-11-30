@@ -60,7 +60,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
                     if (attackCounter <= 0)
                     {
                         attackCounter = timeBetweenAttacks;
-                        Debug.Log(_enemyBlockList.Count);
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isAttacking", true);
                         break;
@@ -127,7 +126,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             if (enemyHealth.GetCurrentHealth() <= 0)
             {
                 _enemyBlockList.Remove(enemyHealth.GetGameObject());
-                Debug.Log("Dead: " + _enemyBlockList.Count);
             }
 
         }

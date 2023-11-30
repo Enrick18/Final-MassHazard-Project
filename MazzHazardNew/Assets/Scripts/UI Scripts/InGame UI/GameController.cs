@@ -12,12 +12,10 @@ public class GameController : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        Debug.Log(pauseMenu);
     }
 
     public void PauseGame() 
     {
-        Debug.Log(pauseMenu);
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
     }
