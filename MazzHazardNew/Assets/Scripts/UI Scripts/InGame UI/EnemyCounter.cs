@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Difficulty{easy, medium, hard}
@@ -36,12 +37,20 @@ public class EnemyCounter : MonoBehaviour
         {
             Debug.Log("You Win");
             winUi.SetActive(true);
+
+            //if player wins, then left click/click exit button - cutscene appear
+            if (Input.GetMouseButtonDown(0))
+            {
+                PlayCutscene4();
+                
+            }
+
             if (isLevelEditor == false) 
             {
                 levelComplete.SaveProgress();
                 //SaveStage.SaveGameFile();
             }
-            
+           
             Time.timeScale = 0f;
         }
     }
@@ -82,4 +91,8 @@ public class EnemyCounter : MonoBehaviour
         enemyCount.text = currentEnemyCount.ToString();
     }
 
+    public void PlayCutscene4()
+    {
+        SceneManager.LoadScene("Cutscene4");
+    }
 }

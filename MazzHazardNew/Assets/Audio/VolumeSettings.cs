@@ -10,15 +10,20 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
 
+    private void Start()
+    {
+        SetMusicVolume();
+        SetSFXVolume();
+    }
     public void SetMusicVolume()
     {
         float music_volume = musicSlider.value;
-        myMixer.SetFloat("Music", Mathf.Log10(music_volume) * 20);
+        myMixer.SetFloat("MusicVolume", Mathf.Log10(music_volume) * 20);
     }
 
     public void SetSFXVolume()
     {
         float sfx_volume = sfxSlider.value;
-        myMixer.SetFloat("SFX", Mathf.Log10(sfx_volume) * 20);
+        myMixer.SetFloat("SFXVolume", Mathf.Log10(sfx_volume) * 20);
     }
 }
