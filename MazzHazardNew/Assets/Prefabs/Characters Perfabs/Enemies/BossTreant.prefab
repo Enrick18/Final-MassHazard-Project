@@ -75,7 +75,7 @@ MonoBehaviour:
   currentHealth: 0
   isMedium: 0
   isHard: 0
-  damageResistance: 1.5
+  damageResistance: 0.5
   element: 1
 --- !u!114 &6549087834758298685
 MonoBehaviour:

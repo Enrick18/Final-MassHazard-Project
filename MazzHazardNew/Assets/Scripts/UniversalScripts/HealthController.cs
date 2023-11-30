@@ -27,7 +27,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
         else if (isHard)
         {
-            damageResistance = 0.6f;
+            damageResistance = 0.7f;
             float increasehealth = maxHealth * 0.30f;
             maxHealth += increasehealth;
         }
