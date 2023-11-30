@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  distance: 7.3
+  distance: 7.5
   blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 3762691830920406709}

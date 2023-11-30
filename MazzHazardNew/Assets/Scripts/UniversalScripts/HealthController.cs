@@ -101,15 +101,26 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public void HealDamage(float healAmount, float health)
     {
         healDmg = healAmount * health;
+        try
+        {
+            Invoke(nameof(Heal), .2f);
 
-        Invoke(nameof(Heal), .2f);
+        }
+        catch { Debug.Log("DeadHero"); }
 
     }
 
     void Heal()
     {
-        currentHealth += healDmg;
+        if (currentHealth > 0) 
+        {
+            currentHealth += healDmg;
+        }
 
+        if (currentHealth > maxHealth) 
+        { 
+            currentHealth = maxHealth;
+        }
     }
 
     public void Dead()

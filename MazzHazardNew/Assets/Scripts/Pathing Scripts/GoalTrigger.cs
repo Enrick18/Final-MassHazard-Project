@@ -23,7 +23,7 @@ public class GoalTrigger : MonoBehaviour
         lifeCountText.text = currentLife.ToString();
         gameOverUi.SetActive(false);
 
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        //audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         
     }
 
@@ -32,7 +32,7 @@ public class GoalTrigger : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
-            audioManager.PlaySFX(audioManager.enterGoal);
+            //audioManager.PlaySFX(audioManager.enterGoal);
             Destroy(other.gameObject);
             Debug.Log("Destroyed");
             LoseHealth();
