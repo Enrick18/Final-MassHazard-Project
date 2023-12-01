@@ -38,13 +38,6 @@ public class EnemyCounter : MonoBehaviour
             Debug.Log("You Win");
             winUi.SetActive(true);
 
-            //if player wins, then left click/click exit button - cutscene appear
-            if (Input.GetMouseButtonDown(0))
-            {
-                PlayCutscene4();
-                
-            }
-
             if (isLevelEditor == false) 
             {
                 levelComplete.SaveProgress();
@@ -89,10 +82,5 @@ public class EnemyCounter : MonoBehaviour
     {
         currentEnemyCount--;
         enemyCount.text = currentEnemyCount.ToString();
-    }
-
-    public void PlayCutscene4()
-    {
-        SceneManager.LoadScene("Cutscene4");
     }
 }

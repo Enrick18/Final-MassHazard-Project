@@ -75,7 +75,6 @@
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 5\VideoController5.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\CurrencySystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroDetect.cs" />
-    <Compile Include="Assets\Models\Mark_Audio.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 1\CutsceneTransition.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Melee\HeroController.cs" />
@@ -85,6 +84,7 @@
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelUnlocker.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMap.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\WaveManager.cs" />
+    <Compile Include="Assets\Audio\Character Audio.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SelectionMenu.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />
@@ -96,14 +96,12 @@
     <Compile Include="Assets\Scripts\Customization Level Editor\SavingData.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\MapData.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 2\CutsceneController2.cs" />
-    <Compile Include="Assets\Models\Golem_Audio.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHeroStats.cs" />
     <Compile Include="Assets\Scripts\PathCalculation.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Scriptable Objects\Hero Database\HeroDatabase.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\HeroRangeAttack.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\LoadOutManager.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\BombController.cs" />
-    <Compile Include="Assets\Models\Eliza_Audio.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerPlacement.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\SpawnerDelay.cs" />
@@ -130,7 +128,6 @@
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerManager.cs" />
-    <Compile Include="Assets\Models\Karma_Audio.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\RealtimeNavMeshBaking.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\BackToMenu.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\Hero Button\HeroButton.cs" />
@@ -145,7 +142,6 @@
     <Compile Include="Assets\CheckPath.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
-    <Compile Include="Assets\Models\Lisa_Audio.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\MissionSelect.cs" />

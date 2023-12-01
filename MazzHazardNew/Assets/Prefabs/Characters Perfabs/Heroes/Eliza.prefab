@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 6959374445660001107}
   - component: {fileID: 7907761870453214425}
   - component: {fileID: 7225828037746306901}
+  - component: {fileID: 7058437327844243544}
   m_Layer: 7
   m_Name: Eliza
   m_TagString: HeroHealer
@@ -264,6 +265,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33faa2a228c89d479f04f1438e84804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7058437327844243544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751291054606762762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93bbdb7287bc6e4fa04a7a7df3659d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: e07b0a4ca9e6cfe45ab914042de3ae3e, type: 3}
+  deathSound: {fileID: 8300000, guid: bd23f3ab4d21ec04596bb9d78ce655f5, type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &7495103712211211929
 GameObject:
   m_ObjectHideFlags: 0

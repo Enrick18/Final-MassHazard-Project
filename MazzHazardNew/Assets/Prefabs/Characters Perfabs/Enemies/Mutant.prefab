@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 2778616273020895694}
   - component: {fileID: 2778616273020895693}
   - component: {fileID: 2778616273020895695}
+  - component: {fileID: 6410827084053336601}
   m_Layer: 6
   m_Name: Mutant
   m_TagString: Enemy
@@ -360,6 +361,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6410827084053336601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778616273020895697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93bbdb7287bc6e4fa04a7a7df3659d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: 3b66683347b7c8c44a514e3a8e95f441, type: 3}
+  deathSound: {fileID: 8300000, guid: f92e26e359cf3c94fbba18c2bc841909, type: 3}
 --- !u!1 &2778616273603166868
 GameObject:
   m_ObjectHideFlags: 0

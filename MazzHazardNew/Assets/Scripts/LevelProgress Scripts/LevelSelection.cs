@@ -10,7 +10,7 @@ public class LevelSelection : MonoBehaviour
     public GameObject loadOutUi;
     public LoadOutHeroList heroList;
     public GameObject warningUi;
-    [SerializeField]private bool loadOutChecker = false;
+    [SerializeField] private bool loadOutChecker = false;
 
     public void SetLevelToLoad(string level)
     {
@@ -31,15 +31,30 @@ public class LevelSelection : MonoBehaviour
         }
 
         if (loadOutChecker)
-        { 
-            if(MissionSelect.levelToLoad == "EasyLevel01")
+        {
+            if (MissionSelect.levelToLoad == "EasyLevel01")
             {
                 PlayCutscene01();
             }
+
+            else if (MissionSelect.levelToLoad == "EasyLevel02")
+            {
+                PlayCutscene02();
+            }
+
+            else if (MissionSelect.levelToLoad == "EasyLevel05")
+            {
+                PlayCutscene05();
+            }
+
+            else if (MissionSelect.levelToLoad == "EasyLevel10")
+            {
+                PlayCutscene03();
+            }
+
             else
                 SceneManager.LoadScene(MissionSelect.levelToLoad);
         }
-
         else
         {
             warningUi.SetActive(true);

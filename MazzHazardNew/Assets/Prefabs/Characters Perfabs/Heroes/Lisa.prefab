@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 6984987243440939664}
   - component: {fileID: 6984987243440939665}
   - component: {fileID: 6984987243440939678}
+  - component: {fileID: 2004145671761639511}
   - component: {fileID: 6984987243440939679}
   - component: {fileID: 6984987243440939676}
   - component: {fileID: 6984987243440939677}
@@ -351,6 +352,20 @@ MonoBehaviour:
   isHard: 0
   damageResistance: 1
   element: 0
+--- !u!114 &2004145671761639511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984987243440939674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a93bbdb7287bc6e4fa04a7a7df3659d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSound: {fileID: 8300000, guid: 6f93cd7b625393f43a34aad03f61cbb3, type: 3}
+  deathSound: {fileID: 8300000, guid: bd23f3ab4d21ec04596bb9d78ce655f5, type: 3}
 --- !u!114 &6984987243440939679
 MonoBehaviour:
   m_ObjectHideFlags: 0

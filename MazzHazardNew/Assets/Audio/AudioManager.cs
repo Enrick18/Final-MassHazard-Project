@@ -13,9 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip background;
     public AudioClip spawning;
     public AudioClip enterGoal;
-    public AudioClip attacking;
     public AudioClip death;
-    public AudioClip female_attack;
+    public AudioClip goblin_death;
 
     private void Start()
     {

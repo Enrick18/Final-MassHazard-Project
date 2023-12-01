@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
 {
+    public AudioManager audioManager;
+
     public Slider healthBar;
     public float maxHealth;
     public float currentHealth;
@@ -16,9 +18,16 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+
         if (isMedium)
         {
             damageResistance = 0.8f;
@@ -123,10 +132,9 @@ public class HealthController : MonoBehaviour, IHealthSystem
                 killable.IsDead();
             }
         }
-
-            Destroy(gameObject);
-        
-        
+        audioManager.PlaySFX(audioManager.death);
+        audioManager.PlaySFX(audioManager.goblin_death);
+        Destroy(gameObject);  
     }
 
     public float GetCurrentHealth()
