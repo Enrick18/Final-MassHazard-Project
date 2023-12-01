@@ -11175,6 +11175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BossAudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1099545950987912427, guid: 81b0cc649775c414794cfb6ffb9fc011, type: 3}
+      propertyPath: m_TagString
+      value: Audio
+      objectReference: {fileID: 0}
     - target: {fileID: 4954259684439401743, guid: 81b0cc649775c414794cfb6ffb9fc011, type: 3}
       propertyPath: m_RootOrder
       value: 6
