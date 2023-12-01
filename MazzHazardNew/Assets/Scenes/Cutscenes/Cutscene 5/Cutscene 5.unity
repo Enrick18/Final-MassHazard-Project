@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutsceneObject: {fileID: 605491029}
+  loadOutHeroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   nextSceneName: EasyLevel05
 --- !u!4 &1128631853
 Transform:

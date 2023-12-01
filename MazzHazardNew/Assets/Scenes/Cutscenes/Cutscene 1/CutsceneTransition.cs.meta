@@ -3,7 +3,9 @@ guid: 46783004430ef264398ba87034a20c01
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cutsceneObject: {instanceID: 0}
+  - loadOutHeroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

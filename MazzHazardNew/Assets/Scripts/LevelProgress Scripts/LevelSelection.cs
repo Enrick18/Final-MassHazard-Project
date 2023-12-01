@@ -90,7 +90,7 @@ public class LevelSelection : MonoBehaviour
     }
     public void PlayCutscene05()
     {
-        SceneManager.LoadScene("Cutscene5");
+        SceneManager.LoadScene("Cutscene 5");
     }
 
 }

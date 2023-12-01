@@ -5,6 +5,7 @@ public class CutsceneController : MonoBehaviour
 {
     // Assign your video player or cutscene object to this variable
     public GameObject cutsceneObject;
+    public LoadOutHeroList loadOutHeroList;
 
     // Name of the next scene to load after the cutscene
     public string nextSceneName;
@@ -26,7 +27,6 @@ public class CutsceneController : MonoBehaviour
 
     void LoadNextScene()
     {
-        // Load the next scene
         SceneManager.LoadScene(nextSceneName);
     }
 }
