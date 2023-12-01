@@ -28,6 +28,7 @@ public class HealerTower : MonoBehaviour, IKillable
     [SerializeField] private bool isAoe;
     private List<GameObject> keysToRemove = new List<GameObject>();
 
+    private Collider[] alliesAoe;
 
     private void Start()
     {
@@ -71,7 +72,7 @@ public class HealerTower : MonoBehaviour, IKillable
 
         if (!isAoe && sortedHealableAllies.Count > 0)
         {
-            LookAtTarget();
+
             healRate -= Time.deltaTime;
 
             foreach (KeyValuePair<GameObject, IHealthSystem> kvp in sortedHealableAllies)
@@ -81,17 +82,18 @@ public class HealerTower : MonoBehaviour, IKillable
                 {
                     if (healRate <= 0 && kvp.Value.GetCurrentHealth() > 0)
                     {
+                        LookAtTarget();
                         healRate = timeBetweenHeals;
                         anim.SetBool("isIdle", false);
                         anim.SetBool("isHealing", true);
                         break;
                     }
                 }
-                else 
+                else
                 {
                     keysToRemove.Add(kvp.Key);
                 }
-                
+
             }
 
             foreach (GameObject key in keysToRemove)
@@ -105,13 +107,14 @@ public class HealerTower : MonoBehaviour, IKillable
             anim.SetBool("isHealing", true);
         }
 
-        Debug.Log(sortedHealableAllies.Count);
         if (sortedHealableAllies.Count <= 0)
         {
             anim.SetBool("isIdle", true);
             anim.SetBool("isHealing", false);
         }
 
+        _healableAllies = new();
+        sortedHealableAllies = new();
     }
 
     void LookAtTarget()
@@ -126,9 +129,9 @@ public class HealerTower : MonoBehaviour, IKillable
 
     public void HealTower() 
     {
-        Debug.Log(heroHealth);
+        
 
-        if (!isAoe && heroHealth!=null)
+        if (!isAoe && heroHealth != null)
         {
             heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
             if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
@@ -136,25 +139,17 @@ public class HealerTower : MonoBehaviour, IKillable
                 _healableAllies.Remove(heroHealth.GetGameObject());
             }
         }
-        else
+        else if(isAoe)
         {
-            foreach (KeyValuePair<GameObject, IHealthSystem> hero in sortedHealableAllies.ToList()) 
+            alliesAoe = Physics.OverlapSphere(transform.position, range, allyLayer);
+            foreach (var allyAoe in alliesAoe)
             {
-                if (hero.Value != null)
+                var allyHealthController = allyAoe.GetComponent<IHealthSystem>();
+                if (allyHealthController.GetCurrentHealth() < allyHealthController.GetMaxHealth())
                 {
-                    heroHealth = hero.Value;
-                    heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
-                    if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
-                    {
-                        if (_healableAllies.ContainsKey(heroHealth.GetGameObject()))
-                            _healableAllies.Remove(heroHealth.GetGameObject());
-                    }
+                    allyHealthController.HealDamage(healAmount, allyHealthController.GetMaxHealth());
+
                 }
-                else 
-                {
-                    _healableAllies.Remove(hero.Key);
-                }
-                
             }
         }
         

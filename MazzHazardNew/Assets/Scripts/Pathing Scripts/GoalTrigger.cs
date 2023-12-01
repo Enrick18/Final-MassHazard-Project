@@ -24,7 +24,7 @@ public class GoalTrigger : MonoBehaviour
         gameOverUi.SetActive(false);
 
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-        
+
     }
 
 
