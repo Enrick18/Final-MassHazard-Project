@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
 {
-    CharacterAudio characterAudio;
-
     private int _enemiesBlocked = 0;
     public int enemiesBlocked => _enemiesBlocked;
     [SerializeField] private int _blockCount = 1;
@@ -26,10 +24,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
     public bool isAoeAttack = false;
 
-    private void Awake()
-    {
-        characterAudio = GameObject.FindGameObjectWithTag("Audio").GetComponent<CharacterAudio>();
-    }
     void Start()
     {
         heroHealth = GetComponent<IHealthSystem>();
@@ -127,7 +121,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         
         if (!isAoeAttack && _enemyBlockList.Count > 0) 
         {
-            characterAudio.PlayAttackSound();
 
             enemyHealth.TakeDamage(damageAmount, enemyHealth.GetElementalDamageMultiplier(heroHealth.GetElementType(), enemyHealth.GetElementType()), enemyHealth.GetDamageResistanceModifier());
             if (enemyHealth.GetCurrentHealth() <= 0)
