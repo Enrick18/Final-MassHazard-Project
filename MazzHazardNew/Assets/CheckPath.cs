@@ -13,7 +13,17 @@ public class CheckPath : MonoBehaviour
 
     public GameObject validMapUi;
     public GameObject invalidMapUi;
+    public Button nextButton;
 
+    private void OnEnable()
+    {
+        SelectionMenu.OnBlockEnabled += FindSpawner;
+    }
+
+    private void OnDisable()
+    {
+        SelectionMenu.OnBlockEnabled -= FindSpawner;
+    }
 
     public void FindSpawner()
     {
@@ -28,6 +38,7 @@ public class CheckPath : MonoBehaviour
         catch 
         {
             invalidMapUi.SetActive(true);
+            nextButton.interactable = false;
         }
 
         CheckNavmeshPath();
@@ -45,10 +56,12 @@ public class CheckPath : MonoBehaviour
                 if (path.status == NavMeshPathStatus.PathComplete)
                 {
                     validMapUi.SetActive(true);
+                    nextButton.interactable = true;
                 }
                 else 
                 { 
                     invalidMapUi.SetActive(true);
+                    nextButton.interactable=false;
                 }
             }
 

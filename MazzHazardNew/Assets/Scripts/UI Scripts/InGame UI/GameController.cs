@@ -33,11 +33,8 @@ public class GameController : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("Checker is " +isLevelEditor);
-
         if (!isLevelEditor)
         {
-            Debug.Log("StagesUI");
             SceneManager.LoadScene("StagesUI_Scene");
         }
         else if(isLevelEditor == true)
