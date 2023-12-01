@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 4aa12e55fac033242967f71a16546385
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - swordStrikeSound: {fileID: 8300000, guid: b8cdb5ff19852f545aa38608ae2cfd6b, type: 3}
+  - deathSound: {fileID: 8300000, guid: 6e6b6ebf2e6bb4f43b51c0b828acc916, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

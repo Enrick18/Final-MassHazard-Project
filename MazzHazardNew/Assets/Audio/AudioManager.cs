@@ -12,9 +12,11 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip background;
     public AudioClip spawning;
-    public AudioClip enterGoal;
-    public AudioClip death;
-    public AudioClip goblin_death;
+    public AudioClip enterGoal; 
+
+    //voice clips
+    //public AudioClip death;
+    //public AudioClip goblin_death;
 
     private void Start()
     {

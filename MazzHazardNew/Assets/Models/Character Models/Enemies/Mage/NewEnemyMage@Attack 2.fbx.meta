@@ -60,7 +60,7 @@ ModelImporter:
       - time: 0.5300328
         functionName: EnemyProjectile
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 8300000, guid: b34487eba906df64aa1b5fa50eed9932, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

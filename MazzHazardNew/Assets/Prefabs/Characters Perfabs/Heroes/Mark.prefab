@@ -154,7 +154,6 @@ GameObject:
   - component: {fileID: 4847767404865447407}
   - component: {fileID: 4847767404865447406}
   - component: {fileID: 4847767404865447403}
-  - component: {fileID: 5208448558049621772}
   m_Layer: 7
   m_Name: Mark
   m_TagString: Hero
@@ -212,7 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884a1bea29a9f2f46aa868d05942f6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterAudio: {fileID: 0}
   healthBar: {fileID: 4847767405068552228}
   maxHealth: 800
   currentHealth: 0
@@ -269,20 +267,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   model: {fileID: 3420458140463308965}
---- !u!114 &5208448558049621772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4847767404865447405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a93bbdb7287bc6e4fa04a7a7df3659d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackSound: {fileID: 8300000, guid: b8cdb5ff19852f545aa38608ae2cfd6b, type: 3}
-  deathSound: {fileID: 8300000, guid: 6e6b6ebf2e6bb4f43b51c0b828acc916, type: 3}
 --- !u!1 &4847767405068552251
 GameObject:
   m_ObjectHideFlags: 0

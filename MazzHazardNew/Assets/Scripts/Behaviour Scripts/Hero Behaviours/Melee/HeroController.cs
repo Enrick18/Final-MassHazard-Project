@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
 {
+
+    //MarkController markController;
+    //LisaController lisaController;
+
     private int _enemiesBlocked = 0;
     public int enemiesBlocked => _enemiesBlocked;
     [SerializeField] private int _blockCount = 1;
@@ -24,6 +28,11 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
     public bool isAoeAttack = false;
 
+    private void Awake()
+    {
+        //markController = GameObject.FindGameObjectWithTag("Audio").GetComponent<MarkController>();
+        //lisaController = GameObject.FindGameObjectWithTag("Audio").GetComponent<LisaController>();
+    }
     void Start()
     {
         heroHealth = GetComponent<IHealthSystem>();
@@ -97,6 +106,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         
         if (other.gameObject.tag == "Enemy")
         {
+            
             if (!other.GetComponent<BombController>()) 
             {
                 var enemy = other.GetComponent<EnemyMove>();
@@ -118,7 +128,10 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     }
     public void DealDamage()
     {
-        
+        //Audio Functions
+        //markController.MarkPlaySFX(markController.attacking);
+        //lisaController.LisaPlaySFX(lisaController.attacking);
+
         if (!isAoeAttack && _enemyBlockList.Count > 0) 
         {
 
