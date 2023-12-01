@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ChangeColor : MonoBehaviour
 {
     private Outline currentOutline;
+    public float outlineStrength;
 
     private void Start()
     {
@@ -33,7 +34,7 @@ public class ChangeColor : MonoBehaviour
 
         // Customize the outline settings as needed
         outline.effectColor = Color.yellow;
-        outline.effectDistance = new Vector2(6f, 6f);
+        outline.effectDistance = new Vector2(outlineStrength, outlineStrength);
 
         // Set the currentOutline to the new outline
         currentOutline = outline;

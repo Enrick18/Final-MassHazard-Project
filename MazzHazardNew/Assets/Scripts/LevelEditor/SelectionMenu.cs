@@ -88,6 +88,7 @@ public class SelectionMenu : MonoBehaviour
     public void EnableTile(int index)
     {
         Debug.Log("Enabled");
+
         selectedCube.transform.GetChild(index).gameObject.SetActive(true);
         DisableButtons();
 
