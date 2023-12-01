@@ -27,8 +27,6 @@ public class Database : MonoBehaviour
     {
         enemySpawner = GameObject.Find("Spawner").GetComponent<EnemySpawner>();
         health = GameObject.Find("Goal").GetComponentInChildren<GoalTrigger>();
-        Debug.Log(enemySpawner);
-
         if (referrencedData.customMapData.toSaveIsRogue) 
         {
             enemySpawner.isRandomized = true;
@@ -36,7 +34,6 @@ public class Database : MonoBehaviour
         
         currency.defaultCurency = referrencedData.customMapData.toSaveCapsuleCount;
         currency.currentCurrency = referrencedData.customMapData.toSaveCapsuleCount;
-        Debug.Log(currency.currentCurrency);
         health.maxLife = referrencedData.customMapData.toSaveHpCount;
         health.currentLife = referrencedData.customMapData.toSaveHpCount;
 

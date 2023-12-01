@@ -3654,7 +3654,6 @@ MonoBehaviour:
   loadOutUi: {fileID: 165824364}
   heroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   warningUi: {fileID: 1454858242}
-  loadOutChecker: 1
 --- !u!114 &2047175441
 MonoBehaviour:
   m_ObjectHideFlags: 0

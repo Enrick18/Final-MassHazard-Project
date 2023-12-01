@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public bool isLevelEditor;
+    public bool isLevelEditor = false;
 
     // Start is called before the first frame update
     void Awake()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        Debug.Log(isLevelEditor);
     }
 
     public void PauseGame() 
@@ -32,10 +33,18 @@ public class GameController : MonoBehaviour
 
     public void ExitGame()
     {
+        Debug.Log("Checker is " +isLevelEditor);
+
         if (!isLevelEditor)
+        {
+            Debug.Log("StagesUI");
             SceneManager.LoadScene("StagesUI_Scene");
-        else
+        }
+        else if(isLevelEditor == true)
+        {
+            Debug.Log("LevelEditor");
             SceneManager.LoadScene("LevelEditor");
+        }
     }
 
     public void ToLevelEditor()
