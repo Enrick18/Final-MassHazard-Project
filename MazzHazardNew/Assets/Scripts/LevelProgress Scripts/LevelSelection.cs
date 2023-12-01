@@ -10,7 +10,7 @@ public class LevelSelection : MonoBehaviour
     public GameObject loadOutUi;
     public LoadOutHeroList heroList;
     public GameObject warningUi;
-    [SerializeField] private bool loadOutChecker = false;
+    private bool loadOutChecker = false;
 
     public void SetLevelToLoad(string level)
     {
