@@ -10434,6 +10434,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1596048579329634689, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: isLevelEditor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1596048579329634702, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: isLevelEditor
       value: 1

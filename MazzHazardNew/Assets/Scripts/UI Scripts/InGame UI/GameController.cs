@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public bool isLevelEditor;
 
     // Start is called before the first frame update
     void Awake()
@@ -31,7 +32,10 @@ public class GameController : MonoBehaviour
 
     public void ExitGame()
     {
-        SceneManager.LoadScene("StagesUI_Scene");
+        if (!isLevelEditor)
+            SceneManager.LoadScene("StagesUI_Scene");
+        else
+            SceneManager.LoadScene("LevelEditor");
     }
 
     public void ToLevelEditor()
