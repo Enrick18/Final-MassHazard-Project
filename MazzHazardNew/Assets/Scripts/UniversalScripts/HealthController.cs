@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
 {
-    //[SerializeField] private AudioSource deathEffect;
+    [SerializeField] private AudioSource deathEffect;
 
     public Slider healthBar;
     public float maxHealth;
@@ -128,7 +128,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
             }
         }
 
-        //deathEffect.Play();
+        deathEffect.Play();
         Destroy(gameObject);  
     }
 

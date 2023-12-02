@@ -1,0 +1,1928 @@
+{
+  "toSaveGameModeSelected": "Wave",
+  "toSaveWaveCount": 1,
+  "toSaveEnemyWaveIndex": [
+    4,
+    -1,
+    -1,
+    -1,
+    -1
+  ],
+  "toSaveNumberOfEnemies": [
+    11,
+    0,
+    0,
+    0,
+    0
+  ],
+  "toSaveHpCount": 10,
+  "toSaveCapsuleCount": 10,
+  "toSavefinalMapName": "Bomb3",
+  "toSaveIsRogue": false,
+  "toSaveMapData": {
+    "FinalBase": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (1)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (2)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (3)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (4)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (5)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (6)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (7)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (8)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (9)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (10)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (11)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (12)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (13)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (14)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (15)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (16)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (17)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (18)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (19)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (20)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (21)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (22)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (23)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (24)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (25)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (26)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (27)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (28)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (29)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (30)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (31)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (32)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (33)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (34)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (35)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (36)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (37)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (38)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (39)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (40)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (41)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (42)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (43)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (44)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (45)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (46)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (47)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (48)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (49)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (50)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (51)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (52)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (53)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (54)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (55)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (56)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (57)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (58)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (59)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (60)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (61)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (62)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (63)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (64)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (65)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (66)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (67)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (68)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (69)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (70)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (71)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (72)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (73)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (74)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (75)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (76)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (77)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (78)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (79)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (80)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (81)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (82)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (83)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (84)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (85)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (86)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (87)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (88)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (89)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (90)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (91)": {
+      "spawner": true,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (92)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (93)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (94)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (95)": {
+      "spawner": false,
+      "goal": true,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (96)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (97)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (98)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (99)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (100)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (101)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (102)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (103)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (104)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (105)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (106)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (107)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (108)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (109)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (110)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (111)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (112)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (113)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (114)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (115)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (116)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (117)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (118)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (119)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (120)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (121)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (122)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (123)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (124)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (125)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (126)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (127)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": true,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (128)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (129)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (130)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (131)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (132)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (133)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (134)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (135)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (136)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (137)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (138)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (139)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (140)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (141)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (142)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (143)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (144)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (145)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (146)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (147)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (148)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (149)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (150)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (151)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (152)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (153)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (154)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (155)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (156)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (157)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (158)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (159)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (160)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (161)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (162)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (163)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (164)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (165)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (166)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (167)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (168)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (169)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (170)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (171)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (172)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (173)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (174)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (175)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (176)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (177)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (178)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (179)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (180)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (181)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (182)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (183)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (184)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (185)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (186)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (187)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (188)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (189)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (190)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (191)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (192)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (193)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (194)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (195)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (196)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (197)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (198)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (199)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (200)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (201)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (202)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (203)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (204)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (205)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (206)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (207)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (208)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (209)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (210)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (211)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (212)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (213)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (214)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (215)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (216)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (217)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (218)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (219)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (220)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (221)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (222)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (223)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (224)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (225)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (226)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (227)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (228)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (229)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (230)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (231)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (232)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (233)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (234)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (235)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (236)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    },
+    "FinalBase (237)": {
+      "spawner": false,
+      "goal": false,
+      "decor": false,
+      "path": false,
+      "range": false,
+      "grass": false
+    }
+  }
+}

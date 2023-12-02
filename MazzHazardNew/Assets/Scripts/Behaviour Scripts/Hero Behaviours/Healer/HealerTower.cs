@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HealerTower : MonoBehaviour, IKillable
 {
+    [SerializeField] private AudioSource healEffect;
+
     public float range = 5f;
     public float healAmount = 3f;
     public float timeBetweenHeals = 1f;
@@ -129,7 +131,7 @@ public class HealerTower : MonoBehaviour, IKillable
 
     public void HealTower() 
     {
-        
+        healEffect.Play();        
 
         if (!isAoe && heroHealth != null)
         {
