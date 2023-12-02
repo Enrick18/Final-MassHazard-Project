@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2185123930229899332}
   - component: {fileID: 615636095504361015}
   - component: {fileID: 5967221084057665582}
+  - component: {fileID: 9142685502685562982}
   m_Layer: 5
   m_Name: Eliza
   m_TagString: Untagged
@@ -37,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0248175, y: 0.62}
   m_AnchorMax: {x: 0.19218063, y: 0.96500003}
-  m_AnchoredPosition: {x: -0.6066284, y: -352.8154}
+  m_AnchoredPosition: {x: -0.60668945, y: -291.28433}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7699679839199459932
@@ -152,3 +153,16 @@ MonoBehaviour:
   levelKey: S7E
   levelUnlocked: 0
   isLevelEditor: 0
+--- !u!114 &9142685502685562982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7945228989303204121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371194b2ae67e1146b5d04911d0f96bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HoverTextMessage: {fileID: 0}
