@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class HealthController : MonoBehaviour, IHealthSystem
 {
-
-    //MarkController markController;
-    //LisaController lisaController;
+    //[SerializeField] private AudioSource deathEffect;
 
     public Slider healthBar;
     public float maxHealth;
@@ -20,11 +18,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
-    private void Awake()
-    {
-        //markController = GameObject.FindGameObjectWithTag("Audio").GetComponent<MarkController>();
-        //lisaController = GameObject.FindGameObjectWithTag("Audio").GetComponent<LisaController>();
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -134,8 +127,8 @@ public class HealthController : MonoBehaviour, IHealthSystem
                 killable.IsDead();
             }
         }
-        //lisaController.LisaPlaySFX(lisaController.death);
-        //markController.MarkPlaySFX(markController.death);
+
+        //deathEffect.Play();
         Destroy(gameObject);  
     }
 

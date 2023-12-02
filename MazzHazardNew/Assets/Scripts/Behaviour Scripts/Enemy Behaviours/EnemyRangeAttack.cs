@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyRangeAttack : MonoBehaviour
 {
+    [SerializeField] private AudioSource enemyRangeAttackEffect;
     public GameObject projectile;
     public Transform firePoint;
 
@@ -125,6 +126,7 @@ public class EnemyRangeAttack : MonoBehaviour
     public void FireProjectile() 
     {
         var bullet = Instantiate(projectile, firePoint.position, firePoint.rotation);
+        enemyRangeAttackEffect.Play();
         bullet.GetComponent<Projectile>().element = element;
         bullet.GetComponent<Projectile>().damageAmount = damage;
     }

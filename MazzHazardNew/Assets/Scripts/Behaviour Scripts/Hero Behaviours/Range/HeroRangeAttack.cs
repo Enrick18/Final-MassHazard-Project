@@ -5,6 +5,8 @@ using UnityEngine;
 public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
 {
 
+    [SerializeField] private AudioSource rangeAttackEffect;
+
     private HeroRangeTower theTower;
     public GameObject projectile;
     public Transform firePoint;
@@ -46,6 +48,8 @@ public class HeroRangeAttack : MonoBehaviour, IKillable, IHeroStats
         // Firing of shots to enemy
         if(shotCounter <= 0 && target != null)
         {
+            rangeAttackEffect.Play();
+
             shotCounter = timeBetweenShots;
             firePoint.LookAt(target);
             anim.SetBool("isIdle",false);

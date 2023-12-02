@@ -4,13 +4,18 @@ using UnityEngine.UIElements;
 
 public class MarkController : MonoBehaviour
 {
-    [SerializeField] AudioSource SFXSource;
+    [SerializeField] AudioSource MarkSFXSource;
 
     public AudioClip attacking;
     public AudioClip death;
 
-    public void MarkPlaySFX(AudioClip clip)
+    private void Awake()
     {
-        SFXSource.PlayOneShot(clip);
+        MarkSFXSource = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();        
+    }
+
+    private void DamageHit(AudioClip clip)
+    {
+        MarkSFXSource.PlayOneShot(clip);
     }
 }
