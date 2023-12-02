@@ -15,15 +15,16 @@ public class CheckPath : MonoBehaviour
     public GameObject invalidMapUi;
     public Button nextButton;
 
-    private void OnEnable()
-    {
-        SelectionMenu.OnBlockEnabled += FindSpawner;
-    }
 
-    private void OnDisable()
-    {
-        SelectionMenu.OnBlockEnabled -= FindSpawner;
-    }
+    //private void OnEnable()
+    //{
+    //    BlockEnabler.OnLayoutChanged += FindSpawner;
+    //}
+
+    //private void OnDisable()
+    //{
+    //    BlockEnabler.OnLayoutChanged -= FindSpawner;
+    //}
 
     public void FindSpawner()
     {
