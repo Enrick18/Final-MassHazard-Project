@@ -40,7 +40,6 @@ public class ReceiptLoader : MonoBehaviour
             TextMeshProUGUI wave = image.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
             TextMeshProUGUI mobName = image.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
 
-
             image.sprite = sprites.enemyImages[levelEditor.enemyWaveIndex[i]];
 
             wave.text = "Wave: " + x.ToString();

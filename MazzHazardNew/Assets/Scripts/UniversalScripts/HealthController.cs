@@ -31,10 +31,12 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
         else if (isHard)
         {
-            damageResistance = 0.7f;
+            damageResistance = 0.6f;
             float increasehealth = maxHealth * 0.30f;
             maxHealth += increasehealth;
         }
+
+
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;

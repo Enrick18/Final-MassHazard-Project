@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2185123930229899332}
   - component: {fileID: 615636095504361015}
   - component: {fileID: 5967221084057665582}
-  - component: {fileID: 9142685502685562982}
   m_Layer: 5
   m_Name: Eliza
   m_TagString: Untagged
@@ -153,16 +152,3 @@ MonoBehaviour:
   levelKey: S7E
   levelUnlocked: 0
   isLevelEditor: 0
---- !u!114 &9142685502685562982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7945228989303204121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 371194b2ae67e1146b5d04911d0f96bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HoverTextMessage: {fileID: 0}
