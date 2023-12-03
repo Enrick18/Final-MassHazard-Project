@@ -32,13 +32,10 @@ public class TreantSpikes : MonoBehaviour
             var enemy = enemyCollider.GetComponent<HeroDetect>();
             if (enemy != null)
             {
-                // Create a rotation that rotates -90 degrees around the X-axis.
                 Quaternion rotation = Quaternion.Euler(-90f, 0f, 0f);
-                // Spawn spikes at the enemy's position.
                 var spikes = Instantiate(spikesPrefab, enemy.transform.position, rotation);
                 spikes.GetComponent<SpikeBehaviour>().element = element;
                 spikes.GetComponent<SpikeBehaviour>().damageAmount = damage;
-                //Debug.Log(enemy.transform.position);
             }
         }
     }

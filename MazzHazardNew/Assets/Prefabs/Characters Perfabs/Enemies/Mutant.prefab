@@ -195,8 +195,8 @@ GameObject:
   - component: {fileID: 2517965082403669629}
   - component: {fileID: 2778616273020895690}
   - component: {fileID: 2778616273020895692}
-  - component: {fileID: 2778616273020895694}
   - component: {fileID: 2778616273020895693}
+  - component: {fileID: 2778616273020895694}
   - component: {fileID: 2778616273020895695}
   - component: {fileID: 8073237922403174308}
   - component: {fileID: 4048843330797642292}
@@ -313,7 +313,26 @@ MonoBehaviour:
   isMedium: 0
   isHard: 0
   damageResistance: 1
-  element: 1
+  element: 3
+--- !u!114 &2778616273020895693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778616273020895697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bac501dab1539d44a2920640091cc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAttackEffect: {fileID: 8073237922403174308}
+  targetTag: Hero
+  damageAmount: 95
+  timeBetweenAttacks: 1
+  anim: {fileID: 3353206539633874598}
+  isMedium: 0
+  isHard: 0
 --- !u!114 &2778616273020895694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,25 +352,6 @@ MonoBehaviour:
   anim: {fileID: 3353206539633874598}
   counter: {fileID: 2778616273020895695}
   isBlocked: 0
---- !u!114 &2778616273020895693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778616273020895697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bac501dab1539d44a2920640091cc28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyAttackEffect: {fileID: 8073237922403174308}
-  targetTag: Hero
-  damageAmount: 85
-  timeBetweenAttacks: 1
-  anim: {fileID: 3353206539633874598}
-  isMedium: 0
-  isHard: 0
 --- !u!114 &2778616273020895695
 MonoBehaviour:
   m_ObjectHideFlags: 0

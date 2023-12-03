@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour, IKillable
     {
         if (isMedium) 
         {
-            float damageIncrease = damageAmount * 0.15f;
+            float damageIncrease = damageAmount * 0.18f;
             damageAmount += damageIncrease;
         }
         else if (isHard) 
@@ -74,7 +74,6 @@ public class EnemyController : MonoBehaviour, IKillable
     public void EnemyDealDamage() 
     {
         enemyAttackEffect.Play();
-        Debug.Log(enemyAttackEffect);
         if(hero != null)
         heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
 

@@ -280,8 +280,10 @@ MonoBehaviour:
   element: 1
   launcherModel: {fileID: 6893684052717483491}
   anim: {fileID: 6851187302556833769}
-  detectionRadius: 11
-  attackRange: 11
+  isMedium: 0
+  isHard: 0
+  detectionRadius: 12
+  attackRange: 12
   heroLayer:
     serializedVersion: 2
     m_Bits: 128

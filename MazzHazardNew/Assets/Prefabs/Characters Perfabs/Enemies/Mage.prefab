@@ -575,7 +575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
-  blockRequirement: 1
+  blockRequirement: 2
   hero: {fileID: 0}
   anim: {fileID: 3762691830920406709}
   counter: {fileID: -3901681482271049161}
@@ -601,6 +601,8 @@ MonoBehaviour:
   element: 0
   launcherModel: {fileID: 4749583453166842694}
   anim: {fileID: 3762691830920406709}
+  isMedium: 0
+  isHard: 0
   detectionRadius: 11
   attackRange: 11
   heroLayer:

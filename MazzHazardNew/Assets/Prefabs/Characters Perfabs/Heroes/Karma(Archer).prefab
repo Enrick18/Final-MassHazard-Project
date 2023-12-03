@@ -412,7 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 5922675676484676164}
   healthBar: {fileID: 7572789433793839575}
-  maxHealth: 600
+  maxHealth: 400
   currentHealth: 0
   isMedium: 0
   isHard: 0
@@ -469,7 +469,7 @@ MonoBehaviour:
   launcherModel: {fileID: 3687296484346733014}
   anim: {fileID: 7335172237230963628}
   element: 2
-  damage: 180
+  damage: 150
 --- !u!82 &1356704926978618598
 AudioSource:
   m_ObjectHideFlags: 0
