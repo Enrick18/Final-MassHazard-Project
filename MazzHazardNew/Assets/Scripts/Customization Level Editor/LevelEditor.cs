@@ -12,7 +12,7 @@ public class LevelEditor : MonoBehaviour
     public int[] numberOfEnemies = { 0, 0, 0, 0, 0 };
     public int waveCount = 1;
     public int hpCount = 1;
-    public int capsuleCount = 10;
+    public int capsuleCount = 30;
     public string finalMapName = "New Map";
     public bool isRogue = false;
 
@@ -34,7 +34,7 @@ public class LevelEditor : MonoBehaviour
             isRogue = true;
             waveCount = Random.Range(3, 5);
             hpCount = Random.Range(5, 10);
-            capsuleCount = Random.Range(10, 30);
+            capsuleCount = Random.Range(30, 70);
             
             for (int i = 0; i < waveCount; i++)
             {
@@ -108,7 +108,7 @@ public class LevelEditor : MonoBehaviour
 
     public void IncrementCapsule()
     {
-        if (capsuleCount < 40)
+        if (capsuleCount < 70)
             capsuleCount += 10;
 
         capsuleText.text = capsuleCount.ToString();
@@ -116,7 +116,7 @@ public class LevelEditor : MonoBehaviour
 
     public void DecrementCapsule()
     {
-        if (capsuleCount > 10)
+        if (capsuleCount > 30)
             capsuleCount -= 10;
 
         capsuleText.text = capsuleCount.ToString();

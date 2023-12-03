@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class SelectionMenu : MonoBehaviour
     private bool isSpawnerSelected = false;
     private List<GameObject> buttonList = new();
     private GameObject removeButton;
+    public static event Action OnBlockEnabled;
 
     private void Start()
     {
@@ -85,6 +87,8 @@ public class SelectionMenu : MonoBehaviour
 
     public void EnableTile(int index)
     {
+        Debug.Log("Enabled");
+
         selectedCube.transform.GetChild(index).gameObject.SetActive(true);
         DisableButtons();
 
@@ -97,6 +101,8 @@ public class SelectionMenu : MonoBehaviour
         {
             isGoalSelected = true;
         }
+
+        OnBlockEnabled?.Invoke();
     }
     
 

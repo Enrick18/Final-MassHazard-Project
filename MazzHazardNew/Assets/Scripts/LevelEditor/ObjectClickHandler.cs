@@ -46,8 +46,8 @@ public class ObjectClickHandler : MonoBehaviour
 
             // Perform the raycast to detect the clicked object
             RaycastHit hit;
-            bool isOverUi = EventSystem.current.IsPointerOverGameObject();
-            if (Physics.Raycast(ray, out hit) && !isOverUi)
+            //bool isOverUi = EventSystem.current.IsPointerOverGameObject();
+            if (Physics.Raycast(ray, out hit))
             {
                 // Check if the collider hit belongs to a clickable object
                 
