@@ -265,6 +265,7 @@ MonoBehaviour:
   isMeleeHeroType: 0
   heroModel: {fileID: 7572789435222156610, guid: 294a5d5149cb7644ba408c3346ba9dad, type: 3}
   setHeroCost: 9
+  heroButton: {fileID: 1795359503124716686}
 --- !u!1 &1795359503150095353
 GameObject:
   m_ObjectHideFlags: 0

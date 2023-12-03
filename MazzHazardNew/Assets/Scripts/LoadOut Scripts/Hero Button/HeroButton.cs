@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroButton : MonoBehaviour
 {
@@ -10,8 +11,11 @@ public class HeroButton : MonoBehaviour
 
     private TowerManager towerManager;
     private HeroSelected isMeleeSelected;
+    private CurrencySystem currencySystem;
 
     private GameObject heroSelected;
+
+    public Button heroButton;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +23,20 @@ public class HeroButton : MonoBehaviour
         heroSelected = GameObject.Find("Hero Selection"); //find the Ui called HeroSelection
 
         towerManager = heroSelected.GetComponent<TowerManager>(); //get towermanager script
-        isMeleeSelected = heroSelected.GetComponent<HeroSelected>(); //get heroselected script     
+        isMeleeSelected = heroSelected.GetComponent<HeroSelected>(); //get heroselected script
+        currencySystem = heroSelected.GetComponent<CurrencySystem>();//get currency script
+    }
+
+    private void Update()
+    {
+        if (currencySystem.currentCurrency < setHeroCost)
+        {
+            heroButton.interactable = false;
+        }
+        else 
+        { 
+            heroButton.interactable=true;
+        }
     }
 
     //assign designated values to the functions

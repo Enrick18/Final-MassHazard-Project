@@ -401,3 +401,4 @@ MonoBehaviour:
   isMeleeHeroType: 1
   heroModel: {fileID: 5002148828284854953, guid: 070aca655dd285f4fa9a1dee48abfe97, type: 3}
   setHeroCost: 17
+  heroButton: {fileID: 4872944792313305252}

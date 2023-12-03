@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\Range\HeroRangeAttack.cs" />
     <Compile Include="Assets\Scripts\LoadOut Scripts\LoadOutManager.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\BombController.cs" />
+    <Compile Include="Assets\TurnOffHeroButton.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerPlacement.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\SpawnerDelay.cs" />
