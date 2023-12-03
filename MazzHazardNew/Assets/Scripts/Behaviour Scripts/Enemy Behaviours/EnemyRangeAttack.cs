@@ -25,8 +25,8 @@ public class EnemyRangeAttack : MonoBehaviour
     private NavMeshAgent agent;
     private float moveSpeed;
 
-    private bool isMedium;
-    private bool isHard;
+    [SerializeField]private bool isMedium;
+    [SerializeField]private bool isHard;
 
     public float detectionRadius = 10f;
     public float attackRange = 10f;

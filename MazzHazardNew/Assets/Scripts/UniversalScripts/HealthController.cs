@@ -12,6 +12,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public float currentHealth;
     private float healDmg;
     private Animator anim;
+    [SerializeField]private bool notStructure = true;
     [SerializeField]private bool isMedium;
     [SerializeField]private bool isHard;
 
@@ -25,16 +26,18 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
         if (isMedium)
         {
-            damageResistance = 0.8f;
-            float increasehealth = maxHealth * 0.10f;
+            damageResistance = 0.7f;
+            float increasehealth = maxHealth * 0.25f;
             maxHealth += increasehealth;
         }
         else if (isHard)
         {
-            damageResistance = 0.7f;
-            float increasehealth = maxHealth * 0.30f;
+            damageResistance = 0.6f;
+            float increasehealth = maxHealth * 0.34f;
             maxHealth += increasehealth;
         }
+
+
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
@@ -128,7 +131,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
             }
         }
 
-        deathEffect.Play();
+        //deathEffect.Play();
         Destroy(gameObject);  
     }
 
@@ -212,5 +215,10 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public GameObject GetGameObject()
     {
         return gameObject;
+    }
+
+    public bool isHealable()
+    {
+        return notStructure;
     }
 }

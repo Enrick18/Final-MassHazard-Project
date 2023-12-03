@@ -85,7 +85,6 @@
     <Compile Include="Assets\Scripts\LevelProgress Scripts\LevelUnlocker.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SaveMap.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\WaveManager.cs" />
-    <Compile Include="Assets\Audio\Character Audio.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SelectionMenu.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\GoalTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />

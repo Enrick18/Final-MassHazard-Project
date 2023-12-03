@@ -302,12 +302,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884a1bea29a9f2f46aa868d05942f6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathEffect: {fileID: 0}
   healthBar: {fileID: 3173503652938919139}
-  maxHealth: 310
+  maxHealth: 500
   currentHealth: 0
   isMedium: 0
   isHard: 0
-  damageResistance: 1
+  damageResistance: 0.7
   element: 1
 --- !u!114 &9190186174890342713
 MonoBehaviour:
@@ -326,8 +327,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackRange: 20
-  attackCooldown: 7
-  damage: 65
+  attackCooldown: 2
+  damage: 70
   element: 1
 --- !u!114 &312201866281046443
 MonoBehaviour:

@@ -421,10 +421,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAttackEffect: {fileID: 6958166443709787354}
   targetTag: Hero
-  damageAmount: 50
+  damageAmount: 55
   timeBetweenAttacks: 1
   anim: {fileID: 8077943958025515953}
-  isMedium: 1
+  isMedium: 0
   isHard: 0
 --- !u!114 &3556801484299115476
 MonoBehaviour:
@@ -442,7 +442,7 @@ MonoBehaviour:
   healthBar: {fileID: 6395120336178643807}
   maxHealth: 300
   currentHealth: 0
-  isMedium: 1
+  isMedium: 0
   isHard: 0
   damageResistance: 1
   element: 2

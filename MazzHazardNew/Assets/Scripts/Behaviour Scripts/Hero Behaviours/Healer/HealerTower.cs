@@ -48,9 +48,12 @@ public class HealerTower : MonoBehaviour, IKillable
 
             if (allyHealthController.GetCurrentHealth() < allyHealthController.GetMaxHealth())
             {
-                if (!_healableAllies.ContainsKey(ally.gameObject))
+                if (allyHealthController.isHealable()) 
                 {
-                    _healableAllies.Add(ally.gameObject, allyHealthController);
+                    if (!_healableAllies.ContainsKey(ally.gameObject))
+                    {
+                        _healableAllies.Add(ally.gameObject, allyHealthController);
+                    }
                 }
 
             }
@@ -149,6 +152,7 @@ public class HealerTower : MonoBehaviour, IKillable
                 var allyHealthController = allyAoe.GetComponent<IHealthSystem>();
                 if (allyHealthController.GetCurrentHealth() < allyHealthController.GetMaxHealth())
                 {
+                    if(allyHealthController.isHealable())
                     allyHealthController.HealDamage(healAmount, allyHealthController.GetMaxHealth());
 
                 }

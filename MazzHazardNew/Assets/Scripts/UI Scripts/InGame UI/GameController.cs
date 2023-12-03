@@ -13,7 +13,6 @@ public class GameController : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        Debug.Log(isLevelEditor);
     }
 
     public void PauseGame() 

@@ -11,6 +11,11 @@ public class HeroCurrencyGenerator : MonoBehaviour
     public float addedCooldownTime;
     public float removedCooldownTime;
 
+    public float timeBetweenCapsules;
+    [SerializeField]private float generateCounter = 8;
+
+    public int amount;
+
 
 
     //public Animator anim;
@@ -24,12 +29,15 @@ public class HeroCurrencyGenerator : MonoBehaviour
 
     private void Update()
     {
-
         var currentHealth = healthController.currentHealth;
 
-        if (currentHealth > 0) 
-        { 
-            currencySystem.DecreaseCooldown(removedCooldownTime);
+        generateCounter -= Time.deltaTime;
+
+        if (generateCounter <= 0) 
+        {
+            generateCounter = timeBetweenCapsules;
+            Debug.Log("Yes");
+            currencySystem.GainCurrency(amount);
         }
 
         if (currentHealth <= 0) 
