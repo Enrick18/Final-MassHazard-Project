@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class HeroCurrencyGenerator : MonoBehaviour
 {
+    [SerializeField] private AudioSource pingEffect;
+
     public CurrencySystem currencySystem;
 
     private HealthController healthController;
