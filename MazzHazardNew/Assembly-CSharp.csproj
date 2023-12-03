@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\LevelEditor\LoadMap.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\ObjectClickHandler.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 3\CutsceneController3.cs" />
+    <Compile Include="Assets\TutorialPause.cs" />
     <Compile Include="Assets\Audio\VolumeSettings.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 4\CutsceneTransition4.cs" />
     <Compile Include="Assets\Scripts\Customization Level Editor\LevelEditor Levels\Database.cs" />
