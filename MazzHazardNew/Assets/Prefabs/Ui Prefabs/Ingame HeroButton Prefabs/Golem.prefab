@@ -224,8 +224,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 65, y: 222}
-  m_SizeDelta: {x: 299.6588, y: 189.8302}
+  m_AnchoredPosition: {x: 63, y: 253.3158}
+  m_SizeDelta: {x: 299.6588, y: 266.2989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7682368503405628160
 CanvasRenderer:
@@ -331,7 +331,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NAME: GOLEM\r\nELEMENT: NORMAL\t\r\nHP: 1000\r\nDMG: 100\r\nCOST: 20"
+  m_text: "NAME: Golem\r\nELEMENT: Normal\nROLE: Defender\nBLOCK COUNT: 3\t\r\nHP:
+    1000\r\nDMG: 100\r\nCOST: 20"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -394,7 +395,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -101.55917, y: -68.706726, z: -53.082413, w: -65.73668}
+  m_margin: {x: -101.55917, y: -101.47905, z: -53.082413, w: -98.509}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

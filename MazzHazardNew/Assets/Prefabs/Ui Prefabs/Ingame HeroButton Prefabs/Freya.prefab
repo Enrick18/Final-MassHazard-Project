@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 55, y: 225}
-  m_SizeDelta: {x: 277.4937, y: 189.8302}
+  m_AnchoredPosition: {x: 63, y: 253.3158}
+  m_SizeDelta: {x: 299.6588, y: 266.2989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3117202131270587164
 CanvasRenderer:
@@ -331,7 +331,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "NAME: FREYA\r\nELEMENT: PLANT\t\r\nHP: 700\r\nDMG: 75\r\nCOST: 13"
+  m_text: "NAME: Freya\r\nELEMENT: Plant\nROLE: Fighter\nBLOCK COUNT: 1\t\r\nHP:
+    700\r\nDMG: 75\r\nCOST: 13"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -394,7 +395,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -101.55917, y: -68.706726, z: -53.082413, w: -65.73668}
+  m_margin: {x: -106.70854, y: -101.47889, z: -53.082413, w: -94.867645}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
