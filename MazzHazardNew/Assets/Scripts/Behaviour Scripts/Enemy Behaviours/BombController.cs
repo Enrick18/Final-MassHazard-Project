@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BombController : MonoBehaviour, IKillable
 {
+    [SerializeField] private AudioSource boomEffect;
+
     private HealthController healthController;
     private IHealthSystem enemyHealth;
     public float bombRadius;
@@ -57,6 +59,7 @@ public class BombController : MonoBehaviour, IKillable
 
             foreach (Collider col in hitColliders) 
             {
+                boomEffect.Play();
                 Debug.Log("Boom");
                 var heroHealth = col.GetComponent<HealthController>();
                 heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());

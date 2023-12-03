@@ -60,7 +60,7 @@ ModelImporter:
       - time: 0.22023807
         functionName: EnemyHit
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 8300000, guid: 3b66683347b7c8c44a514e3a8e95f441, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

@@ -51,6 +51,7 @@ public class EnemySpawner : MonoBehaviour
             while (enemy.enemyCount > 0)
             {
                 audioManager.PlaySFX(audioManager.spawning);
+
                 if (isMedium) 
                 {
                     enemy.enemy.GetComponent<HealthController>().IsMedium();

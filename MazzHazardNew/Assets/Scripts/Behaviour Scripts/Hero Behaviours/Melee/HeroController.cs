@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
 {
+    [SerializeField] private AudioSource attackEffect;
+
+
     private int _enemiesBlocked = 0;
     public int enemiesBlocked => _enemiesBlocked;
     [SerializeField] private int _blockCount = 1;
@@ -23,6 +26,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     private IHealthSystem enemyHealth;
 
     public bool isAoeAttack = false;
+
 
     void Start()
     {
@@ -97,6 +101,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         
         if (other.gameObject.tag == "Enemy")
         {
+            
             if (!other.GetComponent<BombController>()) 
             {
                 var enemy = other.GetComponent<EnemyMove>();
@@ -118,7 +123,10 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     }
     public void DealDamage()
     {
-        
+        //Audio Functions
+
+        attackEffect.Play();
+
         if (!isAoeAttack && _enemyBlockList.Count > 0) 
         {
 
