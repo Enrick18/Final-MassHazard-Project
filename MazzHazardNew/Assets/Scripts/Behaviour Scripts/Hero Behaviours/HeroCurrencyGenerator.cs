@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HeroCurrencyGenerator : MonoBehaviour
 {
+    [SerializeField] private AudioSource generateEffect;
     public CurrencySystem currencySystem;
 
     private HealthController healthController;
@@ -35,6 +36,7 @@ public class HeroCurrencyGenerator : MonoBehaviour
 
         if (generateCounter <= 0) 
         {
+            generateEffect.Play();
             generateCounter = timeBetweenCapsules;
             currencySystem.GainCurrency(amount);
         }
