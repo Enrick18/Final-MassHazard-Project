@@ -26,6 +26,8 @@ public class BlockEnabler : MonoBehaviour
     public GameObject invalidMapMessage;
 
     public Button confirmButton;
+
+    private bool pathComplete = false;
     //public static event Action OnLayoutChanged;
 
 
@@ -55,6 +57,11 @@ public class BlockEnabler : MonoBehaviour
                 if (hit.collider.gameObject.tag == "ChildCube")
                 {
                     clickedChildObject = hit.collider.gameObject;
+                }
+
+                if (pathComplete && tileIndex == 4) 
+                {
+                    tileIndex = -1;
                 }
 
                 if (clickedObject != null && tileIndex != -1 && !isRemove) 
@@ -94,6 +101,7 @@ public class BlockEnabler : MonoBehaviour
                         isGoal = false;
                         goalButton.interactable = true;
                     }
+
 
                     clickedChildObject.transform.gameObject.SetActive(false);
                     SpawnerCheck();
@@ -139,12 +147,15 @@ public class BlockEnabler : MonoBehaviour
                     validMapMessage.SetActive(true);
                     confirmButton.interactable = true;
                     pathButton.interactable = false;
+                    pathComplete = true;
                 }
                 else
                 {
                     invalidMapMessage.SetActive(true);
                     validMapMessage.SetActive(false);
                     confirmButton.interactable = false;
+                    pathComplete = false;
+                    pathButton.interactable= true;
                 }
             }
 

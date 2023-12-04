@@ -555,12 +555,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 4249715726638672434}
   healthBar: {fileID: 4749583452736029983}
-  maxHealth: 450
+  maxHealth: 750
   currentHealth: 0
   notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 1
+  damageResistance: 0.8
   element: 0
 --- !u!114 &-6685852590656365769
 MonoBehaviour:

@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class TutorialPause : MonoBehaviour
 {
-    private bool tutorialDone = false;
+    public GameObject getEssentials;
+    public GameObject tutorial;
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0f;
+        tutorial.SetActive(false);
+        Invoke(nameof(TimeStop), 2f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (tutorialDone) 
-        {
-            Time.timeScale = 1f;
-        }
-        else 
-        {
-            Time.timeScale = 0f;
-        }
+    }
+
+    public void TimeStop() 
+    {
+        getEssentials.SetActive(false);
+        tutorial.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void TimeResume() 
     {
         Time.timeScale = 1f;
-        tutorialDone = true;
+        getEssentials.SetActive(true);
     }
 }

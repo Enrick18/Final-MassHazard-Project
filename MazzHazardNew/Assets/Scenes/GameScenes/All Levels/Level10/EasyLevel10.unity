@@ -1612,6 +1612,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1192289229434983267, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: damageElementalMultiplier
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192289229434983267, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: healthElementalMultiplier
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1192289229789744092, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1711,6 +1719,11 @@ PrefabInstance:
 --- !u!4 &105136275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1192289229322794913, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+  m_PrefabInstance: {fileID: 105136274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &105136276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1192289229789744092, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
   m_PrefabInstance: {fileID: 105136274}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &116412660
@@ -8910,6 +8923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fdbc04ca2310f34f864beb8353cf5d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  getEssentials: {fileID: 105136276}
+  tutorial: {fileID: 563380166}
 --- !u!114 &563380169
 MonoBehaviour:
   m_ObjectHideFlags: 0

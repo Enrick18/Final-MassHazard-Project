@@ -246,8 +246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healEffect: {fileID: 2758159691821905897}
-  range: 25
-  healAmount: 0.3
+  range: 20
+  healAmount: 0.27
   timeBetweenHeals: 1
   healRate: 0
   allyLayer:
