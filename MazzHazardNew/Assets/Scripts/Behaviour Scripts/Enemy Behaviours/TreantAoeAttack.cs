@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TreantAoeAttack : MonoBehaviour
 {
+    [SerializeField] private AudioSource BossBuffEffect;
+    [SerializeField] private AudioSource BossPoisonTarget;
+
     public LayerMask hero;
     public LayerMask enemy;
     public float range;
@@ -20,6 +23,7 @@ public class TreantAoeAttack : MonoBehaviour
 
         foreach (Collider collider in enemyCollider)
         {
+            BossBuffEffect.Play();
             EnemyController enemyController = collider.GetComponent<EnemyController>();
 
             if (enemyController != null)
@@ -57,9 +61,10 @@ public class TreantAoeAttack : MonoBehaviour
     private void PoisonDamage()
     {
         Collider[] heroCollider = Physics.OverlapSphere(transform.position, range, hero);
-
+        
         foreach (Collider collider in heroCollider)
         {
+            BossPoisonTarget.Play();
             if (collider.CompareTag(attackTargetTag))
             {
                 // Implement your health reduction logic here
