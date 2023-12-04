@@ -159,7 +159,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
         }
         else if (attacker == defender)
         {
-            return 0.5f;
+            return 0.6f;
         }
         else
         {

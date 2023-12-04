@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackEffect: {fileID: 6638108483703557877}
   _blockCount: 1
-  damageAmount: 160
+  damageAmount: 180
   timeBetweenAttacks: 2
   blockTarget: Enemy
   launcherModel: {fileID: 1822486062401262905}

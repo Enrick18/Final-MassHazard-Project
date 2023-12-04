@@ -375,7 +375,7 @@ MonoBehaviour:
   launcherModel: {fileID: 4525598916335328110}
   anim: {fileID: 7506943023779053844}
   element: 0
-  damage: 280
+  damage: 200
 --- !u!114 &6984987243440939676
 MonoBehaviour:
   m_ObjectHideFlags: 0

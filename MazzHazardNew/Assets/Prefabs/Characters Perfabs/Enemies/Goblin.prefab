@@ -253,7 +253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 6037655092201878896}
   healthBar: {fileID: 2100608305678336912}
-  maxHealth: 300
+  maxHealth: 550
   currentHealth: 0
   notStructure: 1
   isMedium: 0

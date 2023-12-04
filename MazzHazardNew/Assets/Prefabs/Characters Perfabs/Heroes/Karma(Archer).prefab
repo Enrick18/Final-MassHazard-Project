@@ -470,7 +470,7 @@ MonoBehaviour:
   launcherModel: {fileID: 3687296484346733014}
   anim: {fileID: 7335172237230963628}
   element: 2
-  damage: 150
+  damage: 125
 --- !u!82 &1356704926978618598
 AudioSource:
   m_ObjectHideFlags: 0

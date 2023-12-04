@@ -342,12 +342,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: -2648816852970497172}
   healthBar: {fileID: 9199541396001770720}
-  maxHealth: 1200
+  maxHealth: 3000
   currentHealth: 0
   notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 0.8
+  damageResistance: 0.6
   element: 3
 --- !u!114 &2239447580332868976
 MonoBehaviour:
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAttackEffect: {fileID: 1887448533795188906}
   targetTag: Hero
-  damageAmount: 300
+  damageAmount: 400
   timeBetweenAttacks: 1
   anim: {fileID: 2478126174027457682}
   isMedium: 0
