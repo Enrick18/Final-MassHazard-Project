@@ -67,7 +67,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "NAME: Mark\nELEMENT: Normal\nROLE: Fighter\nBLOCK COUNT: 2\t\nHP: 500\nDMG:
-    150\nCOST: 11"
+    150\nCOST: 13"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -400,5 +400,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMeleeHeroType: 1
   heroModel: {fileID: 4847767404865447405, guid: d38053dac8d0c7f40ba7cc8b49c18b0c, type: 3}
-  setHeroCost: 11
+  setHeroCost: 13
   heroButton: {fileID: 4872944792313305252}

@@ -332,9 +332,10 @@ MonoBehaviour:
   healthBar: {fileID: 5002148828723751337}
   maxHealth: 800
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 0.9
+  damageResistance: 0.8
   element: 0
 --- !u!114 &5002148828284854949
 MonoBehaviour:

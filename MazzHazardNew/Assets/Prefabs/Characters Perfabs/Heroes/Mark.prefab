@@ -215,7 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackEffect: {fileID: 3489539002383637849}
   _blockCount: 2
-  damageAmount: 100
+  damageAmount: 140
   timeBetweenAttacks: 2
   blockTarget: Enemy
   launcherModel: {fileID: 8761687494825966303}
@@ -235,11 +235,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 7256371342494844660}
   healthBar: {fileID: 4847767405068552228}
-  maxHealth: 600
+  maxHealth: 700
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 0.8
+  damageResistance: 0.7
   element: 3
 --- !u!114 &4847767404865447406
 MonoBehaviour:

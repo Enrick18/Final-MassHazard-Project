@@ -226,12 +226,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 5030485843375597699}
   healthBar: {fileID: 5094689902921325337}
-  maxHealth: 380
+  maxHealth: 500
   currentHealth: 0
   notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 1
+  damageResistance: 0.8
   element: 1
 --- !u!114 &7907761870453214425
 MonoBehaviour:
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healEffect: {fileID: 2758159691821905897}
-  range: 20
+  range: 25
   healAmount: 0.3
   timeBetweenHeals: 1
   healRate: 0
@@ -279,7 +279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2534740291083182843, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 43d78731ca6ca364cb62e69b42788694, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e07b0a4ca9e6cfe45ab914042de3ae3e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
