@@ -18,6 +18,7 @@ public class BombController : MonoBehaviour, IKillable
 
     public void IsDead()
     {
+        boomEffect.Play();
         this.enabled = false;
     }
 
@@ -34,6 +35,7 @@ public class BombController : MonoBehaviour, IKillable
             float damageIncrease = damageAmount * 0.40f;
             damageAmount += damageIncrease;
         }
+        
         healthController = GetComponent<HealthController>();
         enemyHealth = GetComponent<IHealthSystem>();
         anim.SetBool("isWalking", true);
@@ -44,8 +46,9 @@ public class BombController : MonoBehaviour, IKillable
 
     private void Update()
     {
+
         if (healthController.currentHealth <= 0) 
-        { 
+        {
             Explode();
             Destroy(gameObject);
         }
@@ -54,12 +57,11 @@ public class BombController : MonoBehaviour, IKillable
     // Update is called once per frame
     public void Explode()
     {
-            Instantiate(explosion, transform.position, transform.rotation);
+        Instantiate(explosion, transform.position, transform.rotation);
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, bombRadius, heroLayer);
-
+            
             foreach (Collider col in hitColliders) 
             {
-                boomEffect.Play();
                 Debug.Log("Boom");
                 var heroHealth = col.GetComponent<HealthController>();
                 heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
@@ -70,6 +72,7 @@ public class BombController : MonoBehaviour, IKillable
     private void OnTriggerEnter(Collider other)
     {
         Explode();
+        boomEffect.Play();
         Destroy(gameObject);
     }
 

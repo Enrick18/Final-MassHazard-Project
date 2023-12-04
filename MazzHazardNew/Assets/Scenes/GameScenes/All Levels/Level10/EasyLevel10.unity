@@ -23603,6 +23603,10 @@ PrefabInstance:
       propertyPath: range
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2898333379273149723, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
+      propertyPath: BossBuffEffect
+      value: 
+      objectReference: {fileID: 1474219048}
     - target: {fileID: 4023519213374639320, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99911183
@@ -23716,6 +23720,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
+--- !u!82 &1474219048 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1510988444983575040, guid: 1429c0d6b45d1e149a183c37e2983e40, type: 3}
+  m_PrefabInstance: {fileID: 1474219047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1476317944
 PrefabInstance:
   m_ObjectHideFlags: 0
