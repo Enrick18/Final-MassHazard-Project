@@ -77,6 +77,7 @@ MonoBehaviour:
   healthBar: {fileID: 4203875407872798224}
   maxHealth: 5000
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
   damageResistance: 0.5
@@ -106,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BossBuffEffect: {fileID: 7939516118950044577}
-  BossPoisonTarget: {fileID: 1510988444983575040}
+  BossPoisonTarget: {fileID: 7939516118950044577}
   hero:
     serializedVersion: 2
     m_Bits: 128
@@ -128,7 +129,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2534740291083182843, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e2b678409774baf4da599caeb4aa5546, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b520ccecffc3f774794383f37b73d066, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -224,7 +225,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2534740291083182843, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a9a6b27921b107d47961381ebf731315, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b520ccecffc3f774794383f37b73d066, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -320,7 +321,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2534740291083182843, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d52cb94fe0e9b8744abb3bdddf645210, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b520ccecffc3f774794383f37b73d066, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

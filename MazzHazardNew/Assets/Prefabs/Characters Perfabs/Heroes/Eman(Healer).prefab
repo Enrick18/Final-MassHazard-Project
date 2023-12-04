@@ -228,6 +228,7 @@ MonoBehaviour:
   healthBar: {fileID: 1877645264048957173}
   maxHealth: 300
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
   damageResistance: 1
@@ -278,7 +279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2534740291083182843, guid: 15247d4180ab49e44be4b3f409c7f163, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e07b0a4ca9e6cfe45ab914042de3ae3e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7a63c9a0b7d9ca4458517c29fd872a26, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
