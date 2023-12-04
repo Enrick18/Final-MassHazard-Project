@@ -283,8 +283,8 @@ MonoBehaviour:
   anim: {fileID: 6851187302556833769}
   isMedium: 0
   isHard: 0
-  detectionRadius: 12
-  attackRange: 12
+  detectionRadius: 11.5
+  attackRange: 11.5
   heroLayer:
     serializedVersion: 2
     m_Bits: 128

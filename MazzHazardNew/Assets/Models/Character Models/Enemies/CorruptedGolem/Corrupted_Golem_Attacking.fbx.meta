@@ -58,14 +58,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.7745216
-        functionName: DamageHit
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.24328494
-        functionName: AttackStart
+        functionName: EnemyHit
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

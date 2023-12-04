@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMeleeHeroType: 0
   heroModel: {fileID: 4751291054606762762, guid: 678de5c3cd20ecd41827c7d9cbe1a6a4, type: 3}
-  setHeroCost: 13
+  setHeroCost: 23
   heroButton: {fileID: 4055338005750181376}
 --- !u!1 &8629495174993131061
 GameObject:
@@ -333,7 +333,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "NAME: Eliza\r\nELEMENT: Plant\nROLE: Single Healer\t\r\nHP: 450\r\nHEAL:
-    30%\r\nCOST: 19"
+    30%\r\nCOST: 23"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

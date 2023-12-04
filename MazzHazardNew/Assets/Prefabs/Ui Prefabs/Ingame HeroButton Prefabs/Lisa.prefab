@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMeleeHeroType: 0
   heroModel: {fileID: 6984987243440939674, guid: c52f76ae37d19c442b45d8f045df6a21, type: 3}
-  setHeroCost: 18
+  setHeroCost: 22
   heroButton: {fileID: 2653418691056458828}
 --- !u!1 &2653418691111493098
 GameObject:
@@ -256,7 +256,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\rNAME: Lisa\nELEMENT: Fire\nROLE: AOE Range\t\r\nHP: 500\r\nDMG: 800\nCOST:
-    18"
+    22"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

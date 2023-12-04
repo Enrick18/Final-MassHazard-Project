@@ -71,6 +71,7 @@ public class TreantAoeAttack : MonoBehaviour
                 var heroHealth = collider.GetComponent<IHealthSystem>();
                 if (heroHealth != null)
                 {
+                    if(heroHealth.isHealable())
                     heroHealth.PoisonDamage(poisonDamage);
                 }
             }

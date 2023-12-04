@@ -412,8 +412,8 @@ GameObject:
   - component: {fileID: 1094496729009279231}
   - component: {fileID: 7269534718531407472}
   - component: {fileID: 6605208439605419451}
-  - component: {fileID: 2210906709011776755}
   - component: {fileID: 5490641126349518544}
+  - component: {fileID: 2162212854898484942}
   m_Layer: 6
   m_Name: BombBot
   m_TagString: Enemy
@@ -520,10 +520,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884a1bea29a9f2f46aa868d05942f6ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
+  deathEffect: {fileID: 0}
   healthBar: {fileID: 8535660769849877697}
   maxHealth: 150
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
   damageResistance: 1
@@ -545,20 +546,8 @@ MonoBehaviour:
   blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 607632051084430070}
-  counter: {fileID: 2210906709011776755}
+  counter: {fileID: 2162212854898484942}
   isBlocked: 0
---- !u!114 &2210906709011776755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8975058826241296649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5490641126349518544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -571,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f55d4a175f3d55f449b26c64ba79aa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boomEffect: {fileID: 0}
   bombRadius: 7.5
   heroLayer:
     serializedVersion: 2
@@ -578,6 +568,20 @@ MonoBehaviour:
   damageAmount: 250
   explosion: {fileID: 2652055922327018255, guid: 7e1cff1820c3eb44cb8f1e2d9ae39e26, type: 3}
   anim: {fileID: 607632051084430070}
+  isMedium: 0
+  isHard: 0
+--- !u!114 &2162212854898484942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8975058826241296649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b35e828c635084a84ad6017e181536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6414299634357188455
 PrefabInstance:
   m_ObjectHideFlags: 0

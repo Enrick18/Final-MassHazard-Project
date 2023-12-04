@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577455512450028891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.262859, y: 6.599678, z: 2.662092}
+  m_LocalRotation: {x: -0.63221717, y: 0.040793568, z: -0.033364177, w: -0.7729969}
+  m_LocalPosition: {x: 0.11870611, y: 3.749999, z: 2.6700094}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -375,7 +375,7 @@ MonoBehaviour:
   launcherModel: {fileID: 4525598916335328110}
   anim: {fileID: 7506943023779053844}
   element: 0
-  damage: 500
+  damage: 300
 --- !u!114 &6984987243440939676
 MonoBehaviour:
   m_ObjectHideFlags: 0

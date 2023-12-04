@@ -36,7 +36,6 @@ public class HeroCurrencyGenerator : MonoBehaviour
         if (generateCounter <= 0) 
         {
             generateCounter = timeBetweenCapsules;
-            Debug.Log("Yes");
             currencySystem.GainCurrency(amount);
         }
 

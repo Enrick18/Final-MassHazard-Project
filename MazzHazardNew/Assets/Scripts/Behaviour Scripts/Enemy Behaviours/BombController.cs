@@ -13,8 +13,8 @@ public class BombController : MonoBehaviour, IKillable
     public float damageAmount;
     public GameObject explosion;
     public Animator anim;
-    private bool isMedium;
-    private bool isHard;
+    [SerializeField]private bool isMedium;
+    [SerializeField]private bool isHard;
 
     public void IsDead()
     {
@@ -26,12 +26,12 @@ public class BombController : MonoBehaviour, IKillable
     {
         if (isMedium)
         {
-            float damageIncrease = damageAmount * 0.15f;
+            float damageIncrease = 50f;
             damageAmount += damageIncrease;
         }
         else if (isHard)
         {
-            float damageIncrease = damageAmount * 0.40f;
+            float damageIncrease = 100f;
             damageAmount += damageIncrease;
         }
         healthController = GetComponent<HealthController>();
@@ -44,23 +44,20 @@ public class BombController : MonoBehaviour, IKillable
 
     private void Update()
     {
-        if (healthController.currentHealth <= 0) 
-        { 
-            Explode();
-            Destroy(gameObject);
-        }
+
     }
 
     // Update is called once per frame
     public void Explode()
     {
-            Instantiate(explosion, transform.position, transform.rotation);
+
             Collider[] hitColliders = Physics.OverlapSphere(transform.position, bombRadius, heroLayer);
 
             foreach (Collider col in hitColliders) 
             {
-                boomEffect.Play();
+                //boomEffect.Play();
                 Debug.Log("Boom");
+                Instantiate(explosion, transform.position, transform.rotation);
                 var heroHealth = col.GetComponent<HealthController>();
                 heroHealth.TakeDamage(damageAmount, heroHealth.GetElementalDamageMultiplier(enemyHealth.GetElementType(), heroHealth.GetElementType()), heroHealth.GetDamageResistanceModifier());
             }
@@ -70,6 +67,7 @@ public class BombController : MonoBehaviour, IKillable
     private void OnTriggerEnter(Collider other)
     {
         Explode();
+        healthController.Dead();
         Destroy(gameObject);
     }
 
