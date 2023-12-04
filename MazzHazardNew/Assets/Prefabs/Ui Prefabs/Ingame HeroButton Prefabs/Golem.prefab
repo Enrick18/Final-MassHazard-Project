@@ -333,7 +333,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "NAME: Golem\r\nELEMENT: Normal\nROLE: Defender\nBLOCK COUNT: 3\t\r\nHP:
-    1000\r\nDMG: 100\r\nCOST: 20"
+    1000\r\nDMG: 85\nCOST: 20"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
