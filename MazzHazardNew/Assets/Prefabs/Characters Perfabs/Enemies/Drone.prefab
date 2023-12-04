@@ -356,8 +356,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.7941704, y: 3.7255254, z: 4.1129246}
-  m_Center: {x: 0.00004196167, y: 1.6890867, z: 0.031837463}
+  m_Size: {x: 4.557749, y: 5.391516, z: 4.1129246}
+  m_Center: {x: -0.10408306, y: 2.522082, z: 0.031837463}
 --- !u!54 &3048699529559996885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -442,6 +442,7 @@ MonoBehaviour:
   healthBar: {fileID: 6395120336178643807}
   maxHealth: 300
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
   damageResistance: 1

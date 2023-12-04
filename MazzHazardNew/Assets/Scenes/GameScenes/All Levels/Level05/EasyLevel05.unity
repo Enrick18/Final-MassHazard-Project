@@ -15130,7 +15130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[0].enemy
@@ -15147,11 +15147,15 @@ PrefabInstance:
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[3].enemy
       value: 
-      objectReference: {fileID: 4749583453166842703, guid: 712fb00a36b6ce540a7abb68f50af7f1, type: 3}
+      objectReference: {fileID: 2309751930865661252, guid: d439e3c91b9cb0f4a9bda2d80b48ad38, type: 3}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[4].enemy
       value: 
-      objectReference: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
+      objectReference: {fileID: 4749583453166842703, guid: 712fb00a36b6ce540a7abb68f50af7f1, type: 3}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.data[5].enemy
+      value: 
+      objectReference: {fileID: 2309751930865661252, guid: d439e3c91b9cb0f4a9bda2d80b48ad38, type: 3}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[0].enemyCount
       value: 3
@@ -15166,10 +15170,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[3].enemyCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[4].enemyCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: enemyList.Array.data[5].enemyCount
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209068, guid: f89572840482a1e4f820b8e604fd04db, type: 3}

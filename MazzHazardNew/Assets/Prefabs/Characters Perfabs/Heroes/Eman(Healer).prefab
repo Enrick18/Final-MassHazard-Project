@@ -226,11 +226,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 1040925371256505962}
   healthBar: {fileID: 1877645264048957173}
-  maxHealth: 300
+  maxHealth: 500
   currentHealth: 0
+  notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 1
+  damageResistance: 0.8
   element: 3
 --- !u!114 &1877645262903174885
 MonoBehaviour:
@@ -245,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healEffect: {fileID: 2268761782545376698}
-  range: 15
+  range: 20
   healAmount: 0.15
   timeBetweenHeals: 1.1
   healRate: 1
