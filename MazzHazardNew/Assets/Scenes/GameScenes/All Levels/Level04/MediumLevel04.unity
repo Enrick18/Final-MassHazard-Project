@@ -2425,6 +2425,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: timeBetweenSpawns
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -2443,7 +2447,7 @@ PrefabInstance:
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[3].enemy
       value: 
-      objectReference: {fileID: 6398054517495382798, guid: d29f254ba07460148af8306ce7c5c126, type: 3}
+      objectReference: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[0].enemyCount
       value: 2
@@ -2458,7 +2462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[3].enemyCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209068, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: m_Name

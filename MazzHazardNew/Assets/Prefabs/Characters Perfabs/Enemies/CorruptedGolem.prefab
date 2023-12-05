@@ -342,7 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: -2648816852970497172}
   healthBar: {fileID: 9199541396001770720}
-  maxHealth: 3000
+  maxHealth: 2800
   currentHealth: 0
   notStructure: 1
   isMedium: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
-  blockRequirement: 3
+  blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 2478126174027457682}
   counter: {fileID: 512971052848069693}

@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.98039216, g: 0.48246333, b: 0.18823527, a: 1}
+  m_Color: {r: 1, g: 0.06568897, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
-  blockRequirement: 2
+  blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 3762691830920406709}
   counter: {fileID: -3901681482271049161}

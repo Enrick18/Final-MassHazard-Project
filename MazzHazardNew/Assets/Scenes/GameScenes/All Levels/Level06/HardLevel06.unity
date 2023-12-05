@@ -207,7 +207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: defaultCurency
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: cooldownCounter
@@ -8363,6 +8363,10 @@ PrefabInstance:
     - target: {fileID: 4082568470376938699, guid: 46de197c01aeaa2449eeaf2412febbe1, type: 3}
       propertyPath: wayPointIndex
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7306511984850556832, guid: 46de197c01aeaa2449eeaf2412febbe1, type: 3}
+      propertyPath: maxLife
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

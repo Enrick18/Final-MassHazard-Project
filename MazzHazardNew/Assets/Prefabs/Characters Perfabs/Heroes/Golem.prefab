@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 1980423114653611533}
   healthBar: {fileID: 6594814974313365683}
-  maxHealth: 1200
+  maxHealth: 1500
   currentHealth: 0
   notStructure: 1
   isMedium: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   blockTarget: Enemy
   launcherModel: {fileID: 5629675801801837615}
   anim: {fileID: 1783579955204920917}
-  isAoeAttack: 0
+  isAoeAttack: 1
   blockCounterUi: {fileID: 7916577854075476638}
 --- !u!114 &5414125985786134499
 MonoBehaviour:

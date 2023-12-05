@@ -1275,7 +1275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CAN ONLY BRING 5 HEROES
+  m_text: CAN ONLY BRING 6 HEROES
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -5287,7 +5287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32b07c16debde4448297d99f170b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineStrength: 6
+  outlineStrength: 8
 --- !u!114 &259679473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6095,7 +6095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32b07c16debde4448297d99f170b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineStrength: 6
+  outlineStrength: 8
 --- !u!114 &278469453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28865,7 +28865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32b07c16debde4448297d99f170b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineStrength: 6
+  outlineStrength: 8
 --- !u!114 &1375482844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33587,7 +33587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32b07c16debde4448297d99f170b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineStrength: 6
+  outlineStrength: 8
 --- !u!114 &1564327216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37632,7 +37632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32b07c16debde4448297d99f170b8e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineStrength: 6
+  outlineStrength: 8
 --- !u!1001 &1782245556
 PrefabInstance:
   m_ObjectHideFlags: 0

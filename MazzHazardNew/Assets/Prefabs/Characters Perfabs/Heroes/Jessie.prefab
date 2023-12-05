@@ -336,7 +336,7 @@ MonoBehaviour:
   notStructure: 1
   isMedium: 0
   isHard: 0
-  damageResistance: 0.8
+  damageResistance: 0.7
   element: 0
 --- !u!114 &5002148828284854949
 MonoBehaviour:

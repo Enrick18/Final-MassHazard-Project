@@ -80,6 +80,7 @@ public class Projectile : MonoBehaviour
             }
         }
 
+        Destroy(gameObject, 5f);
         
     }
 
