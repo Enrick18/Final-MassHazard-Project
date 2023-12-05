@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class HeroController : MonoBehaviour, IKillable, IHeroStats
@@ -27,6 +28,7 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
 
     public bool isAoeAttack = false;
 
+    public TextMeshProUGUI blockCounterUi;
 
     void Start()
     {
@@ -49,6 +51,8 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
         }
 
         _enemiesBlocked = currentBlockCount;
+        blockCounterUi.text = (blockCount - _enemiesBlocked).ToString();
+
 
         if (!isAoeAttack && _enemyBlockList.Count > 0)
         {
