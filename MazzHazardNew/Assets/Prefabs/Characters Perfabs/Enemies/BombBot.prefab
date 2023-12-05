@@ -34,10 +34,10 @@ RectTransform:
   m_Father: {fileID: 358509955780722852}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.23736218, y: 0.059340507}
+  m_AnchorMax: {x: 0.8575827, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.0000038146973, y: 0.00000008940697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5980166294305422559
 CanvasRenderer:
@@ -129,7 +129,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.043453217, y: 4}
+  m_AnchoredPosition: {x: 0.043453217, y: 4.5}
   m_SizeDelta: {x: 880.39996, y: 414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7059844845411208602
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6153743, g: 1, b: 0.3339622, a: 1}
+  m_Color: {r: 1, g: 0.06666667, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -393,8 +393,8 @@ RectTransform:
   m_Father: {fileID: 358509955780722852}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.23736218, y: 0.11868111}
+  m_AnchorMax: {x: 0.8575827, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -506,7 +506,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &7269534718531407472
 MonoBehaviour:
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 0}
   healthBar: {fileID: 8535660769849877697}
-  maxHealth: 400
+  maxHealth: 300
   currentHealth: 0
   notStructure: 1
   isMedium: 1

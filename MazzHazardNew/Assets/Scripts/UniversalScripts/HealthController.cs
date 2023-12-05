@@ -26,13 +26,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
         if (isMedium)
         {
-            damageResistance -= 0.3f;
-            float increasehealth = maxHealth * 0.25f;
+            damageResistance -= 0.25f;
+            float increasehealth = maxHealth * 0.2f;
             maxHealth += increasehealth;
         }
         else if (isHard)
         {
-            damageResistance -= 0.4f;
+            damageResistance -= 0.35f;
             float increasehealth = maxHealth * 0.34f;
             maxHealth += increasehealth;
         }

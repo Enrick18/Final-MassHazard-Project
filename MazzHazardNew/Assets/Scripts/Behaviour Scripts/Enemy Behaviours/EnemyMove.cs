@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,8 +9,7 @@ public class EnemyMove : MonoBehaviour, IKillable
     NavMeshAgent agent;
     private UnitPathing thePath;
     int wayPointIndex;
-    [SerializeField]
-    private Vector3 target;
+    [SerializeField]private Vector3 target;
     public float distance = 2.7f;
     public int blockRequirement = 1;
     private float movementSpeed;
@@ -20,6 +20,8 @@ public class EnemyMove : MonoBehaviour, IKillable
     public Animator anim;
     public EnemyEventRaiser counter;
     public bool isBlocked;
+
+    //public TextMeshProUGUI blockCounText;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,7 @@ public class EnemyMove : MonoBehaviour, IKillable
             thePath = findGameManager.GetComponent<UnitPathing>();
         }
         UpdateDestination();
-
+        //blockCounText.text = blockRequirement.ToString();
     }
     void Update()
     {
@@ -41,6 +43,11 @@ public class EnemyMove : MonoBehaviour, IKillable
         {
             IterateWayPointIndex();
         }
+
+        //if (isBlocked) 
+        //{
+        //    blockCounText.gameObject.SetActive(false);
+        //}
 
 
         if (hero == null )// to resume movement when no hero blocking

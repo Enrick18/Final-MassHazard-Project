@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6153743, g: 1, b: 0.3339622, a: 1}
+  m_Color: {r: 0.8679245, g: 0, b: 0.02382543, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -342,7 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: -2648816852970497172}
   healthBar: {fileID: 9199541396001770720}
-  maxHealth: 3000
+  maxHealth: 2800
   currentHealth: 0
   notStructure: 1
   isMedium: 0
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   distance: 7.5
-  blockRequirement: 3
+  blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 2478126174027457682}
   counter: {fileID: 512971052848069693}

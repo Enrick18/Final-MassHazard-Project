@@ -7359,7 +7359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.size
@@ -7372,7 +7372,7 @@ PrefabInstance:
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[1].enemy
       value: 
-      objectReference: {fileID: 2778616273020895697, guid: 46c8628b4a9e2974abca948535e76233, type: 3}
+      objectReference: {fileID: 6398054517495382798, guid: d29f254ba07460148af8306ce7c5c126, type: 3}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.data[0].enemyCount
       value: 4
@@ -7469,6 +7469,14 @@ PrefabInstance:
     - target: {fileID: 5077898088379688472, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986124550055106930, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: maxHealth
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986124550055106930, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: damageResistance
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 9190186174890342713, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: attackCooldown
@@ -9589,6 +9597,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6003634204650141522 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1192289229322794912, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1192289229789744092, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
   m_PrefabInstance: {fileID: 6003634204650141517}
   m_PrefabAsset: {fileID: 0}

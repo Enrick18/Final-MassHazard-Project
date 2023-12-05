@@ -244,7 +244,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 0
 --- !u!54 &2517965082403669629
 Rigidbody:
@@ -308,12 +308,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathEffect: {fileID: 4048843330797642292}
   healthBar: {fileID: 2778616272866425175}
-  maxHealth: 850
+  maxHealth: 750
   currentHealth: 0
   notStructure: 1
-  isMedium: 0
+  isMedium: 1
   isHard: 0
-  damageResistance: 0.7
+  damageResistance: 0.8
   element: 3
 --- !u!114 &2778616273020895693
 MonoBehaviour:
@@ -332,7 +332,7 @@ MonoBehaviour:
   damageAmount: 95
   timeBetweenAttacks: 1
   anim: {fileID: 3353206539633874598}
-  isMedium: 0
+  isMedium: 1
   isHard: 0
 --- !u!114 &2778616273020895694
 MonoBehaviour:
@@ -615,7 +615,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6153743, g: 1, b: 0.3339622, a: 1}
+  m_Color: {r: 1, g: 0.1649927, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
