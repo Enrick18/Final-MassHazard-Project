@@ -57,6 +57,7 @@ public class BlockEnabler : MonoBehaviour
                 if (hit.collider.gameObject.tag == "ChildCube")
                 {
                     clickedChildObject = hit.collider.gameObject;
+                    Debug.Log(clickedChildObject);
                 }
 
                 if (pathComplete && tileIndex == 4) 
