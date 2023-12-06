@@ -10,7 +10,7 @@ public class TutorialPause : MonoBehaviour
     void Start()
     {
         tutorial.SetActive(false);
-        Invoke(nameof(TimeStop), 2f);
+        Invoke(nameof(TimeStop), 0.8f);
     }
 
     // Update is called once per frame
