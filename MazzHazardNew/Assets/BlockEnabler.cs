@@ -93,13 +93,21 @@ public class BlockEnabler : MonoBehaviour
                     int index = clickedChildObject.transform.GetSiblingIndex();
                     if (index == 0)
                     {
+                        invalidMapMessage.SetActive(true);
+                        validMapMessage.SetActive(false);
+                        pathComplete = false;
                         isSpawner = false;
                         spawnButton.interactable = true;
+                        pathButton.interactable = true;
                     }
                     else if (index == 1) 
                     {
+                        invalidMapMessage.SetActive(true);
+                        validMapMessage.SetActive(false);
+                        pathComplete = false;
                         isGoal = false;
                         goalButton.interactable = true;
+                        pathButton.interactable = true;
                     }
 
 
