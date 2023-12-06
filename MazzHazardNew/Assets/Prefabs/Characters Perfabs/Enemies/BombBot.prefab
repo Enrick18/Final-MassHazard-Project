@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  distance: 9
+  distance: 8
   blockRequirement: 1
   hero: {fileID: 0}
   anim: {fileID: 607632051084430070}
@@ -565,10 +565,10 @@ MonoBehaviour:
   heroLayer:
     serializedVersion: 2
     m_Bits: 128
-  damageAmount: 250
+  damageAmount: 300
   explosion: {fileID: 2652055922327018255, guid: 7e1cff1820c3eb44cb8f1e2d9ae39e26, type: 3}
   anim: {fileID: 607632051084430070}
-  isMedium: 1
+  isMedium: 0
   isHard: 0
 --- !u!114 &2162212854898484942
 MonoBehaviour:
