@@ -33,7 +33,11 @@ public class LoadMap : MonoBehaviour
                 parentCube.GetChild(3).gameObject.SetActive(mapData[parentCube.name.ToString()].grass);
                 parentCube.GetChild(4).gameObject.SetActive(mapData[parentCube.name.ToString()].path);
                 parentCube.GetChild(5).gameObject.SetActive(mapData[parentCube.name.ToString()].range);
-                
+             
+                if(!mapData[parentCube.name.ToString()].spawner && !mapData[parentCube.name.ToString()].goal && !mapData[parentCube.name.ToString()].decor && !mapData[parentCube.name.ToString()].grass && !mapData[parentCube.name.ToString()].path && !mapData[parentCube.name.ToString()].range)
+                {
+                    parentCube.gameObject.SetActive(false);
+                }
             }
         }
 
