@@ -34,7 +34,6 @@ public class GoalTrigger : MonoBehaviour
         {
             audioManager.PlaySFX(audioManager.enterGoal);
             Destroy(other.gameObject);
-            Debug.Log("Destroyed");
             LoseHealth();
             enemyCounter.DecreaseEnemy();
         }    

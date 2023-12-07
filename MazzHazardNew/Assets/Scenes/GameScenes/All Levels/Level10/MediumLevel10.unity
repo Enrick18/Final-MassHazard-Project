@@ -3750,6 +3750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4475,6 +4479,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7986438507284771237, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: isWayPoint
@@ -5936,6 +5944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6496,7 +6508,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.66
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 623f83a4681b60448a29f83700556bd8, type: 2}
   m_BuildHeightMesh: 0
@@ -7063,6 +7075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7392,6 +7408,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
@@ -8624,6 +8644,10 @@ PrefabInstance:
     - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
       propertyPath: m_Name
       value: PlantBuffBlock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11427,6 +11451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -12887,6 +12915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -13876,6 +13908,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
@@ -15662,6 +15698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -15727,6 +15767,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
@@ -16530,7 +16574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3066557407855236567, guid: 3eb57082b52790546a7161a1035891fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.4948785
+      value: 2.9948785
       objectReference: {fileID: 0}
     - target: {fileID: 3066557407855236567, guid: 3eb57082b52790546a7161a1035891fa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16571,6 +16615,10 @@ PrefabInstance:
     - target: {fileID: 7601157155410028436, guid: 3eb57082b52790546a7161a1035891fa, type: 3}
       propertyPath: m_Name
       value: FireBuffBlock2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601157155410028436, guid: 3eb57082b52790546a7161a1035891fa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19102,6 +19150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -20553,6 +20605,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
@@ -22452,6 +22508,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
@@ -25385,7 +25445,13 @@ PrefabInstance:
       addedObject: {fileID: 1483878234}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 256937593}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 574065989}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077634989}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1977278668}
@@ -25394,13 +25460,7 @@ PrefabInstance:
       addedObject: {fileID: 1799489608}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 256937593}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 190609661}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1077634989}
     - targetCorrespondingSourceObject: {fileID: 1184014204712684634, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1254524400}
@@ -32550,6 +32610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NonSpawnableBlock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8045246331911651984, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -33341,6 +33405,10 @@ PrefabInstance:
     - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: m_Name
       value: NonSpawnableBlock (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392894167198635836, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7986438507284771237, guid: 1b8ae167524d0f94db2b8cfdea6cb643, type: 3}
       propertyPath: isWayPoint

@@ -16,7 +16,6 @@ public class LevelSelection : MonoBehaviour
         stageUi.SetActive(false);
         loadOutUi.SetActive(true);
         MissionSelect.levelToLoad = level;
-
     }
 
     public void LoadLevel()
@@ -59,6 +58,7 @@ public class LevelSelection : MonoBehaviour
             warningUi.SetActive(true);
         }
     }
+
 
     public void BackToStageUi()
     {

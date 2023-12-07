@@ -10,12 +10,18 @@ public class SpikedBlock : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == target) 
+        if (other.tag == target)
         {
             Debug.Log("Damage");
-           var hero = other.GetComponent<HealthController>();
+            var hero = other.GetComponent<HealthController>();
 
             hero.TakePureDamage(damageAmount);
+        }
+        else if (other.tag == "Enemy") 
+        { 
+            var enemy = other.GetComponent<HealthController>();
+
+            enemy.TakePureDamage(damageAmount*0.75f);
         }
     }
 

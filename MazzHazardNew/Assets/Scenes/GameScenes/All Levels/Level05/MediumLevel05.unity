@@ -1527,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantBuffBlock2
       objectReference: {fileID: 0}
+    - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4055,6 +4059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantBuffBlock2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6370,6 +6378,9 @@ PrefabInstance:
       addedObject: {fileID: 1374729372}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 874169122}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 370438732}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
@@ -6410,9 +6421,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 649929302}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 874169122}
     - targetCorrespondingSourceObject: {fileID: 1184014204712684634, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175111858}
@@ -7871,7 +7879,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.66
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 1a0100499c3017d44953998e6264a57b, type: 2}
   m_BuildHeightMesh: 0

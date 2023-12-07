@@ -766,6 +766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlantBuffBlock2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1029,6 +1033,10 @@ PrefabInstance:
     - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
       propertyPath: m_Name
       value: PlantBuffBlock2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2254695292189276110, guid: 9920bb9076455c9418d2e44328029c86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1957,6 +1965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikedPath
       objectReference: {fileID: 0}
+    - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3268000845586000201, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2154,6 +2166,10 @@ PrefabInstance:
     - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_Name
       value: SpikedPath (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268000845586000201, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_RootOrder
@@ -2528,7 +2544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4858210561567659588, guid: 24566679414dc5041b6b0257c958a6f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.5
+      value: -22
       objectReference: {fileID: 0}
     - target: {fileID: 4858210561567659588, guid: 24566679414dc5041b6b0257c958a6f6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3247,6 +3263,10 @@ PrefabInstance:
     - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_Name
       value: SpikedPath (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268000845586000201, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_RootOrder
@@ -4610,6 +4630,10 @@ PrefabInstance:
     - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_Name
       value: SpikedPath (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268000845586000201, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_RootOrder
@@ -7574,7 +7598,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.66
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: d361b2c9ccc99d249aa19b209cad8a99, type: 2}
   m_BuildHeightMesh: 0
@@ -11975,6 +11999,18 @@ PrefabInstance:
       addedObject: {fileID: 100724808}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 796245371}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1482235480}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1112998233}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 314865523}
+    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 389737398}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
@@ -12029,19 +12065,7 @@ PrefabInstance:
       addedObject: {fileID: 103074431}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 796245371}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1482235480}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 81480980}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1112998233}
-    - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 314865523}
     - targetCorrespondingSourceObject: {fileID: 5791344108095663214, guid: 6fe600ac7f46dec4c9c597f61a77e5d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1764234210}
@@ -14223,6 +14247,10 @@ PrefabInstance:
     - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_Name
       value: SpikedPath (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073936382326217629, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3268000845586000201, guid: 309fe5866c213bb4da1e952aa4851229, type: 3}
       propertyPath: m_RootOrder

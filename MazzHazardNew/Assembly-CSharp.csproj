@@ -138,6 +138,7 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\TileBuff.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 2\VideoController2.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\SpikedBlock.cs" />
+    <Compile Include="Assets\OverViewScript.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantAoeAttack.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\DeleteJson.cs" />
