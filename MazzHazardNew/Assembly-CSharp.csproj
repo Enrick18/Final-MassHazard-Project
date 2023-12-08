@@ -73,6 +73,7 @@
     <Compile Include="Assets\Audio\SoundEffectsPlayer.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\GridGenerator.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 5\VideoController5.cs" />
+    <Compile Include="Assets\StarUnlock.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\CurrencySystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroDetect.cs" />
     <Compile Include="Assets\BlockEnabler.cs" />
