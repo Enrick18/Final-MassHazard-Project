@@ -19,6 +19,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
+    public GameObject deathModel;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +51,9 @@ public class HealthController : MonoBehaviour, IHealthSystem
     {
         if (currentHealth <= 0)
         {
+            currentHealth = 0;
+            anim.SetBool("isDead", true);
+            Instantiate(deathModel, this.transform);
             Dead();
         }
 
@@ -82,11 +86,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
         damageAmount *= resistanceModifier;
         currentHealth -= damageAmount;
 
-        if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            Dead();
-        }
+        //if (currentHealth <= 0)
+        //{
+        //    currentHealth = 0;
+        //    anim.SetBool("isDead", true);
+        //    Invoke(nameof(CancelDeath), .1f);
+        //    Dead();
+        //}
 
     }
 
@@ -98,11 +104,11 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public void PoisonDamage(float poisonDamage)
     {
         currentHealth -= poisonDamage;
-        if(currentHealth <= 0)
-        {
-            currentHealth = 0;
-            Dead();
-        }
+        //if(currentHealth <= 0)
+        //{
+        //    currentHealth = 0;
+        //    Dead();
+        //}
     }
 
     public void HealDamage(float healAmount, float health)
@@ -121,17 +127,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
     public void Dead()
     {
-        if (anim != null)
-        {
-            anim.SetBool("isDead", true);
-            var killableComponents = GetComponents<IKillable>();
-            foreach (var killable in killableComponents)
-            {
-                killable.IsDead();
-            }
-        }
 
-        //deathEffect.Play();
+        var killableComponents = GetComponents<IKillable>();
+        foreach (var killable in killableComponents)
+        {
+            killable.IsDead();
+        }
+        
         Destroy(gameObject);  
     }
 

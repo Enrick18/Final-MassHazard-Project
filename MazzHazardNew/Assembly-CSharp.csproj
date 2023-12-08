@@ -145,6 +145,7 @@
     <Compile Include="Assets\Scripts\LevelEditor\DeleteJson.cs" />
     <Compile Include="Assets\CheckPath.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />
+    <Compile Include="Assets\DeathPlay.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />
