@@ -311,10 +311,12 @@ MonoBehaviour:
   maxHealth: 750
   currentHealth: 0
   notStructure: 1
-  isMedium: 1
+  isMedium: 0
   isHard: 0
   damageResistance: 0.8
   element: 3
+  deathPrefab: {fileID: 3825284881124272568, guid: 63667886afd8f084b949888c9c23c2a7, type: 3}
+  isBomb: 0
 --- !u!114 &2778616273020895693
 MonoBehaviour:
   m_ObjectHideFlags: 0

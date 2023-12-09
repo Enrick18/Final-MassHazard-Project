@@ -562,6 +562,8 @@ MonoBehaviour:
   isHard: 0
   damageResistance: 0.8
   element: 0
+  deathPrefab: {fileID: 8395142726217391798, guid: 39a510094a220ed438682c47ab9129aa, type: 3}
+  isBomb: 0
 --- !u!114 &-6685852590656365769
 MonoBehaviour:
   m_ObjectHideFlags: 0

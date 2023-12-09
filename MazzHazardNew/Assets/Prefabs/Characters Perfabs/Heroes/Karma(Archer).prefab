@@ -419,6 +419,8 @@ MonoBehaviour:
   isHard: 0
   damageResistance: 0.8
   element: 2
+  deathPrefab: {fileID: 8407057154707628692, guid: 495ff37ad92c9fc44a09dc4249738e6e, type: 3}
+  isBomb: 0
 --- !u!114 &7572789435222156614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +879,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 781a32b7246156b4b8250ba83cc2ce76, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 9cc2dc38badb97748b08e23ab18f56b0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

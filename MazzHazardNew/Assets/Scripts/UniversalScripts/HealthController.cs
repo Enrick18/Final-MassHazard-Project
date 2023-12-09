@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,11 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
-    public GameObject deathModel;
+    public GameObject deathPrefab;
+
+    public static event Action<SpawnModelDetails> OnSpawnDestroyedModel;
+
+    public bool isBomb = false;
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +58,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
         {
             currentHealth = 0;
             anim.SetBool("isDead", true);
-            Instantiate(deathModel, this.transform);
+
+            if (!isBomb) 
+            {
+                SpawnModelDetails modelDetails = new SpawnModelDetails { model = deathPrefab, spawnPoint = transform };
+                OnSpawnDestroyedModel?.Invoke(modelDetails);
+            }
+
             Dead();
         }
 
@@ -222,5 +233,12 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public bool isHealable()
     {
         return notStructure;
+    }
+
+    [System.Serializable]
+    public class SpawnModelDetails 
+    {
+        public GameObject model;
+        public Transform spawnPoint;
     }
 }

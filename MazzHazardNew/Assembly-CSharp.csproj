@@ -130,6 +130,7 @@
     <Compile Include="Assets\ReceiptLoader.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
+    <Compile Include="Assets\SpawnDeathModel.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerManager.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\RealtimeNavMeshBaking.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\BackToMenu.cs" />

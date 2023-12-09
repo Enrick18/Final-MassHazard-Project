@@ -525,10 +525,12 @@ MonoBehaviour:
   maxHealth: 300
   currentHealth: 0
   notStructure: 1
-  isMedium: 1
+  isMedium: 0
   isHard: 0
   damageResistance: 1
   element: 3
+  deathPrefab: {fileID: 0}
+  isBomb: 1
 --- !u!114 &6605208439605419451
 MonoBehaviour:
   m_ObjectHideFlags: 0

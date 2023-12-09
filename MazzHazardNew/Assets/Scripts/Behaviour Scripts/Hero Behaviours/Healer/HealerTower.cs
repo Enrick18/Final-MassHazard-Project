@@ -13,6 +13,7 @@ public class HealerTower : MonoBehaviour, IKillable
     public float healRate;
     public LayerMask allyLayer;
     public GameObject healingEffectPrefab;
+    public GameObject aoeHealEffectPrefab;
     public Transform launcherModel;
     private Coroutine healCoroutine;
     private Dictionary<GameObject, IHealthSystem> _healableAllies = new Dictionary<GameObject, IHealthSystem>();
@@ -138,6 +139,7 @@ public class HealerTower : MonoBehaviour, IKillable
 
         if (!isAoe && heroHealth != null)
         {
+            Instantiate(healingEffectPrefab, heroHealth.GetGameObject().transform);
             heroHealth.HealDamage(healAmount, heroHealth.GetMaxHealth());
             if (heroHealth.GetCurrentHealth() >= heroHealth.GetMaxHealth())
             {
@@ -152,7 +154,9 @@ public class HealerTower : MonoBehaviour, IKillable
                 var allyHealthController = allyAoe.GetComponent<IHealthSystem>();
                 if (allyHealthController.GetCurrentHealth() < allyHealthController.GetMaxHealth())
                 {
-                    if(allyHealthController.isHealable())
+                    Instantiate(healingEffectPrefab, allyHealthController.GetGameObject().transform);
+
+                    if (allyHealthController.isHealable())
                     allyHealthController.HealDamage(healAmount, allyHealthController.GetMaxHealth());
 
                 }
