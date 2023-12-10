@@ -8,6 +8,7 @@ public class SaveLoadOut : MonoBehaviour
     public LoadOutHeroList playerLoadOut;
     public Sprite activatedImage;
     public Sprite originalImage;
+    public Sprite unlockImage;
     private Button button;
     public string levelKey;
     public int levelUnlocked;
@@ -26,10 +27,12 @@ public class SaveLoadOut : MonoBehaviour
 
         if (levelUnlocked != 0)
         {
+            button.image.sprite = originalImage;
             button.interactable = true;
         }
         else 
-        { 
+        {
+            button.image.sprite = unlockImage;
             button.interactable=false;
         }
     }

@@ -12,16 +12,17 @@ public class SpikedBlock : MonoBehaviour
     {
         if (other.tag == target)
         {
-            Debug.Log("Damage");
             var hero = other.GetComponent<HealthController>();
 
             hero.TakePureDamage(damageAmount);
         }
         else if (other.tag == "Enemy") 
-        { 
+        {
+            Debug.Log("Damage");
+
             var enemy = other.GetComponent<HealthController>();
 
-            enemy.TakePureDamage(damageAmount*0.75f);
+            enemy.TakePureDamage(damageAmount*0.3f);
         }
     }
 

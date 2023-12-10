@@ -311,6 +311,8 @@ MonoBehaviour:
   isHard: 0
   damageResistance: 0.6
   element: 1
+  deathPrefab: {fileID: 0}
+  noDeathAnim: 1
 --- !u!114 &9190186174890342713
 MonoBehaviour:
   m_ObjectHideFlags: 0

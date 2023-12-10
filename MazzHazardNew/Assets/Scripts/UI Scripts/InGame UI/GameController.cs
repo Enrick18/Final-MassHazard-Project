@@ -47,4 +47,12 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene("LevelEditor");
     }
+
+    public void EndCutscene(bool isLevel10) 
+    {
+        if (isLevel10) 
+        {
+            SceneManager.LoadScene("Cutscene4");
+        }
+    }
 }

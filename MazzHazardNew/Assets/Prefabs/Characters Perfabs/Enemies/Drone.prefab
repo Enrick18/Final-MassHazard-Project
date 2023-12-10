@@ -394,19 +394,19 @@ NavMeshAgent:
   m_GameObject: {fileID: 6398054517495382798}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 4.46
+  m_Radius: 4
   m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 800
-  m_StoppingDistance: 3
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &8681718244737273062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   anim: {fileID: 8077943958025515953}
   isMedium: 0
-  isHard: 0
+  isHard: 1
 --- !u!114 &3556801484299115476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,11 +444,11 @@ MonoBehaviour:
   currentHealth: 0
   notStructure: 1
   isMedium: 0
-  isHard: 0
+  isHard: 1
   damageResistance: 0.8
   element: 2
   deathPrefab: {fileID: 7857466439532463119, guid: e5b0c3bcf52bd0f48ad8269d74536ad7, type: 3}
-  isBomb: 0
+  noDeathAnim: 0
 --- !u!114 &5059915530188485434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +480,7 @@ MonoBehaviour:
   anim: {fileID: 8077943958025515953}
   counter: {fileID: 5059915530188485434}
   isBlocked: 0
+  environmentalMob: 0
 --- !u!82 &6958166443709787354
 AudioSource:
   m_ObjectHideFlags: 0

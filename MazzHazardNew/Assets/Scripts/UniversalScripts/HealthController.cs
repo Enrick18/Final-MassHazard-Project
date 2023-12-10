@@ -24,7 +24,7 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
     public static event Action<SpawnModelDetails> OnSpawnDestroyedModel;
 
-    public bool isBomb = false;
+    public bool noDeathAnim = false;
 
     // Start is called before the first frame update
     void Start()
@@ -57,9 +57,10 @@ public class HealthController : MonoBehaviour, IHealthSystem
         if (currentHealth <= 0)
         {
             currentHealth = 0;
+            if(anim!=null)
             anim.SetBool("isDead", true);
 
-            if (!isBomb) 
+            if (!noDeathAnim) 
             {
                 SpawnModelDetails modelDetails = new SpawnModelDetails { model = deathPrefab, spawnPoint = transform };
                 OnSpawnDestroyedModel?.Invoke(modelDetails);
@@ -96,15 +97,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
         damageAmount *= multiplier;
         damageAmount *= resistanceModifier;
         currentHealth -= damageAmount;
-
-        //if (currentHealth <= 0)
-        //{
-        //    currentHealth = 0;
-        //    anim.SetBool("isDead", true);
-        //    Invoke(nameof(CancelDeath), .1f);
-        //    Dead();
-        //}
-
     }
 
     public void TakePureDamage(float damageAmount) 
@@ -115,11 +107,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public void PoisonDamage(float poisonDamage)
     {
         currentHealth -= poisonDamage;
-        //if(currentHealth <= 0)
-        //{
-        //    currentHealth = 0;
-        //    Dead();
-        //}
     }
 
     public void HealDamage(float healAmount, float health)

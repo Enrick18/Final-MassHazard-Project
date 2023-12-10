@@ -234,7 +234,7 @@ MonoBehaviour:
   damageResistance: 0.8
   element: 1
   deathPrefab: {fileID: 6869576981574724455, guid: 72a865d02bcd7eb45bcd03d7a3a29886, type: 3}
-  isBomb: 0
+  noDeathAnim: 0
 --- !u!114 &7907761870453214425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +255,8 @@ MonoBehaviour:
   allyLayer:
     serializedVersion: 2
     m_Bits: 128
-  healingEffectPrefab: {fileID: 0}
+  healingEffectPrefab: {fileID: 7824204022322569897, guid: 2349dbeb701c0904eb1767c067eabd28, type: 3}
+  aoeHealEffectPrefab: {fileID: 0}
   launcherModel: {fileID: 3287314137035371666}
   anim: {fileID: 8898776545974365928}
   isAoe: 0
