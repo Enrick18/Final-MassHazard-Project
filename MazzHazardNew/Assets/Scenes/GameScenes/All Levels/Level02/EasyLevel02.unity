@@ -3028,6 +3028,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: unlockStar
+      value: ST2E
+      objectReference: {fileID: 0}
+    - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextStage
       value: S2M
       objectReference: {fileID: 0}
@@ -8372,7 +8376,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.7
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: cc40cb7f28ff8a64090112236c8d587b, type: 2}
   m_BuildHeightMesh: 0

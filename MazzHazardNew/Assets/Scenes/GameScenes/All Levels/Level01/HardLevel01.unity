@@ -2321,7 +2321,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 879bc70c3df51b64994688856a9abd71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7d12d7fe8d36f84ab179cbcf95ea6f5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7482,6 +7482,26 @@ PrefabInstance:
       propertyPath: damageResistance
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 8165544284681660075, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.87504244
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165544284681660075, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165544284681660075, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.48404625
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165544284681660075, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165544284681660075, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 302.1
+      objectReference: {fileID: 0}
     - target: {fileID: 9190186174890342713, guid: 9a2b7f7f3246e9c4f881d5cc430646e6, type: 3}
       propertyPath: attackCooldown
       value: 7
@@ -8545,7 +8565,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.7
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 0b8484962c842524cac8f6e8c2675649, type: 2}
   m_BuildHeightMesh: 0
@@ -9439,6 +9459,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
+      propertyPath: unlockStar
+      value: ST1H
+      objectReference: {fileID: 0}
     - target: {fileID: 185707911184988328, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: unlockNextStage
       value: 

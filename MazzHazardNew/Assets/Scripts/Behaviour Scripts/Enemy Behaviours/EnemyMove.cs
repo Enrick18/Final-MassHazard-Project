@@ -20,11 +20,12 @@ public class EnemyMove : MonoBehaviour, IKillable
     public Animator anim;
     public EnemyEventRaiser counter;
     public bool isBlocked;
+    public bool environmentalMob = false;
 
-    //public TextMeshProUGUI blockCounText;
     // Start is called before the first frame update
     void Start()
     {
+        if(!environmentalMob)
         agent = GetComponent<NavMeshAgent>();
         movementSpeed = agent.speed;
         thePath = FindObjectOfType<UnitPathing>();
@@ -34,7 +35,6 @@ public class EnemyMove : MonoBehaviour, IKillable
             thePath = findGameManager.GetComponent<UnitPathing>();
         }
         UpdateDestination();
-        //blockCounText.text = blockRequirement.ToString();
     }
     void Update()
     {
@@ -43,11 +43,6 @@ public class EnemyMove : MonoBehaviour, IKillable
         {
             IterateWayPointIndex();
         }
-
-        //if (isBlocked) 
-        //{
-        //    blockCounText.gameObject.SetActive(false);
-        //}
 
 
         if (hero == null )// to resume movement when no hero blocking
@@ -94,11 +89,15 @@ public class EnemyMove : MonoBehaviour, IKillable
 
     public void IsDead()
     {
-        if (agent.enabled == true) 
+        if (!environmentalMob) 
         {
-            agent.isStopped = true;
+            if (agent.enabled == true)
+            {
+                agent.isStopped = true;
+            }
+            counter.SendDeathEvent();
         }
-        counter.SendDeathEvent();
+        
         this.enabled = false;
     }
 }

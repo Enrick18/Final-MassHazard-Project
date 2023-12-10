@@ -7,10 +7,16 @@ public class StageComplete : MonoBehaviour
     public string unlockNextDifficulty;
     public string unlockNextStage;
 
+    public string unlockStar;
+
     public void SaveProgress()
     {
+        PlayerPrefs.SetInt(unlockStar, 1);
 
-        PlayerPrefs.SetInt(unlockNextDifficulty, 1);
+        if (unlockNextDifficulty != null) 
+        {
+            PlayerPrefs.SetInt(unlockNextDifficulty, 1);
+        }
 
         if (unlockNextStage != null)
         {

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,11 @@ public class HealthController : MonoBehaviour, IHealthSystem
     [SerializeField] private float damageResistance = 1;
     [SerializeField] private ElementType element;
 
+    public GameObject deathPrefab;
+
+    public static event Action<SpawnModelDetails> OnSpawnDestroyedModel;
+
+    public bool noDeathAnim = false;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +56,16 @@ public class HealthController : MonoBehaviour, IHealthSystem
     {
         if (currentHealth <= 0)
         {
+            currentHealth = 0;
+            if(anim!=null)
+            anim.SetBool("isDead", true);
+
+            if (!noDeathAnim) 
+            {
+                SpawnModelDetails modelDetails = new SpawnModelDetails { model = deathPrefab, spawnPoint = transform };
+                OnSpawnDestroyedModel?.Invoke(modelDetails);
+            }
+
             Dead();
         }
 
@@ -81,13 +97,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
         damageAmount *= multiplier;
         damageAmount *= resistanceModifier;
         currentHealth -= damageAmount;
-
-        if (currentHealth <= 0)
-        {
-            currentHealth = 0;
-            Dead();
-        }
-
     }
 
     public void TakePureDamage(float damageAmount) 
@@ -98,11 +107,6 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public void PoisonDamage(float poisonDamage)
     {
         currentHealth -= poisonDamage;
-        if(currentHealth <= 0)
-        {
-            currentHealth = 0;
-            Dead();
-        }
     }
 
     public void HealDamage(float healAmount, float health)
@@ -121,17 +125,13 @@ public class HealthController : MonoBehaviour, IHealthSystem
 
     public void Dead()
     {
-        if (anim != null)
-        {
-            anim.SetBool("isDead", true);
-            var killableComponents = GetComponents<IKillable>();
-            foreach (var killable in killableComponents)
-            {
-                killable.IsDead();
-            }
-        }
 
-        //deathEffect.Play();
+        var killableComponents = GetComponents<IKillable>();
+        foreach (var killable in killableComponents)
+        {
+            killable.IsDead();
+        }
+        
         Destroy(gameObject);  
     }
 
@@ -220,5 +220,12 @@ public class HealthController : MonoBehaviour, IHealthSystem
     public bool isHealable()
     {
         return notStructure;
+    }
+
+    [System.Serializable]
+    public class SpawnModelDetails 
+    {
+        public GameObject model;
+        public Transform spawnPoint;
     }
 }

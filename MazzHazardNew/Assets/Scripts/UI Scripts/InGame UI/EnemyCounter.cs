@@ -15,7 +15,6 @@ public class EnemyCounter : MonoBehaviour
 
     public StageComplete levelComplete;
     public bool isLevelEditor = false;
-
     private void OnEnable()
     {
         if (isLevelEditor == true)

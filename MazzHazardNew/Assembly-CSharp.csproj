@@ -73,6 +73,7 @@
     <Compile Include="Assets\Audio\SoundEffectsPlayer.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\GridGenerator.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 5\VideoController5.cs" />
+    <Compile Include="Assets\StarUnlock.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\CurrencySystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroDetect.cs" />
     <Compile Include="Assets\BlockEnabler.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Assets\ReceiptLoader.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\CharacterCardManager.cs" />
     <Compile Include="Assets\Scripts\UniversalScripts\HealthController.cs" />
+    <Compile Include="Assets\SpawnDeathModel.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\InGame UI\TowerSpawning Scripts\TowerManager.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\RealtimeNavMeshBaking.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\Main UI\BackToMenu.cs" />
@@ -138,11 +140,13 @@
     <Compile Include="Assets\Scripts\Pathing Scripts\TileBuff.cs" />
     <Compile Include="Assets\Scenes\Cutscenes\Cutscene 2\VideoController2.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\SpikedBlock.cs" />
+    <Compile Include="Assets\OverViewScript.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IHealthSystem.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Enemy Behaviours\TreantAoeAttack.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\DeleteJson.cs" />
     <Compile Include="Assets\CheckPath.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\Hero Behaviours\HeroCurrencyGenerator.cs" />
+    <Compile Include="Assets\DeathPlay.cs" />
     <Compile Include="Assets\Scripts\Pathing Scripts\Block.cs" />
     <Compile Include="Assets\Scripts\LevelEditor\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\LevelProgress Scripts\StageUnlock.cs" />

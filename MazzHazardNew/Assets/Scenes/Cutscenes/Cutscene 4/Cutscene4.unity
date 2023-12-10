@@ -386,7 +386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759867083}
-  - component: {fileID: 759867082}
+  - component: {fileID: 759867084}
   m_Layer: 0
   m_Name: CutsceneSkipper
   m_TagString: Untagged
@@ -394,20 +394,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &759867082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759867081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf0aca0815df1245a693f03b7d583fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cutsceneObject: {fileID: 431311090}
-  nextSceneName: StagesUI_Scene
 --- !u!4 &759867083
 Transform:
   m_ObjectHideFlags: 0
@@ -423,6 +409,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &759867084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759867081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46783004430ef264398ba87034a20c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutsceneObject: {fileID: 431311090}
+  loadOutHeroList: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
+  nextSceneName: StagesUi_Scene
 --- !u!1 &942298829
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,14 +646,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 668176d087797574aa324a9d396ef7f5, type: 2}
+  m_Texture: {fileID: 8400000, guid: 819b97f592abc5547b21b3bd164d885a, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0

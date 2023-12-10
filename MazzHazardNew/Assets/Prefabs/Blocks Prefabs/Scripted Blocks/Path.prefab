@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4858210561567659588}
   - component: {fileID: 4858210561567659591}
-  - component: {fileID: 4858210561567659590}
+  - component: {fileID: 248800420905040903}
   - component: {fileID: 4560421530972417107}
   - component: {fileID: 8751075641875083858}
   - component: {fileID: 3145197562640372008}
@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isWayPoint: 0
   wayPointIndex: -1
---- !u!114 &4858210561567659590
+--- !u!114 &248800420905040903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

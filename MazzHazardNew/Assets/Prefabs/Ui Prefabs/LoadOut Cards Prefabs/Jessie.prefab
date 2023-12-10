@@ -149,6 +149,7 @@ MonoBehaviour:
   playerLoadOut: {fileID: 11400000, guid: 8a5b85f6a266f614ab41a6ea000b752a, type: 2}
   activatedImage: {fileID: 21300000, guid: 3d4490500c83f144f86eda4ed99a6d82, type: 3}
   originalImage: {fileID: 21300000, guid: 212f1c073b5f0db40a263070037bbd42, type: 3}
-  levelKey: S8E
+  unlockImage: {fileID: 21300000, guid: c88918444f59bb24f9e0c0a2f187b52c, type: 3}
+  levelKey: ST9E
   levelUnlocked: 0
   isLevelEditor: 0

@@ -528,7 +528,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4749583453166842703}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 2.09
   m_Speed: 6
   m_Acceleration: 10
   avoidancePriority: 50
@@ -562,6 +562,8 @@ MonoBehaviour:
   isHard: 0
   damageResistance: 0.8
   element: 0
+  deathPrefab: {fileID: 8395142726217391798, guid: 39a510094a220ed438682c47ab9129aa, type: 3}
+  isBomb: 0
 --- !u!114 &-6685852590656365769
 MonoBehaviour:
   m_ObjectHideFlags: 0

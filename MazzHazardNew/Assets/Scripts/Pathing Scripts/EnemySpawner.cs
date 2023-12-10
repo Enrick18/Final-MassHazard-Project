@@ -11,8 +11,6 @@ public class EnemySpawner : MonoBehaviour
     private Transform spawnPoint;
     public float timeBetweenSpawns = 2f;
     public float timeBetweenWaves = 10f;
-    private float spawnCounter;
-    public bool isThereBoss;
     public bool isRandomized = false;
 
     private int totalEnemies = 0;
@@ -34,7 +32,6 @@ public class EnemySpawner : MonoBehaviour
             totalEnemies += enemy.enemyCount;
         }
 
-        spawnCounter = timeBetweenSpawns;
         spawnPoint = this.gameObject.transform.GetChild(0);
 
         if (!isRandomized)
@@ -86,6 +83,7 @@ public class EnemySpawner : MonoBehaviour
                         enemy.enemy.GetComponent<BombController>().IsHard();
                     }
                 }
+                
                 Instantiate(enemy.enemy, spawnPoint.position, spawnPoint.rotation);
                 enemy.enemyCount--;
                 yield return new WaitForSeconds(timeBetweenSpawns);

@@ -233,11 +233,11 @@ NavMeshAgent:
   m_GameObject: {fileID: 2778616273020895697}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 2.4
   m_Speed: 8
-  m_Acceleration: 10
+  m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 300
+  m_AngularSpeed: 600
   m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -245,7 +245,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 1
   m_WalkableMask: 1
-  m_ObstacleAvoidanceType: 0
+  m_ObstacleAvoidanceType: 3
 --- !u!54 &2517965082403669629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -311,10 +311,12 @@ MonoBehaviour:
   maxHealth: 750
   currentHealth: 0
   notStructure: 1
-  isMedium: 1
+  isMedium: 0
   isHard: 0
   damageResistance: 0.8
   element: 3
+  deathPrefab: {fileID: 3825284881124272568, guid: 63667886afd8f084b949888c9c23c2a7, type: 3}
+  isBomb: 0
 --- !u!114 &2778616273020895693
 MonoBehaviour:
   m_ObjectHideFlags: 0

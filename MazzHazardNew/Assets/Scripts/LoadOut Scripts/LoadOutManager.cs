@@ -18,11 +18,11 @@ public class LoadOutManager : MonoBehaviour
             heroList.heroChoosenIndex[i] = -1;
         }
        
-        InstantiateHeroButtons();
+        //InstantiateHeroButtons();
     }
 
     private void OnDisable() {
-        DestroyHeroButtons();
+        //DestroyHeroButtons();
     }
 
     public void InstantiateHeroButtons()

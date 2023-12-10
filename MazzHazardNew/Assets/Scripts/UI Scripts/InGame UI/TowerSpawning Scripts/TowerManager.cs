@@ -52,10 +52,8 @@ public class TowerManager : MonoBehaviour
                         {
                             if (currency.EnoughCurrency(currentTowerCost))
                             {
+                                placement.hasTower = true;
                                 isSelected = true;
-                                //check if currency is enough
-                                //directionCanvas.transform.position = tile.transform.GetChild(1).position; //testing global
-                                //directionCanvas.SetActive(true);
                                 SpawnTower();
                             }
 
@@ -64,11 +62,8 @@ public class TowerManager : MonoBehaviour
                         {
                             if (currency.EnoughCurrency(currentTowerCost))
                             {
+                                placement.hasTower = true;
                                 isSelected = true;
-                                //check if currency is enough
-
-                                //directionCanvas.transform.position = tile.transform.GetChild(1).position;
-                                //directionCanvas.SetActive(true);
                                 SpawnTower();
                             }
 
@@ -76,6 +71,10 @@ public class TowerManager : MonoBehaviour
 
 
                     }
+                }
+                else 
+                {
+                    towerPrefab = null;
                 }
             }
         }
@@ -145,6 +144,9 @@ public class TowerManager : MonoBehaviour
     }
     public void SpawnTower()
     {
+
+        placement.hasTower = true;
+        Debug.Log(placement.hasTower);
         // Debug.Log(yRotation);
         TileBuff buff = null;
         IHealthSystem health = null;
@@ -169,8 +171,6 @@ public class TowerManager : MonoBehaviour
                 heroStats.ModifyHeroDamage(0.85f);
             }
         }
-        placement.hasTower = true;
-
         currency.UseCurrency(currentTowerCost);
 
         isSelected = false;
