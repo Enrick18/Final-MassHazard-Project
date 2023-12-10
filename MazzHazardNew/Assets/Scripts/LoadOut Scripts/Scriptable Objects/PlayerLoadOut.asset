@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c0291c4ee144c46b94f05468405624, type: 3}
   m_Name: PlayerLoadOut
   m_EditorClassIdentifier: 
-  heroChoosenIndex: 0500000006000000010000000400000003000000ffffffff
+  heroChoosenIndex: ffffffffffffffffffffffffffffffffffffffffffffffff
