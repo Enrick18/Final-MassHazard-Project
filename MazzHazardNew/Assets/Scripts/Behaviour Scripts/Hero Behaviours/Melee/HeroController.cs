@@ -38,7 +38,6 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(_enemyBlockList.Count);
         int currentBlockCount = 0;
 
         foreach (KeyValuePair<GameObject, EnemyMove> kvp in _enemyBlockList)
@@ -125,6 +124,8 @@ public class HeroController : MonoBehaviour, IKillable, IHeroStats
             
         }
     }
+
+
     public void DealDamage()
     {
         //Audio Functions

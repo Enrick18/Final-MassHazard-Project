@@ -146,8 +146,6 @@ public class TowerManager : MonoBehaviour
     {
 
         placement.hasTower = true;
-        Debug.Log(placement.hasTower);
-        // Debug.Log(yRotation);
         TileBuff buff = null;
         IHealthSystem health = null;
         IHeroStats heroStats = null;
@@ -167,7 +165,6 @@ public class TowerManager : MonoBehaviour
             }
             else if ((buff.tileElement != health.GetElementType()) && health.GetElementType() != ElementType.Normal)
             {
-                //health.ApplyElementalEffect(1f-(healthElementalMultiplier%1));
                 heroStats.ModifyHeroDamage(0.85f);
             }
         }
