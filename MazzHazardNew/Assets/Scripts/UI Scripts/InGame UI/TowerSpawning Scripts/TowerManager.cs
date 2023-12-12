@@ -29,7 +29,6 @@ public class TowerManager : MonoBehaviour
     }
     private void Update()
     {
-
         if (Input.GetMouseButtonDown(0) && towerPrefab != null && !isSelected)
         {
             tile = null;
@@ -66,9 +65,7 @@ public class TowerManager : MonoBehaviour
                                 isSelected = true;
                                 SpawnTower();
                             }
-
                         }
-
 
                     }
                 }
@@ -100,8 +97,6 @@ public class TowerManager : MonoBehaviour
         TileBuff buff = null;
         IHealthSystem health = null;
         IHeroStats heroStats = null;
-
-        
         Quaternion rot = new Quaternion();
         Debug.Log(towerPosition);
        
@@ -142,12 +137,11 @@ public class TowerManager : MonoBehaviour
         tile = null;
 
     }
+
     public void SpawnTower()
     {
-
         placement.hasTower = true;
         Debug.Log(placement.hasTower);
-        // Debug.Log(yRotation);
         TileBuff buff = null;
         IHealthSystem health = null;
         IHeroStats heroStats = null;

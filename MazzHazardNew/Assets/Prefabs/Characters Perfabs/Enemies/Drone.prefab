@@ -425,7 +425,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   anim: {fileID: 8077943958025515953}
   isMedium: 0
-  isHard: 1
+  isHard: 0
 --- !u!114 &3556801484299115476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
   currentHealth: 0
   notStructure: 1
   isMedium: 0
-  isHard: 1
+  isHard: 0
   damageResistance: 0.8
   element: 2
   deathPrefab: {fileID: 7857466439532463119, guid: e5b0c3bcf52bd0f48ad8269d74536ad7, type: 3}

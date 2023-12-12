@@ -41,9 +41,7 @@ public class HeroRangeTower : MonoBehaviour, IKillable
             }
 
             enemiesUpdated = true;
-        }
-
-        
+        } 
     }
 
     private void OnDrawGizmosSelected() 

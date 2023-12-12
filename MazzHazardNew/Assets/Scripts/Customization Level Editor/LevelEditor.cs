@@ -50,7 +50,7 @@ public class LevelEditor : MonoBehaviour
         waveManager.waveIndex = 0;
     }
 
-    public void IncrementWave()
+    public void IncrementWave() //Increment Wave Count
     {
         if (waveCount < 5)
             waveCount++;
@@ -58,7 +58,7 @@ public class LevelEditor : MonoBehaviour
         waveText.text = waveCount.ToString();
     }
 
-    public void DecrementWave()
+    public void DecrementWave() //Decrease Wave Count
     {
         if (waveCount > 1)
             waveCount--;
@@ -66,14 +66,14 @@ public class LevelEditor : MonoBehaviour
         waveText.text = waveCount.ToString();
     }
 
-    public void EnemySelectedWave(int index)
+    public void EnemySelectedWave(int index) //Assign Enemy to Wave
     {
         Debug.Log(enemyWaveIndex[1]);
         enemyWaveIndex[waveManager.waveIndex - 1] = index;
         numberOfEnemies[waveManager.waveIndex - 1] = 1;
     }
 
-    public void IncrementEnemies()
+    public void IncrementEnemies() //Increase enemy count
     {
         if (numberOfEnemies[waveManager.waveIndex - 1] < 12)
             numberOfEnemies[waveManager.waveIndex - 1]++;
@@ -81,7 +81,7 @@ public class LevelEditor : MonoBehaviour
         enemyCountText[waveManager.waveIndex - 1].text = numberOfEnemies[waveManager.waveIndex - 1].ToString();
     }
 
-    public void DecrementEnemies()
+    public void DecrementEnemies() // Decrease enemy count
     {
         if (numberOfEnemies[waveManager.waveIndex - 1] > 1)
             numberOfEnemies[waveManager.waveIndex - 1]--;
@@ -90,7 +90,7 @@ public class LevelEditor : MonoBehaviour
     }
 
 
-    public void IncrementHp()
+    public void IncrementHp() // Increase Health Count
     {
         if (hpCount < 10)
             hpCount++;
@@ -98,7 +98,7 @@ public class LevelEditor : MonoBehaviour
         hpText.text = hpCount.ToString();
     }
 
-    public void DecrementHp()
+    public void DecrementHp()// Decrease Health Count
     {
         if (hpCount > 1)
             hpCount--;
@@ -106,7 +106,7 @@ public class LevelEditor : MonoBehaviour
         hpText.text = hpCount.ToString();
     }
 
-    public void IncrementCapsule()
+    public void IncrementCapsule() //Increase Starting Capsule Count
     {
         if (capsuleCount < 70)
             capsuleCount += 10;
@@ -114,7 +114,7 @@ public class LevelEditor : MonoBehaviour
         capsuleText.text = capsuleCount.ToString();
     }
 
-    public void DecrementCapsule()
+    public void DecrementCapsule() // Decrease Starting Capsule Count
     {
         if (capsuleCount > 30)
             capsuleCount -= 10;
@@ -122,7 +122,7 @@ public class LevelEditor : MonoBehaviour
         capsuleText.text = capsuleCount.ToString();
     }
 
-    public void SetMapName()
+    public void SetMapName() //Set the Map Name
     {
         if (mapNameInputField.text != "") 
         {

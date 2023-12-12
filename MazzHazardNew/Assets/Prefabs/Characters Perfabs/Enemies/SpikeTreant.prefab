@@ -352,6 +352,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   counter: {fileID: 0}
   isBlocked: 0
+  environmentalMob: 1
 --- !u!1 &6956320903251734397
 GameObject:
   m_ObjectHideFlags: 0

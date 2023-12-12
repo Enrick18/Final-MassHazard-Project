@@ -141,9 +141,8 @@ public class EnemySpawner : MonoBehaviour
             }
         }
     }
-
-
 }
+
 
 [System.Serializable]
 public class EnemyList

@@ -7313,6 +7313,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1957904604}
     m_Modifications:
+    - target: {fileID: 3699967946952938718, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
+      propertyPath: delay
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209041, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7363,7 +7367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: timeBetweenSpawns
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5959959934657209042, guid: f89572840482a1e4f820b8e604fd04db, type: 3}
       propertyPath: enemyList.Array.size
@@ -9477,11 +9481,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: defaultCurency
-      value: 30
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983265, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: cooldownCounter
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1192289229434983266, guid: 657fcd839d1b6fc4db102f83f4475177, type: 3}
       propertyPath: m_SizeDelta.x

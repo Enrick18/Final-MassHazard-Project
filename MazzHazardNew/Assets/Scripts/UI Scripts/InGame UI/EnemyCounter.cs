@@ -40,7 +40,6 @@ public class EnemyCounter : MonoBehaviour
             if (isLevelEditor == false) 
             {
                 levelComplete.SaveProgress();
-                //SaveStage.SaveGameFile();
             }
            
             Time.timeScale = 0f;
